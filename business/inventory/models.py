@@ -28,7 +28,7 @@ class Contacts(models.Model):
 
 
 class Shipment(models.Model):
-    id = models.UUIDField(primary_key=True,default=uuid.uuid4())
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4())
     date_added = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -36,7 +36,7 @@ class Shipment(models.Model):
 
 
 class Product(models.Model):
-    name = models.CharField(max_length=100, unique=True)
+    name = models.CharField(max_length=100, unique=True, db_index=True)
     weight = models.DecimalField(max_digits=20, decimal_places=2)
 
     def save(self, *args, **kwargs):

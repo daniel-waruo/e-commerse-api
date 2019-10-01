@@ -1,18 +1,10 @@
-from django.conf import settings
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.db.models.signals import post_save
 from django.utils.translation import gettext_lazy as _
 from pyuploadcare.dj.models import ImageField
+
 from utils.geo.phone_numbers.fields import PhoneNumberField
-
-from django.conf import settings
-from django.db import models
-from django.utils import timezone
-
-from knox import crypto
-from knox.settings import CONSTANTS, knox_settings
-
 
 # Create your models here.
 
@@ -46,7 +38,7 @@ class UserProfile(models.Model):
     """
     Models for the User Profile
     """
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, primary_key=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
     gender = models.CharField(max_length=1, choices=gender_choices, default='u', null=True)
     location = models.CharField(max_length=100, default='', null=True)
     phone_number = PhoneNumberField(null=True)
@@ -73,5 +65,4 @@ def create_profile(**kwargs):
  TODO:
     # Implement Permissions and Privileges     
 """
-post_save.connect(create_profile, sender=settings.AUTH_USER_MODEL)
-
+post_save.connect(create_profile, sender=User)

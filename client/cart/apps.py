@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class CheckoutConfig(AppConfig):
-    name = 'client.checkout'
+    name = 'client.cart'

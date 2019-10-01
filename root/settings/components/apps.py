@@ -1,18 +1,25 @@
 INSTALLED_APPS = [
     'django.contrib.admin',
-    'accounts',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    # THIRD PARTY APPS
+    # rest framework
     'rest_framework',
     'rest_framework.authtoken',
+
+    # all auth
     'allauth',
     'allauth.account',
+
+    # rest auth
     'rest_auth',
     'rest_auth.registration',
-    'knox',
+
+    # Custom Apps
+    'accounts',
     'utils.geo.phone_numbers'
 ]

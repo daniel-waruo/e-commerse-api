@@ -16,12 +16,14 @@ BASE_CURRENCY = settings.BASE_CURRENCY
 
 
 class Product(models.Model):
+    name = models.CharField(max_length=100, db_index=True)
     product = models.OneToOneField(to=BaseProduct, on_delete=models.CASCADE)
     price = MoneyField(max_digits=14, decimal_places=2)
     discount_price = MoneyField(max_digits=14, decimal_places=2)
     timestamp = models.DateTimeField(auto_now=True)
     price_base = MoneyField(max_digits=14, decimal_places=2, editable=False)
     slug = models.SlugField(unique=True, null=True)
+    description = models.TextField(null=True)
 
     def save(self, *args, **kwargs):
         self.price_base = convert_money(self.price, BASE_CURRENCY)

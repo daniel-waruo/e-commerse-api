@@ -23,7 +23,8 @@ base_settings = [
     'components/allauth.py',  # allauth rest_auth settings
     'components/currency.py',  # currency settings
     'components/email.py',  # email settings
-    'components/rest_framework.py'  # rest framework settings
+    'components/rest_framework.py',  # rest framework settings
+    'components/middleware.py',  # middleware configuration
 ]
 
 # Include settings:

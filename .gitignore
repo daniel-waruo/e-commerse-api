@@ -1,0 +1,8 @@
+# ignore venv folder
+venv
+
+#ignore python cache files
+.pyc
+
+#ignore env files
+.env

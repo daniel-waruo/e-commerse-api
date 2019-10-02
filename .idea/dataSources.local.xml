@@ -6,6 +6,11 @@
       <secret-storage>master_key</secret-storage>
       <auth-required>false</auth-required>
       <first-sync>true</first-sync>
+      <introspection-schemas>*:*</introspection-schemas>
+    </data-source>
+    <data-source name="db" uuid="868efa5e-99f8-48dc-82e8-fcc99065d9e6">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <introspection-schemas>*:</introspection-schemas>
     </data-source>
   </component>
 </project>

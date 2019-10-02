@@ -1,16 +1,19 @@
 from django.http import Http404
 from rest_framework import status
+from rest_framework.generics import RetrieveAPIView
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from utils.currency.utils import translate_money
+from .serializers import CartSerializer
 from .utils import (
     add_product_to_cart,
     remove_product_from_cart,
     add_product_number,
     subtract_product_number,
-    CartDetails
-)
+    update_product_number,
+    CartDetails,
+    get_cart_object)
 
 
 class AddProduct(APIView):
@@ -133,3 +136,49 @@ class SubtractProductNumber(APIView):
                 )),
         }
         return Response(data, status=status.HTTP_200_OK)
+
+
+class UpdateProductNumber(APIView):
+    def post(self, request):
+        pk = self.request.POST.get('product_pk', None)
+        product_number = self.request.POST('product_number', None)
+        if request.user.is_authenticated:
+            cart_product = update_product_number(product_pk=pk, product_number=product_number, user_id=request.user.id)
+            cart_details = CartDetails(user_id=request.user.id)
+        else:
+            session_key = request.checkout_session.session_key
+            # the function returns the product checkout
+            cart_product = update_product_number(product_pk=pk, product_number=product_number, session_key=session_key)
+            cart_details = CartDetails(session=session_key)
+        data = {
+            'cart_detail': {
+                'cart_total_number': cart_details.total_number,
+                'cart_total_value': str(
+                    translate_money(
+                        request,
+                        cart_details.total_value
+                    )
+                )
+            },
+            "product_pk": pk,
+            "product_total": str(
+                translate_money(
+                    request,
+                    cart_product.product.price * cart_product.number
+                )),
+        }
+        return Response(data, status=status.HTTP_200_OK)
+
+
+class CartListView(RetrieveAPIView):
+    serializer_class = CartSerializer
+
+    def get_object(self):
+        if self.request.user.is_authenticated:
+            return get_cart_object(
+                user_id=self.request.user.id
+            )
+        else:
+            return get_cart_object(
+                session_key=self.request.checkout_session.session_key
+            )

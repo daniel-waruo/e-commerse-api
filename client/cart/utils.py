@@ -116,11 +116,15 @@ def subtract_product_number(product_pk, user_id=None, session_key=None):
         return remove_product_from_cart(product_pk=product_pk, user_id=user_id)
 
 
-def change_product_number(cart_product_id, product_number):
-    cart_product = CartProduct.objects.get(pk=cart_product_id)
-    cart_product.number = product_number
-    cart_product.save()
-    return cart_product
+def update_product_number(product_pk, product_number, user_id=None, session_key=None):
+    cart = get_cart_object(user_id, session_key)
+    if cart.cartproduct_set.filter(product=product_pk):
+        cart_product = cart.cartproduct_set.get(product=product_pk)
+        cart_product.number = product_number
+        cart_product.save()
+        return cart_product
+    else:
+        return remove_product_from_cart(product_pk=product_pk, user_id=user_id)
 
 
 class CartDetails:

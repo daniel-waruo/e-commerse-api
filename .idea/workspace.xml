@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2626fec1-3ddf-4594-b705-ddfca256fc71" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/analytics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/analytics/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/cms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/cms/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/cms/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/dashboard/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/dashboard/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/delivery/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/delivery/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/orders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0002_order_transaction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0003_auto_20190424_1317.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0004_auto_20190503_0813.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0005_auto_20190503_0814.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0006_auto_20190503_1249.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0007_auto_20190503_1249.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0008_auto_20190503_1301.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0009_auto_20190503_1316.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0010_auto_20190503_1316.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0011_auto_20190503_1629.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0012_auto_20190505_0144.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0013_auto_20190505_0154.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0014_auto_20190505_0157.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0015_auto_20190505_1332.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0016_auto_20190505_1842.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0017_auto_20190505_2036.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/migrations/0018_auto_20190505_2039.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/templates/orders/order_confirm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/products/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/products/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/cart/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/products/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/products/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/settings/components/currency.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/components/currency.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/cms/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/delivery/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/settings/components/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/components/apps.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,7 +40,17 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="9" selection-start-line="16" selection-end-line="16" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -142,7 +120,6 @@
         <option value="$PROJECT_DIR$/root/settings/__init__.py" />
         <option value="$PROJECT_DIR$/root/settings/components/middleware.py" />
         <option value="$PROJECT_DIR$/client/checkout/serializers.py" />
-        <option value="$PROJECT_DIR$/root/settings/components/apps.py" />
         <option value="$PROJECT_DIR$/client/__init__.py" />
         <option value="$PROJECT_DIR$/business/transactions/models.py" />
         <option value="$PROJECT_DIR$/client/checkout/models.py" />
@@ -158,11 +135,9 @@
         <option value="$PROJECT_DIR$/client/web/models.py" />
         <option value="$PROJECT_DIR$/client/products/serializers.py" />
         <option value="$PROJECT_DIR$/business/cms/serializers.py" />
-        <option value="$PROJECT_DIR$/business/cms/urls.py" />
         <option value="$PROJECT_DIR$/business/analytics/api.py" />
         <option value="$PROJECT_DIR$/business/analytics/base_api.py" />
         <option value="$PROJECT_DIR$/business/delivery/apps.py" />
-        <option value="$PROJECT_DIR$/business/delivery/models.py" />
         <option value="$PROJECT_DIR$/business/orders/models.py" />
         <option value="$PROJECT_DIR$/business/orders/serializers.py" />
         <option value="$PROJECT_DIR$/business/cms/api.py" />
@@ -178,6 +153,9 @@
         <option value="$PROJECT_DIR$/client/cart/__init__.py" />
         <option value="$PROJECT_DIR$/business/products/__init__.py" />
         <option value="$PROJECT_DIR$/client/products/__init__.py" />
+        <option value="$PROJECT_DIR$/business/cms/urls.py" />
+        <option value="$PROJECT_DIR$/root/settings/components/apps.py" />
+        <option value="$PROJECT_DIR$/business/delivery/models.py" />
       </list>
     </option>
   </component>
@@ -209,6 +187,11 @@
               <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_commerse" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_commerse" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -222,7 +205,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -393,13 +376,13 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50075644" side_tool="true" weight="0.32838285" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="13" sideWeight="0.50075644" side_tool="true" visible="true" weight="0.32838285" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.32838285" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.34323433" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.6270802" weight="0.46039605" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19818456" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19818456" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.32838285" />
@@ -459,48 +442,8 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/cart/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/cart/ajax_views.py" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="373" column="6" lean-forward="true" selection-start-line="373" selection-start-column="6" selection-end-line="373" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/status.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/currency/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="41" column="36" lean-forward="true" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/products/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/cart/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="e#495#1441#0" />
-            <element signature="e#1479#2408#0" />
-            <element signature="e#2448#3647#0" />
-            <element signature="e#3692#4901#0" />
-            <element signature="e#4971#6204#0" />
-            <element signature="e#4992#5328#0" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/cart/utils.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -627,16 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/delivery/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/commerse/checkout/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -671,44 +604,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/cms/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/cms/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/cms/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pyuploadcare/dj/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
           <caret line="174" selection-start-line="126" selection-end-line="174" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/settings/components/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -774,9 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/inventory/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/business/delivery/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -805,12 +701,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/products/__init__.py">
+    <entry file="file://$PROJECT_DIR$/business/products/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state relative-caret-position="17">
+          <caret line="1" column="85" selection-start-line="1" selection-start-column="85" selection-end-line="1" selection-end-column="85" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/root/.env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/root/settings/components/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/delivery/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/cms/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/cms/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/cms/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/inventory/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/cart/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/inventory/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/client/cart/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -819,10 +775,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/products/__init__.py">
+    <entry file="file://$PROJECT_DIR$/client/cart/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/products/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="85" selection-start-line="1" selection-start-column="85" selection-end-line="1" selection-end-column="85" />
+        <state relative-caret-position="34">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="9" selection-start-line="16" selection-end-line="16" selection-end-column="9" />
         </state>
       </provider>
     </entry>

@@ -1,3 +1,4 @@
+django-shortuuidfield
 django-rest-auth
 django
 django-rest-knox

@@ -20,6 +20,13 @@ INSTALLED_APPS = [
     'rest_auth.registration',
 
     # Custom Apps
+    # auth
     'accounts',
+    # business
+    # 'business.delivery',
+    # 'business.cms',
+    # 'business.orders',
+    # 'business.transactions'
+    # utils
     'utils.geo.phone_numbers'
 ]

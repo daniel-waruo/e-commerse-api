@@ -6,3 +6,5 @@ venv
 
 #ignore env files
 .env
+
+.idea

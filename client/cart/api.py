@@ -14,8 +14,8 @@ from .utils import (
     update_product_number,
     CartDetails,
     get_cart_object)
-
-
+from rest_framework.urlpatterns import *
+from rest_framework.permissions import *
 class AddProduct(APIView):
 
     def post(self, request):

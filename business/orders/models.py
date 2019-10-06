@@ -23,6 +23,10 @@ shortuuid.set_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0987654321"
 
 
 class Order(models.Model):
+    """
+    Order
+    This is the model used to store the order is officially.
+    """
     id = ShortUUIDField(default=shortuuid.uuid(), primary_key=True, editable=False)
     payment_status = models.BooleanField(default=False, choices=PAYMENT_STATES)
     date_added = models.DateField(auto_now_add=True)

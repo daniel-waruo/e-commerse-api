@@ -10,7 +10,18 @@
     </data-source>
     <data-source name="db" uuid="868efa5e-99f8-48dc-82e8-fcc99065d9e6">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <introspection-schemas>*:*</introspection-schemas>
+    </data-source>
+    <data-source name="db [2]" uuid="09997f22-9984-4ef9-b0a8-a7b413c37227">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
       <introspection-schemas>*:</introspection-schemas>
+    </data-source>
+    <data-source name="database" uuid="39b4df89-401e-475a-b792-868ff9696685">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <auth-required>false</auth-required>
+    </data-source>
+    <data-source name="database [2]" uuid="8676baf0-fa5b-443b-83ff-ede3a62bf5af">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
     </data-source>
   </component>
 </project>

@@ -1,13 +1,13 @@
-
-# Application definition
-
+"""
+The
+"""
 MIDDLEWARE = [
-    'django.session.security.SecurityMiddleware',
-    'django.contrib.sessions.session.SessionMiddleware',
-    'django.session.common.CommonMiddleware',
-    'django.session.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.session.AuthenticationMiddleware',
-    'cart.anonymous_session.middleware.CheckoutSessionMiddleware',
-    'django.contrib.messages.session.MessageMiddleware',
-    'django.session.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'utils.session.middleware.CheckoutSessionMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]

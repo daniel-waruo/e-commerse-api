@@ -17,7 +17,10 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    # django admin urls
     path('django_admin/', admin.site.urls),
-    path('api/auth/', include('knox.urls')),
-    path('accounts/', include('accounts.urls'))
+    # account urls
+    path('accounts/', include('accounts.urls')),
+    # business inventory urls
+    path('business/inventory/', include('business.inventory.urls'))
 ]

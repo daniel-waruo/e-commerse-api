@@ -26,7 +26,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 ROOT_URLCONF = 'root.urls'
 
 TEMPLATES = [
@@ -49,6 +48,7 @@ WSGI_APPLICATION = 'root.wsgi.application'
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -92,3 +92,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# SESSIONS
+ANONYMOUS_SESSION_ENGINE = "utils.session.cached_db"
+ANONYMOUS_SESSION_CACHE_ALIAS = "default"
+ANONYMOUS_SESSION_NAME = "checkout_session"

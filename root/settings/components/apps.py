@@ -7,7 +7,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     # THIRD PARTY APPS
+    # session framework
+    'qsessions',
     # rest framework
+
     'rest_framework',
     'rest_framework.authtoken',
 
@@ -22,11 +25,12 @@ INSTALLED_APPS = [
     # Custom Apps
     # auth
     'accounts',
-    # business
+    'business.inventory',
     # 'business.delivery',
     # 'business.cms',
     # 'business.orders',
     # 'business.transactions'
     # utils
-    'utils.geo.phone_numbers'
+    'utils.geo.phone_numbers',
+    'utils.session'
 ]

@@ -2,7 +2,7 @@
 venv
 
 #ignore python cache files
-.pyc
+*.pyc
 
 #ignore env files
 .env

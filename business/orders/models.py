@@ -1,64 +1,57 @@
 import shortuuid
+from django.conf import settings
 from django.db import models
 from shortuuidfield import ShortUUIDField
 
 from business.cms.models import Product
 from business.delivery.models import DeliveryInfo
+from business.payment.models import Receipt
 
 # Create your models here.
 
 ORDER_STATES = (
     ('pend', 'Pending'),
-    ('del', 'Processed'),
+    ('del', 'Cancelled'),
     ('shipping', 'Shipping'),
     ('received', 'Received')
-)
-
-PAYMENT_STATES = (
-    (True, 'payment complete'),
-    (False, 'payment pending')
 )
 
 shortuuid.set_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0987654321"
 
 
 class Order(models.Model):
+    # TODO:
     """
     Order
     This is the model used to store the order is officially.
     """
     id = ShortUUIDField(default=shortuuid.uuid(), primary_key=True, editable=False)
-    payment_status = models.BooleanField(default=False, choices=PAYMENT_STATES)
-    date_added = models.DateField(auto_now_add=True)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    receipt = models.OneToOneField(Receipt, on_delete=models.PROTECT, null=True)
+    delivery_info = models.ForeignKey(DeliveryInfo, on_delete=models.CASCADE)
     state = models.CharField(choices=ORDER_STATES, max_length=4, default='init')
+    date_added = models.DateField(auto_now_add=True)
 
     class Meta:
         verbose_name = "Order"
 
-    def __str__(self):
-        return "Order " + str(self.pk)
-
-
-class OrderInfo(models.Model):
-    order = models.OneToOneField(Order, on_delete=models.CASCADE)
-    delivery_info = models.ForeignKey(DeliveryInfo, on_delete=models.CASCADE)
-
-    class Meta:
-        verbose_name = "Order Information"
-        verbose_name_plural = "Order Information"
+    def get_payment_status(self):
+        if not self.receipt:
+            return False
+        else:
+            return True
 
     def __str__(self):
-        return "Order Information " + str(self.order.id)
+        return "Order " + str(self.user) + " " + self.state
 
 
 class ProductOrder(models.Model):
     product = models.ForeignKey(Product, on_delete=models.PROTECT)
     number = models.PositiveIntegerField(default=1)
     order = models.ForeignKey(Order, on_delete=models.PROTECT)
-    state = models.CharField(choices=ORDER_STATES, max_length=4, default='init')
 
     class Meta:
-        verbose_name = " Product Order"
+        verbose_name = "Product Order"
 
     def __str__(self):
         return self.product.name

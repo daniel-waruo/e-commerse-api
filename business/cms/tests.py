@@ -1,12 +1,7 @@
-from djmoney.money import Money
 from rest_framework.reverse import reverse
-from utils.tests import UserTestCase, test_category_params, test_cms_product_params, create_test_category, \
-    create_test_cms_product,create_test_inventory_product
 
-"""
-TODO:
-Write tests on testing the cms operations
-"""
+from utils.tests import UserTestCase, test_category_params, create_test_category, \
+    create_test_cms_product, create_test_inventory_product
 
 
 class TestCreateCategory(UserTestCase):
@@ -96,7 +91,19 @@ class TestCreateProduct(UserTestCase):
         """
         self.client.login(username="test", password="test")
         url = reverse("cms:add_product")
-        response = self.client.post(url, test_cms_product_params)
+
+        response = self.client.post(url, {
+            "product": 1,
+            "name": "Test Cms Product",
+            # "images": ["https://ucarecdn.com/0799e306-6da7-4c94-bc54-29cf96957f25/-/resize/50x50/"],
+            "category": 1,
+            "price": 2000.87,
+            "price_currency": "USD",
+            "discount_price": 1800.87,
+            "discount_price_currency": "USD",
+            "slug": "cms-product",
+            "description": "This is the Product Used to test our Cms Product"
+        })
         self.assertEqual(response.status_code, 201,
                          'CMS Product not Created.Expected Response Code 201, received {0} instead.'
                          'It returned {1}'

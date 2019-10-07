@@ -1,7 +1,8 @@
+from allauth.account.views import email_verification_sent
 from django.urls import path
 from rest_auth.registration.views import RegisterView, VerifyEmailView
+
 from accounts.api import ConfirmEmailApi
-from allauth.account.views import email_verification_sent
 
 urlpatterns = [
     # url for registering new users

@@ -1,16 +1,8 @@
-from django.urls import path
 from allauth.account.views import (
     email_verification_sent,
-    password_change,
-    password_set,
-    account_inactive,
-    email,
-    password_reset,
-    password_reset_done,
-    password_reset_from_key,
-    password_reset_from_key_done
+    password_reset_from_key
 )
-from django.contrib.auth import urls
+from django.urls import path
 
 urlpatterns = [
     # url for informing the user that the verification in sent

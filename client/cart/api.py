@@ -161,7 +161,7 @@ class UpdateProductNumber(CartApiView):
         return data
 
 
-class CartListView(RetrieveAPIView):
+class CartView(RetrieveAPIView):
     serializer_class = CartSerializer
 
     def get_object(self):

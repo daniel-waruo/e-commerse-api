@@ -1,9 +1,10 @@
 from django.contrib.auth import get_user_model
+from djmoney.money import Money
 from rest_framework.authtoken.models import Token
 from rest_framework.test import APITestCase, APIClient
-from djmoney.money import Money
-from business.inventory.models import Supplier, Product as InventoryProduct
+
 from business.cms.models import Category, Product as CmsProduct
+from business.inventory.models import Supplier, Product as InventoryProduct
 
 
 class UserTestCase(APITestCase):
@@ -64,10 +65,7 @@ test_cms_product_params = {
     "name": "Test Cms Product",
     "images": ["", "", ""],
     "category": 1,
-    "price": {
-        'amount': 2000.87,
-        'currency': 'USD'
-    },
+    "price": (2000.87, 'USD'),
     "discount_price": 1800.87,
     "slug": "cms-product",
     "description": "This is the Product Used to test our Cms Product"

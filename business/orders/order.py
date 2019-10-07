@@ -1,8 +1,19 @@
-import datetime
+"""
+In order for One to make a new order they require to have:-
 
-from client.cart.models import Cart, CartProduct
-from django.conf import settings
-from django.core.mail import EmailMessage
-from django.template.loader import get_template
-from django.template.loader import render_to_string
-from django.utils import timezone
+Order - payment_status
+Order Information - order
+                  - delivery information - user
+                                         - phone_number
+                                         - email
+Product Orders - order  
+               - product
+               - number
+               - state
+                                       
+"""
+
+
+def make_order_from_cart():
+    # function to make an order from a cart
+    pass

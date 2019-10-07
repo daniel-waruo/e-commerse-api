@@ -1,13 +1,14 @@
 from django.urls import path
-from accounts.api import PasswordResetView
 from rest_auth.views import (
     LoginView,
     LogoutView,
     UserDetailsView,
     PasswordChangeView,
     PasswordResetConfirmView,
-    #PasswordResetView,
+    # PasswordResetView,
 )
+
+from accounts.api import PasswordResetView
 
 urlpatterns = [
     # URLs that do not require a session or valid token

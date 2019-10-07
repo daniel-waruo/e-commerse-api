@@ -1,4 +1,5 @@
 from rest_framework.serializers import ModelSerializer
+
 from .models import DeliveryInfo
 
 
@@ -10,3 +11,4 @@ class DeliveryInfoSerializer(ModelSerializer):
             'phone_number',
             'email'
         ]
+

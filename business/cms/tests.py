@@ -1,155 +1,162 @@
+from djmoney.money import Money
 from rest_framework.reverse import reverse
+from utils.tests import UserTestCase, test_category_params, test_cms_product_params, create_test_category, \
+    create_test_cms_product,create_test_inventory_product
 
-from utils.tests import UserTestCase, test_supplier_params, create_test_supplier, create_test_inventory_product
+"""
+TODO:
+Write tests on testing the cms operations
+"""
 
 
-# supplier tests
-class TestCreateSupplier(UserTestCase):
+class TestCreateCategory(UserTestCase):
 
     def setUp(self):
         super().setUp()
 
-    def test_create_supplier(self):
-        url = reverse("inventory:add_supplier")
-        response = self.client.post(url, test_supplier_params)
-        self.assertEqual(response.status_code, 201,
-                         'Expected Response Code 201, received {0} instead.'
-                         .format(response.status_code))
-
-
-class TestRetrieveSupplier(UserTestCase):
-    def setUp(self):
-        super().setUp()
-        create_test_supplier()
-        # create_test_inventory_product()
-
-    def test_retrieve_supplier(self):
+    def test_create_category(self):
         """
-        Test the retrieval of  product data  an inventory object
+        Test whether the api can make a category
+        :return:
+        """
+        self.client.login(username="test", password="test")
+        url = reverse("cms:add_category")
+        response = self.client.post(url, test_category_params)
+        self.assertEqual(response.status_code, 201,
+                         'Category not Created.Expected Response Code 201, received {0} instead.'
+                         'It returned {1}'
+                         .format(response.status_code, response.content))
+
+
+class TestCategoryView(UserTestCase):
+    def setUp(self):
+        super().setUp()
+        create_test_category()
+
+    def test_retrieve_category(self):
+        """
+        Test the retrieval of  product data  an cms category
         :return: None
         """
         self.client.login(username="test", password="test")
-        url = reverse('inventory:supplier_view', kwargs={'pk': 1})
+        url = reverse('cms:category_view', kwargs={'pk': 1})
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200,
-                         'Retrieve Supplier is not Successful.\n'
+                         'Retrieve Category is not Successful.\n'
                          'Expected  Response Code 200, received {0} instead with content as :-'
                          '\n\t {1}.'
                          .format(response.status_code, response.content))
 
-    def test_update_supplier(self):
+    def test_update_category(self):
         self.client.login(username="test", password="test")
-        url = reverse('inventory:supplier_view', kwargs={'pk': 1})
+        url = reverse('cms:category_view', kwargs={'pk': 1})
         response = self.client.put(url, data={
-            "identifier": "test-supplier-update",
-            "name": "Test Supplier Update",
-            "phone_number": "+254797797797",
-            "email": "test@email.com"
+            "name": "Test Category Update",
+            "slug": "test-category-update",
+            "parent": ''
         })
         self.assertEqual(response.status_code, 200,
-                         'Retrieve Supplier is not Successful.\n'
+                         'Retrieve Category is not Successful.\n'
                          'Expected  Response Code 200, received {0} instead with content as :-'
                          '\n\t {1}.'
                          .format(response.status_code, response.content))
 
-    def test_delete_supplier(self):
+    def test_delete_category(self):
         self.client.login(username="test", password="test")
-        url = reverse('inventory:supplier_view', kwargs={'pk': 1})
+        url = reverse('cms:category_view', kwargs={'pk': 1})
         response = self.client.delete(url)
         self.assertEqual(response.status_code, 204,
-                         'Delete Supplier is not Successful.\n'
+                         'Delete Category is not Successful.\n'
                          'Expected  Response Code 204, received {0} instead with content as :-'
                          '\n\t {1}.'
                          .format(response.status_code, response.content))
 
-    def test_list_suppliers(self):
+    def test_list_categories(self):
         self.client.login(username="test", password="test")
-        url = reverse('inventory:list_suppliers')
+        url = reverse('cms:list_categories')
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200,
-                         'Listing of Suppliers is not Successful.\n'
+                         'Listing of Categories is not Successful.\n'
                          'Expected  Response Code 200, received {0} instead with content as :-'
                          '\n\t {1}.'
                          .format(response.status_code, response.content))
 
 
-# product tests
 class TestCreateProduct(UserTestCase):
 
     def setUp(self):
         super().setUp()
-        create_test_supplier()
+        create_test_category()
+        create_test_inventory_product()
 
     def test_create_product(self):
         """
-        Test whether a user can create an inventory object
-        :return: None
+        Test whether the api can make a category
+        :return:
         """
         self.client.login(username="test", password="test")
-        url = reverse('inventory:add_product')
-        params = {
-            "name": "Test Product",
-            "weight": 4.34,
-            "supplier": [1],
-            "size": 1
-        }
-        response = self.client.post(url, params)
+        url = reverse("cms:add_product")
+        response = self.client.post(url, test_cms_product_params)
         self.assertEqual(response.status_code, 201,
-                         'Expected Response Code 201, received {0} instead.'
-                         .format(response.status_code))
+                         'CMS Product not Created.Expected Response Code 201, received {0} instead.'
+                         'It returned {1}'
+                         .format(response.status_code, response.content))
 
 
-class TestRetrieveProduct(UserTestCase):
+class TestProductView(UserTestCase):
     def setUp(self):
         super().setUp()
-        create_test_inventory_product()
+        create_test_cms_product()
 
     def test_retrieve_product(self):
         """
-        Test the retrieval of  product data  an inventory object
+        Test the retrieval of  product data  an cms category
         :return: None
         """
-
         self.client.login(username="test", password="test")
-        url = reverse('inventory:product_view', kwargs={'pk': 1})
+        url = reverse('cms:product_view', kwargs={'pk': 1})
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200,
-                         'Retrieve Product is not Successful.\n'
+                         'Retrieve CMS PRODUCT is not Successful.\n'
                          'Expected  Response Code 200, received {0} instead with content as :-'
                          '\n\t {1}.'
                          .format(response.status_code, response.content))
 
     def test_update_product(self):
         self.client.login(username="test", password="test")
-        url = reverse('inventory:product_view', kwargs={'pk': 1})
+        url = reverse('cms:product_view', kwargs={'pk': 1})
         response = self.client.put(url, data={
-            "name": "Test Product Update",
-            "weight": 4.34,
-            "supplier": [1],
-            "size": 1
+            "product": 1,
+            "name": "Test Cms Product Update",
+            "images": ["", "", ""],
+            "category": 1,
+            "price": 2000.87,
+            "discount_price": 1800.87,
+            "slug": "cms-product-update",
+            "description": "This is the Product Used to test our Cms Product"
         })
         self.assertEqual(response.status_code, 200,
-                         'Retrieve Product is not Successful.\n'
+                         'Update Product is not Successful.\n'
                          'Expected  Response Code 200, received {0} instead with content as :-'
                          '\n\t {1}.'
-                         .format(response.status_code, bytes.decode(response.content)))
+                         .format(response.status_code, response.content))
 
     def test_delete_product(self):
         self.client.login(username="test", password="test")
-        url = reverse('inventory:product_view', kwargs={'pk': 1})
+        url = reverse('cms:product_view', kwargs={'pk': 1})
         response = self.client.delete(url)
         self.assertEqual(response.status_code, 204,
-                         'Delete Product is not Successful.\n'
+                         'Delete CMS Product is not Successful.\n'
                          'Expected  Response Code 204, received {0} instead with content as :-'
                          '\n\t {1}.'
                          .format(response.status_code, response.content))
 
     def test_list_products(self):
         self.client.login(username="test", password="test")
-        url = reverse('inventory:list_products')
+        url = reverse('cms:list_products')
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200,
-                         'Listing of Products is not Successful.\n'
+                         'Listing of CMS Products is not Successful.\n'
                          'Expected  Response Code 200, received {0} instead with content as :-'
                          '\n\t {1}.'
                          .format(response.status_code, response.content))

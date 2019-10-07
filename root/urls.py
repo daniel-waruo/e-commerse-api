@@ -22,5 +22,6 @@ urlpatterns = [
     # account urls
     path('accounts/', include('accounts.urls')),
     # business inventory urls
-    path('business/inventory/', include('business.inventory.urls'))
+    path('business/inventory/', include('business.inventory.urls')),
+    path('business/cms/', include('business.cms.urls'))
 ]

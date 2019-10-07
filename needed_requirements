@@ -1,12 +1,10 @@
 **django
 **djangorestframework
-**markdown
 **django-filter
 **pillow
 **django_allauth
 **django_rest_auth
 **django-money
-**country-currencies
 
 africastalking
 geoip2

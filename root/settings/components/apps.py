@@ -7,10 +7,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     # THIRD PARTY APPS
+    # django money
+    'djmoney',
+    'djmoney.contrib.exchange',
     # session framework
     'qsessions',
     # rest framework
-
     'rest_framework',
     'rest_framework.authtoken',
 
@@ -26,8 +28,8 @@ INSTALLED_APPS = [
     # auth
     'accounts',
     'business.inventory',
+    'business.cms',
     # 'business.delivery',
-    # 'business.cms',
     # 'business.orders',
     # 'business.transactions'
     # utils

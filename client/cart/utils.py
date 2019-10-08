@@ -1,34 +1,27 @@
+from django.conf import settings
 from django.db.models import Sum, F
 from djmoney.models.fields import MoneyField
 from djmoney.money import Money
-from django.conf import settings
+
 from business.cms.models import Product
+from client.cart.errors import NoUserIdOrSessionKeyError, NoProductToDelete, BadConfigError
 from .models import CartProduct, Cart
 
 BASE_CURRENCY = settings.BASE_CURRENCY
-
-
-class NoUserIdOrSessionKeyError(Exception):
-    pass
-
-
-class NoCart(Exception):
-    pass
-
-
-class BadConfigError(Exception):
-    pass
 
 
 def get_cart_object(user_id=None, session_key=None):
     if user_id and session_key:
         raise BadConfigError("One should not provide both the user id and session key")
     if user_id:
-        return Cart.objects.get_or_create(user=user_id)
+        cart = Cart.objects.get_or_create(user_id=user_id)
     elif session_key:
-        return Cart.objects.get_or_create(session_id=session_key)
+        cart = Cart.objects.get_or_create(session_id=session_key)
     else:
         raise NoUserIdOrSessionKeyError
+    if isinstance(cart, tuple):
+        return cart[0]
+    return cart
 
 
 def get_cart_id(user_id=None, session_key=None):
@@ -43,7 +36,7 @@ def get_cart_id(user_id=None, session_key=None):
 def get_grand_total(user_id=None, session_key=None):
     cart = get_cart_object(user_id, session_key)
     if cart.cartproduct_set.all().exists():
-        total = cart.cartproduct_set.filter.aggregate(
+        total = cart.cartproduct_set.aggregate(
             cart_total=Sum(F("number") * F("product__price_base"), output_field=MoneyField())
         )["cart_total"]
         return Money(total, BASE_CURRENCY)
@@ -77,10 +70,6 @@ def add_product_to_cart(product_pk, user_id=None, session_key=None):
         )
 
 
-class NoProductToDelete(Exception):
-    pass
-
-
 def remove_product_from_cart(product_pk, user_id=None, session_key=None):
     cart = get_cart_object(user_id, session_key)
     if cart.cartproduct_set.filter(product=product_pk).exists():
@@ -93,8 +82,8 @@ def remove_product_from_cart(product_pk, user_id=None, session_key=None):
 
 def add_product_number(product_pk, user_id=None, session_key=None):
     cart = get_cart_object(user_id, session_key)
-    if cart.objects.filter(cart=cart.id, product=product_pk):
-        cart_product = CartProduct.objects.get(cart=cart.id, product=product_pk)
+    if cart.cartproduct_set.filter(product=product_pk):
+        cart_product = cart.cartproduct_set.get(product=product_pk)
         cart_product.number += 1
         cart_product.save()
         return cart_product

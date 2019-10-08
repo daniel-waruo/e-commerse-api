@@ -1,5 +1,14 @@
-from django.urls import path, include
-from .api import *
+from django.urls import path
+
+from .api import (
+    AddProductNumber,
+    AddProduct,
+    RemoveProduct,
+    SubtractProductNumber,
+    UpdateProductNumber
+)
+
+app_name = 'cart'
 
 urlpatterns = [
     # cart related urls

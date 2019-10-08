@@ -24,4 +24,5 @@ class OrderSerializer(serializers.ModelSerializer):
             'receipt',
             'delivery_info',
             'state',
+            'products',
         ]

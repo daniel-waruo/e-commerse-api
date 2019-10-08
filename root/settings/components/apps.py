@@ -26,11 +26,15 @@ INSTALLED_APPS = [
     # Custom Apps
     # auth
     'accounts',
+    # business apps
     'business.inventory',
     'business.cms',
     'business.delivery',
-    # 'business.orders',
-    # 'business.transactions'
+    'business.orders',
+    'business.payment',
+    # client apps
+    'client.checkout',
+    'client.cart',
     # utils
     'utils.geo.phone_numbers',
     'utils.session'

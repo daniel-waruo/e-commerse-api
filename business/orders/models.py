@@ -20,7 +20,6 @@ shortuuid.set_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0987654321"
 
 
 class Order(models.Model):
-    # TODO:
     """
     Order
     This is the model used to store the order is officially.

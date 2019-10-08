@@ -1,11 +1,12 @@
 import decimal
+
+import geoip2.errors
 from country_currencies import get_by_country
+from django.conf import settings
+from django.contrib.gis.geoip2 import GeoIP2
 from djmoney.contrib.exchange.models import convert_money
 from djmoney.money import Money
 from ipware import get_client_ip
-from django.conf import settings
-from django.contrib.gis.geoip2 import GeoIP2
-import geoip2.errors
 
 BASE_CURRENCY = settings.BASE_CURRENCY
 
@@ -17,7 +18,7 @@ def get_currency_from_ip(request):
     else:
         g = GeoIP2()
         try:
-            country_code = g.city(ip)["country_code"]
+            country_code = g.country(ip)["country_code"]
         except geoip2.errors.AddressNotFoundError:
             return BASE_CURRENCY
         else:

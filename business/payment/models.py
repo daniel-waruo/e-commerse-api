@@ -1,10 +1,10 @@
-from django.contrib.auth.models import User
+from django.conf import settings
 from django.db import models
 from jsonfield import JSONField
 
 
 class Receipt(models.Model):
-    user = models.ForeignKey(to=User, on_delete=models.PROTECT)
+    user = models.ForeignKey(to=settings.AUTH_USER_MODEL, on_delete=models.PROTECT)
     # stores receipt data
     receipt_data = JSONField(blank=True)
     # stores price list

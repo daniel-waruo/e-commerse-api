@@ -97,3 +97,7 @@ STATIC_URL = '/static/'
 ANONYMOUS_SESSION_ENGINE = "utils.session.cached_db"
 ANONYMOUS_SESSION_CACHE_ALIAS = "default"
 ANONYMOUS_SESSION_NAME = "checkout_session"
+
+# GEOIP2 CONFIGURATION
+GEOIP_PATH = os.getcwd()
+GEOIP_DB = os.path.join(os.path.dirname(GEOIP_PATH), "GeoLite2-Country.mmdb")

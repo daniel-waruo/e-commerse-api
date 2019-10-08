@@ -1,5 +1,5 @@
-from django.http import HttpResponseBadRequest
 from rest_framework import status
+from rest_framework.exceptions import ValidationError
 from rest_framework.generics import RetrieveAPIView
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -22,10 +22,13 @@ class CartApiView(APIView):
     required_post_fields = ['product_pk']
 
     def get_required_fields(self):
+        # gets the required post fields for this view
         fields = self.required_post_fields
+        # checks if the fields are all present in the POST data and returns an error
+        # if it is not there
         for field in fields:
-            if field not in self.request.POST:
-                return HttpResponseBadRequest
+            if not self.request.POST.get(field):
+                raise ValidationError("The field " + field + " is required")
 
     def dispatch(self, request, *args, **kwargs):
         self.request = request
@@ -33,6 +36,8 @@ class CartApiView(APIView):
         self.kwargs = kwargs
         self.user = request.user
         self.checkout_session = request.checkout_session
+        # check whether the user is authenticates and assign the appropriate kwargs for use in
+        # getting the cart objects
         if request.user.is_authenticated:
             self.user_session_kwargs = {
                 'user_id': request.user.id
@@ -51,20 +56,25 @@ class CartApiView(APIView):
         raise NotImplementedError("This must be implemented in the View")
 
     def post(self, request, *args, **kwargs):
+        # check if the required fields are there
         self.get_required_fields()
+        # do the specific cart product action and return the cart product object
         self.cart_product = self.product_action()
+        # get data to be returned
         data = self.get_data()
+        # return the response
         return Response(data, status=self.success_status)
 
     def get_cart_details(self):
-        if self.request.user.is_authenticated():
+        # get the cart details
+        if self.request.user.is_authenticated:
             return CartDetails(user_id=self.user.id)
         else:
             return CartDetails(session=self.checkout_session.session_key)
 
     def get_data(self):
         """
-        This method returns the data usefull to cart views
+        This method returns the data useful to the cart views
         :return:data
         """
         cart_details = self.get_cart_details()
@@ -143,7 +153,7 @@ class UpdateProductNumber(CartApiView):
 
     def product_action(self):
         self.pk = self.request.POST.get('product_pk', None)
-        product_number = self.request.POST('product_number', None)
+        product_number = self.request.POST.get('product_number', None)
         return update_product_number(product_pk=self.pk, product_number=product_number, **self.user_session_kwargs)
 
     def get_data(self):

@@ -5,21 +5,23 @@ django-rest-auth
 django-jsonfield
 django-shortuuidfield
 django-phonenumber-field
+phonenumbers
+django-location-field
 
 pillow
 django-qsessions
 django-money
 
-django_extensions
+django-extensions
 werkzeug
 pyOpenSSL
 
 pyuploadcare
 django-sendgrid-v5
 
-phonenumbers
-django-location-field
 
 google-api-python-client
 oauth2client
+
 django-environ
+django-split-settings

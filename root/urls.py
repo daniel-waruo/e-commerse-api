@@ -21,5 +21,8 @@ urlpatterns = [
     # business inventory urls
     path('business/inventory/', include('business.inventory.urls')),
     path('business/cms/', include('business.cms.urls')),
-    path('business/delivery/', include('business.delivery.urls'))
+    path('business/delivery/', include('business.delivery.urls')),
+    path('business/orders/', include('business.orders.urls')),
+    path('business/checkout/', include('client.checkout.urls')),
+    path('client/cart/', include('client.cart.urls'))
 ]

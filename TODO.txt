@@ -1,0 +1,23 @@
+CLIENT-SIDE
+
+User Auth
+    registration
+    login
+    password management
+    email confirmation
+
+User Cart Operations
+    - Anonymous
+    -Authenticated
+
+Checkout Process allow for authenticated user-
+
+BUSINESS-SIDE
+
+Inventory management
+
+Content Management
+Order Management
+Payement Processing
+Delivery Management
+

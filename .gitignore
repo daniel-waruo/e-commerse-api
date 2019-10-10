@@ -1,11 +1,12 @@
 # ignore venv folder
-venv
+venv/*
 
 # ignore python cache files
-*.pyc
+**__pycache__
+*.pyc*
 
 # ignore env files
 .env
 
-.idea
+.idea/*
 GeoLite2-Country.mmdb

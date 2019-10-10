@@ -7,59 +7,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2626fec1-3ddf-4594-b705-ddfca256fc71" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/checkout/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/cms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/cms/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/cms/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/cms/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/cms/migrations/0002_auto_20191007_1352.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/cms/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/cms/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/delivery/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/delivery/api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/delivery/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/delivery/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/delivery/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/payment/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/delivery/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/delivery/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/delivery/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/delivery/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/inventory/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/inventory/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/inventory/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/inventory/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/inventory/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0002_auto_20191006_2014.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0003_auto_20191007_1352.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0004_auto_20191007_1352.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0005_auto_20191007_1353.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0006_auto_20191007_1353.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0007_auto_20191007_1641.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0008_auto_20191007_1642.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0009_auto_20191007_1753.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0010_auto_20191007_1843.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/orders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/orders/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/orders/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/orders/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/payment/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/payment/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/products/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/cart/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/cart/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/cart/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/checkout/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/checkout/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/products/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/payment/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/settings/components/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/components/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/settings/components/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/components/common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/settings/database.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0002_staffuser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/authorization/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/authorization/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/authorization/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/authorization/management/commands/clean_departments.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/authorization/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/authorization/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/authorization/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/authorization/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/authorization/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/authorization/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/orders/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/payment/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/payment/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/payment/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/payment/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cart/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cart/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/checkout/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/delivery/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/root/settings/components/departments.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/currency/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/cms/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/delivery/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/delivery/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/delivery/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/delivery/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/authorization/management/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/delivery/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/delivery/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/delivery/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/delivery/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/inventory/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/inventory/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/products/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/authorization/management/commands/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/products/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/authorization/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/settings/database.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/database.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -127,23 +113,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/authorization/utils.py">
+      <file leaf-file-name="apps.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/business/authorization/apps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="33" selection-start-column="33" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clean_departments.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/business/authorization/management/commands/clean_departments.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="49" column="33" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
-              <folding>
-                <element signature="e#321#398#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -297,28 +271,13 @@
             <path>
               <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_commerse" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_commerse" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="authorization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_commerse" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="authorization" type="462c0819:PsiDirectoryNode" />
-              <item name="management" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e_commerse" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="authorization" type="462c0819:PsiDirectoryNode" />
-              <item name="management" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -661,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570545112047</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implemented authorization management started by including Departments&#10;Created a command line interface and to clear Department instances&#10;Added a new Staff User model to manage department instances">
+      <created>1570697330714</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570697330714</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -707,16 +673,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.37443268" side_tool="true" weight="0.6287129" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.32838285" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.43729374" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.34323433" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.52970296" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.19471948" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30711043" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.45214522" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30711043" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.33055976" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.32838285" />
@@ -764,6 +729,43 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -772,7 +774,8 @@
     <MESSAGE value="Added order and delivery modules" />
     <MESSAGE value="Added order and delivery modules &#10;Wrote tests on order delivery &#10;Wrote the modules on payment and wrote a Receipt Model" />
     <MESSAGE value="Wrote tests on the cart operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrote tests on the cart operations" />
+    <MESSAGE value="Implemented authorization management started by including Departments&#10;Created a command line interface and to clear Department instances&#10;Added a new Staff User model to manage department instances" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented authorization management started by including Departments&#10;Created a command line interface and to clear Department instances&#10;Added a new Staff User model to manage department instances" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -831,6 +834,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#109#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -972,13 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/authorization/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1131,6 +1130,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/business/authorization/management/commands/clean_departments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="32" column="49" lean-forward="true" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+          <folding>
+            <element signature="e#321#398#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/business/authorization/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1138,13 +1147,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/authorization/management/commands/clean_departments.py">
+    <entry file="file://$PROJECT_DIR$/business/authorization/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="49" column="33" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
-          <folding>
-            <element signature="e#321#398#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

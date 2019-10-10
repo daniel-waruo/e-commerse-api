@@ -2,4 +2,6 @@ from django.apps import AppConfig
 
 
 class InventoryConfig(AppConfig):
-    name = 'business.inventory'
+    is_department = True
+    name = 'business'
+    verbose_name = 'Inventory Management'

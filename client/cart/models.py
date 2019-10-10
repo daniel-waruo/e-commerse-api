@@ -31,10 +31,10 @@ class Cart(models.Model):
     state = models.CharField(max_length=2, null=False, choices=cart_state, default='ac')
 
     class Meta:
-        verbose_name = 'Checkout'
+        verbose_name = 'Cart'
 
     def __str__(self):
-        return "CHECKOUT " + str(self.pk)
+        return "Cart " + str(self.pk)
 
 
 class CartProduct(models.Model):

@@ -93,7 +93,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# SESSIONS
+# CHECKOUT SESSIONS
 ANONYMOUS_SESSION_ENGINE = "utils.session.cached_db"
 ANONYMOUS_SESSION_CACHE_ALIAS = "default"
 ANONYMOUS_SESSION_NAME = "checkout_session"

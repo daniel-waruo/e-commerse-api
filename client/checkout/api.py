@@ -1,4 +1,6 @@
 from rest_framework import status
+from rest_framework.exceptions import ValidationError
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -14,6 +16,7 @@ class CheckoutApi(APIView):
     This is the view that transitions from a cart to an order
 
     """
+    permission_classes = [IsAuthenticated]
 
     def post(self, request):
         # TODO:check whether user has a cart object if not redirect to products
@@ -40,7 +43,10 @@ class CheckoutApi(APIView):
         serializer.is_valid(raise_exception=True)
         order = serializer.save()
         cart = get_cart_object(user_id=self.request.user.id)
+        # TODO: check whether cart products is empty and return a 404 response
         cartproducts = CartProduct.objects.filter(cart_id=cart.id)
+        if not cartproducts:
+            raise ValidationError("The Cart is empty therefore one cannot checkout")
 
         def cartproduct_to_productorder(cart_product):
             product_order = ProductOrder(

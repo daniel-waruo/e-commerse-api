@@ -1,3 +1,6 @@
+from importlib import import_module
+
+from django.conf import settings
 from django.contrib.auth import get_user_model
 from djmoney.money import Money
 from rest_framework.authtoken.models import Token
@@ -22,6 +25,27 @@ class UserTestCase(APITestCase):
             email='testuser@test.com',
             password='test'
         )
+
+
+class CheckoutSessionTestMixin:
+    def checkout_session(self):
+        """Return the current session variables."""
+        engine = import_module(settings.ANONYMOUS_SESSION_ENGINE)
+        cookie = self.client.cookies.get(settings.ANONYMOUS_SESSION_NAME)
+        if cookie:
+            return engine.CheckoutSessionStore(session_key=cookie.value)
+
+        session = engine.CheckoutSessionStore()
+        session.save()
+        self.client.cookies[settings.ANONYMOUS_SESSION_NAME] = session.session_key
+        return session
+
+
+class TestAuthenticatedUser(UserTestCase):
+    def setUp(self):
+        super().setUp()
+        self.client.force_login(user=self.user)
+        self.client.force_authenticate(user=self.user, token=self.token)
 
 
 test_supplier_params = {

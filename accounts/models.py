@@ -4,6 +4,7 @@ from django.db.models.signals import post_save
 from django.utils.translation import gettext_lazy as _
 from pyuploadcare.dj.models import ImageField
 
+from business.authorization.models import Department
 from utils.geo.phone_numbers.fields import PhoneNumberField
 
 # Create your models here.
@@ -59,6 +60,14 @@ class UserProfile(models.Model):
 def create_profile(**kwargs):
     if kwargs['created']:
         UserProfile.objects.create(user=kwargs['instance'])
+
+
+class StaffUser(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    departments = models.ManyToManyField(to=Department)
+
+    def __str__(self):
+        return self.user.username
 
 
 """

@@ -1,11 +1,12 @@
 import shortuuid
 from django.conf import settings
 from django.db import models
+from djmoney.models.fields import MoneyField
 from shortuuidfield import ShortUUIDField
 
 from business.cms.models import Product
-from business.delivery.models import DeliveryInfo
 from business.payment.models import Receipt
+from client.delivery.models import DeliveryInfo
 
 # Create your models here.
 
@@ -48,6 +49,12 @@ class ProductOrder(models.Model):
     product = models.ForeignKey(Product, on_delete=models.PROTECT)
     number = models.PositiveIntegerField(default=1)
     order = models.ForeignKey(Order, on_delete=models.PROTECT)
+    price_on_purchase = MoneyField(max_digits=14, decimal_places=2, blank=False, null=False, editable=False)
+
+    def save(self, force_insert=False, force_update=False, using=None,
+             update_fields=None):
+        self.price_on_purchase = self.product.price
+        return super().save(force_insert, force_update, using, update_fields)
 
     class Meta:
         verbose_name = "Product Order"

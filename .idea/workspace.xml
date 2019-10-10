@@ -1,43 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoTestManager">
+    <enabled-run-configurations>
+      <run-configuration type="DjangoTestsConfigurationType" name="E_Commerse Tests" />
+    </enabled-run-configurations>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2626fec1-3ddf-4594-b705-ddfca256fc71" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/checkout/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/admin/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/cms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/cms/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/cms/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/cms/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/cms/migrations/0002_auto_20191007_1352.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/cms/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/cms/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/cms/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/payment/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/delivery/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/inventory/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/inventory/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0002_auto_20191006_2014.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0003_auto_20191007_1352.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0004_auto_20191007_1352.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0005_auto_20191007_1353.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0006_auto_20191007_1353.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0007_auto_20191007_1641.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0008_auto_20191007_1642.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0009_auto_20191007_1753.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/migrations/0010_auto_20191007_1843.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/orders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/orders/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/orders/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/orders/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/orders/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/orders/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/orders/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/orders/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/orders/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/orders/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/payment/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/payment/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/payment/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/payment/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/products/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/products/apps.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/business/products/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/products/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/products/serializers.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/cart/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/cart/errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/errors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/cart/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/cart/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/cart/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/checkout/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/checkout/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/checkout/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/checkout/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/products/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/products/api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/products/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/products/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/products/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/permissions/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/permissions/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/products/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/payment/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/settings/components/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/components/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/settings/components/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/components/common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/settings/database.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/database.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/settings/database.sqlite3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/root/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/currency/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/currency/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,29 +69,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/e_commerce$Test__business_orders_tests_TestOrderView_test_retrieve_order_info.coverage" NAME="Test: business.orders.tests.TestOrderView.test_retrieve_order_info Coverage Results" MODIFIED="1570472811916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_TestRetrieveSupplier.coverage" NAME="Test: business.inventory.tests.TestRetrieveSupplier Coverage Results" MODIFIED="1570379051592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Test__business_cms_tests_TestRetrieveCategory.coverage" NAME="Test: business.cms.tests.TestRetrieveCategory Coverage Results" MODIFIED="1570385521187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$E_Commerse_Tests.coverage" NAME="E_Commerse Tests Coverage Results" MODIFIED="1570598103354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_TestRetrieveProduct_test_retrieve_product.coverage" NAME="Test: business.inventory.tests.TestRetrieveProduct.test_retrieve_product Coverage Results" MODIFIED="1570176387241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Test__client_cart_tests_TestCartAnonymousUser_test_add_product_number.coverage" NAME="Test: client.cart.tests.TestCartAnonymousUser.test_add_product_number Coverage Results" MODIFIED="1570549728019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Checkout.coverage" NAME="Checkout Tests Coverage Results" MODIFIED="1570553536113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Test__business_delivery_tests_TestDeliverInfoView_test_retrieve_delivery_info.coverage" NAME="Test: business.delivery.tests.TestDeliverInfoView.test_retrieve_delivery_info Coverage Results" MODIFIED="1570461222892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Test__client_cart_tests_TestCartAuthenticatedUser_test_add_product_number.coverage" NAME="Test: client.cart.tests.TestCartAuthenticatedUser.test_add_product_number Coverage Results" MODIFIED="1570531945163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Delivery_Tests.coverage" NAME="Delivery Tests Coverage Results" MODIFIED="1570599724704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Test__business_cms_tests_TestCreateProduct.coverage" NAME="Test: business.cms.tests.TestCreateProduct Coverage Results" MODIFIED="1570448373382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Cart_Tests.coverage" NAME="Cart Tests Coverage Results" MODIFIED="1570598759022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_TestRetrieveSupplier_test_delete_supplier.coverage" NAME="Test: business.inventory.tests.TestRetrieveSupplier.test_delete_supplier Coverage Results" MODIFIED="1570379822374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$manage.coverage" NAME="manage Coverage Results" MODIFIED="1569325674750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__client_cart_tests_TestCartAuthenticatedUser_test_add_product.coverage" NAME="Test: client.cart.tests.TestCartAuthenticatedUser.test_add_product Coverage Results" MODIFIED="1570531923555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_TestCreateProduct_test_create_product.coverage" NAME="Test: business.inventory.tests.TestCreateProduct.test_create_product Coverage Results" MODIFIED="1570176924301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_TestSupplier.coverage" NAME="Test: business.inventory.tests.TestSupplier Coverage Results" MODIFIED="1570174730979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_UserTestCase.coverage" NAME="Test: business.inventory.tests.UserTestCase Coverage Results" MODIFIED="1570305280463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__client_checkout_tests_TestCheckout.coverage" NAME="Test: client.checkout.tests.TestCheckout Coverage Results" MODIFIED="1570504651890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/e_commerce$Test__business_orders_tests_TestOrderView_test_retrieve_order_info.coverage" NAME="Test: business.orders.tests.TestOrderView.test_retrieve_order_info Coverage Results" MODIFIED="1570472811916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_TestProductInventory.coverage" NAME="Test: business.inventory.tests.TestProductInventory Coverage Results" MODIFIED="1570174774792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_TestCreateProduct.coverage" NAME="Test: business.inventory.tests.TestCreateProduct Coverage Results" MODIFIED="1570305300604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__client_cart_tests_TestCartAuthenticatedUser_test_remove_product.coverage" NAME="Test: client.cart.tests.TestCartAuthenticatedUser.test_remove_product Coverage Results" MODIFIED="1570531934790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_TestRetrieveSupplier.coverage" NAME="Test: business.inventory.tests.TestRetrieveSupplier Coverage Results" MODIFIED="1570379051592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Order_tests.coverage" NAME="Order tests Coverage Results" MODIFIED="1570552486644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__client_cart_tests_TestCartAuthenticatedUser_test_update_product_number.coverage" NAME="Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number Coverage Results" MODIFIED="1570544586274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/e_commerce$E_Commerse_Tests.coverage" NAME="E_Commerse Tests Coverage Results" MODIFIED="1570379783025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/root/settings" />
-    <SUITE FILE_PATH="coverage/e_commerce$Test__business_cms_tests_TestRetrieveCategory.coverage" NAME="Test: business.cms.tests.TestRetrieveCategory Coverage Results" MODIFIED="1570385521187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_TestRetrieveProduct_test_retrieve_product.coverage" NAME="Test: business.inventory.tests.TestRetrieveProduct.test_retrieve_product Coverage Results" MODIFIED="1570176387241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Inventory_Tests.coverage" NAME="Inventory Tests Coverage Results" MODIFIED="1570683109737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_TestRetrieveProduct.coverage" NAME="Test: business.inventory.tests.TestRetrieveProduct Coverage Results" MODIFIED="1570378235831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/e_commerce$Test__business_delivery_tests_TestDeliverInfoView_test_retrieve_delivery_info.coverage" NAME="Test: business.delivery.tests.TestDeliverInfoView.test_retrieve_delivery_info Coverage Results" MODIFIED="1570461222892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/e_commerce$Test__client_cart_tests_TestCartAuthenticatedUser_test_add_product_number.coverage" NAME="Test: client.cart.tests.TestCartAuthenticatedUser.test_add_product_number Coverage Results" MODIFIED="1570531945163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/e_commerce$Test__business_cms_tests_TestCreateProduct.coverage" NAME="Test: business.cms.tests.TestCreateProduct Coverage Results" MODIFIED="1570448373382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Cms_Tests.coverage" NAME="Cms Tests Coverage Results" MODIFIED="1570599218850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Test__client_cart_tests_TestCartAnonymousUser_test_remove_product.coverage" NAME="Test: client.cart.tests.TestCartAnonymousUser.test_remove_product Coverage Results" MODIFIED="1570549715498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__business_cms_tests_TestCreateCategory.coverage" NAME="Test: business.cms.tests.TestCreateCategory Coverage Results" MODIFIED="1570505164952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__client_cart_tests_TestCartAuthenticatedUser_test_subtract_product_number.coverage" NAME="Test: client.cart.tests.TestCartAuthenticatedUser.test_subtract_product_number Coverage Results" MODIFIED="1570531959257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_TestCreateSupplier.coverage" NAME="Test: business.inventory.tests.TestCreateSupplier Coverage Results" MODIFIED="1570305252429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_TestRetrieveSupplier_test_delete_supplier.coverage" NAME="Test: business.inventory.tests.TestRetrieveSupplier.test_delete_supplier Coverage Results" MODIFIED="1570379822374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/e_commerce$manage.coverage" NAME="manage Coverage Results" MODIFIED="1569325674750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/e_commerce$Test__client_cart_tests_TestCartAnonymousUser_test_add_product.coverage" NAME="Test: client.cart.tests.TestCartAnonymousUser.test_add_product Coverage Results" MODIFIED="1570549605186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/e_commerce$Checkout_Tests.coverage" NAME="Checkout Tests Coverage Results" MODIFIED="1570598730395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_TestRetrieveSupplier_test_retrieve_supplier.coverage" NAME="Test: business.inventory.tests.TestRetrieveSupplier.test_retrieve_supplier Coverage Results" MODIFIED="1570357265130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
@@ -83,28 +115,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="database" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="database [2]" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -115,30 +126,44 @@
     <option name="OUTPUT_DIRECTORY" value="C:\Users\Dan\PycharmProjects\e_commerse" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/authorization/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="33" selection-start-column="33" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clean_departments.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/business/authorization/management/commands/clean_departments.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="49" column="33" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+              <folding>
+                <element signature="e#321#398#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Vue Single File Component" />
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>super</find>
-      <find>rest</find>
-      <find>rest_Auth_</find>
-      <find>REST_FRAME</find>
-      <find>TOKEN_SER</find>
-      <find>TOKEN</find>
-      <find>get_or_cre</find>
-      <find>REST_AUTH_TO</find>
-      <find>token_creator</find>
       <find>REST_FRAMEWORK</find>
       <find>knox</find>
-      <find>Authentication credentials were not provided.</find>
-      <find>permission</find>
+      <find />
       <find>NotAuthentica</find>
       <find>DEFAULT_AUTHENTICATION_CLASSES'</find>
       <find>token</find>
@@ -156,71 +181,87 @@
       <find>PAYMENT_STATES</find>
       <find>print</find>
       <find>GEOIP</find>
+      <find>manager</find>
+      <find>session</find>
+      <find>permission</find>
+      <find>ready</find>
+      <find>djmoney</find>
+      <find>app_config</find>
+      <find>app_label</find>
+      <find>INSTALLED_APPS</find>
+      <find>apps</find>
+      <find>commands</find>
     </findStrings>
     <replaceStrings>
       <replace>cart</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Dan\PycharmProjects\e_commerse</dir>
+      <dir>C:\Users\Dan\PycharmProjects\e_commerse\venv\Lib\site-packages\django</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Daniel Waruo &lt;warudaniel@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/products/__init__.py" />
-        <option value="$PROJECT_DIR$/permissions/apps.py" />
-        <option value="$PROJECT_DIR$/business/admin/__init__.py" />
-        <option value="$PROJECT_DIR$/root/settings/__init__.py" />
-        <option value="$PROJECT_DIR$/root/settings/components/middleware.py" />
-        <option value="$PROJECT_DIR$/root/settings/components/database.py" />
-        <option value="$PROJECT_DIR$/business/inventory/models.py" />
-        <option value="$PROJECT_DIR$/business/inventory/serializers.py" />
-        <option value="$PROJECT_DIR$/business/inventory/urls.py" />
-        <option value="$PROJECT_DIR$/business/inventory/api.py" />
-        <option value="$PROJECT_DIR$/needed_requirements" />
-        <option value="$PROJECT_DIR$/business/cms/api.py" />
-        <option value="$PROJECT_DIR$/business/inventory/tests.py" />
-        <option value="$PROJECT_DIR$/business/cms/urls.py" />
-        <option value="$PROJECT_DIR$/utils/tests.py" />
-        <option value="$PROJECT_DIR$/business/cms/models.py" />
-        <option value="$PROJECT_DIR$/business/cms/serializers.py" />
-        <option value="$PROJECT_DIR$/business/cms/tests.py" />
-        <option value="$PROJECT_DIR$/business/orders/order.py" />
-        <option value="$PROJECT_DIR$/business/payment.py" />
-        <option value="$PROJECT_DIR$/business/payment/apps.py" />
-        <option value="$PROJECT_DIR$/accounts/urls.py" />
-        <option value="$PROJECT_DIR$/accounts/urls/__init__.py" />
-        <option value="$PROJECT_DIR$/business/delivery/urls.py" />
-        <option value="$PROJECT_DIR$/business/delivery/models.py" />
-        <option value="$PROJECT_DIR$/business/delivery/serializers.py" />
-        <option value="$PROJECT_DIR$/business/delivery/api.py" />
-        <option value="$PROJECT_DIR$/business/delivery/tests.py" />
-        <option value="$PROJECT_DIR$/business/orders/urls.py" />
-        <option value="$PROJECT_DIR$/business/payment/models.py" />
-        <option value="$PROJECT_DIR$/business/orders/models.py" />
-        <option value="$PROJECT_DIR$/business/orders/tests.py" />
-        <option value="$PROJECT_DIR$/business/orders/serializers.py" />
-        <option value="$PROJECT_DIR$/business/orders/api.py" />
-        <option value="$PROJECT_DIR$/business/payment/api.py" />
-        <option value="$PROJECT_DIR$/business/payment/tests.py" />
-        <option value="$PROJECT_DIR$/client/checkout/urls.py" />
-        <option value="$PROJECT_DIR$/root/settings/components/apps.py" />
-        <option value="$PROJECT_DIR$/client/checkout/tests.py" />
-        <option value="$PROJECT_DIR$/client/checkout/api.py" />
-        <option value="$PROJECT_DIR$/root/urls.py" />
-        <option value="$PROJECT_DIR$/client/cart/urls.py" />
-        <option value="$PROJECT_DIR$/root/settings/components/common.py" />
-        <option value="$PROJECT_DIR$/utils/currency/utils.py" />
-        <option value="$PROJECT_DIR$/client/cart/api.py" />
-        <option value="$PROJECT_DIR$/client/cart/tests.py" />
         <option value="$PROJECT_DIR$/client/cart/utils.py" />
         <option value="$PROJECT_DIR$/business/payment/__init__.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Daniel.vue" />
+        <option value="$PROJECT_DIR$/Daniel.ipynb" />
+        <option value="$PROJECT_DIR$/root/settings/components/common.py" />
+        <option value="$PROJECT_DIR$/client/cart/tests.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/business/payment/models.py" />
+        <option value="$PROJECT_DIR$/business/payment/migrations/__init__.py" />
+        <option value="$PROJECT_DIR$/TODO.txt" />
+        <option value="$PROJECT_DIR$/business/orders/models.py" />
+        <option value="$PROJECT_DIR$/root/urls.py" />
+        <option value="$PROJECT_DIR$/client/cart/models.py" />
+        <option value="$PROJECT_DIR$/client/cart/api.py" />
+        <option value="$PROJECT_DIR$/business/orders/api.py" />
+        <option value="$PROJECT_DIR$/utils/tests.py" />
+        <option value="$PROJECT_DIR$/client/checkout/api.py" />
+        <option value="$PROJECT_DIR$/client/checkout/tests.py" />
+        <option value="$PROJECT_DIR$/business/cms/tests.py" />
+        <option value="$PROJECT_DIR$/business/cms/api.py" />
+        <option value="$PROJECT_DIR$/business/delivery/api.py" />
+        <option value="$PROJECT_DIR$/accounts/tests.py" />
+        <option value="$PROJECT_DIR$/business/management/apps.py" />
+        <option value="$PROJECT_DIR$/business/management/api.py" />
+        <option value="$PROJECT_DIR$/business/management/urls.py" />
+        <option value="$PROJECT_DIR$/business/management/__init__.py" />
+        <option value="$PROJECT_DIR$/business/authorization/tests.py" />
+        <option value="$PROJECT_DIR$/accounts/admin.py" />
+        <option value="$PROJECT_DIR$/business/inventory/api.py" />
+        <option value="$PROJECT_DIR$/business/authorization/__init__.py" />
+        <option value="$PROJECT_DIR$/accounts/models.py" />
+        <option value="$PROJECT_DIR$/business/cms/__init__.py" />
+        <option value="$PROJECT_DIR$/business/orders/__init__.py" />
+        <option value="$PROJECT_DIR$/business/cms/models.py" />
+        <option value="$PROJECT_DIR$/business/authorization/serializers.py" />
+        <option value="$PROJECT_DIR$/business/authorization/api.py" />
+        <option value="$PROJECT_DIR$/business/inventory/__init__.py" />
+        <option value="$PROJECT_DIR$/business/inventory/apps.py" />
+        <option value="$PROJECT_DIR$/business/authorization/management/commands/__init__.py" />
+        <option value="$PROJECT_DIR$/root/settings/departments.py" />
+        <option value="$PROJECT_DIR$/root/settings/components/departments.py" />
+        <option value="$PROJECT_DIR$/root/settings/__init__.py" />
+        <option value="$PROJECT_DIR$/root/settings/components/apps.py" />
+        <option value="$PROJECT_DIR$/business/authorization/apps.py" />
+        <option value="$PROJECT_DIR$/business/cms/apps.py" />
+        <option value="$PROJECT_DIR$/business/authorization/models.py" />
+        <option value="$PROJECT_DIR$/business/authorization/management/commands/update_departments.py" />
+        <option value="$PROJECT_DIR$/business/authorization/utils.py" />
+        <option value="$PROJECT_DIR$/business/authorization/management/commands/clean_departments.py" />
       </list>
     </option>
   </component>
@@ -234,8 +275,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="481" />
-    <option name="y" value="-10" />
+    <option name="x" value="596" />
+    <option name="y" value="182" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -245,6 +286,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,17 +294,43 @@
               <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="e_commerse" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_commerse" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_commerse" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="authorization" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_commerse" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="authorization" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e_commerse" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="authorization" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/root/.env" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv/Lib/site-packages/django" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -272,19 +340,19 @@
     <option name="myUseBundledCoveragePy" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Dan\PycharmProjects\e_commerse\accounts\urls" />
-      <recent name="C:\Users\Dan\PycharmProjects\e_commerse\client\cart" />
-      <recent name="C:\Users\Dan\PycharmProjects\e_commerse\utils\session" />
-      <recent name="C:\Users\Dan\PycharmProjects\e_commerse\business\transactions" />
-      <recent name="C:\Users\Dan\PycharmProjects\e_commerse\utils" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Dan\PycharmProjects\e_commerse" />
       <recent name="C:\Users\Dan\PycharmProjects\e_commerse\business\orders" />
       <recent name="C:\Users\Dan\PycharmProjects\e_commerse\business\analytics" />
       <recent name="C:\Users\Dan\PycharmProjects\e_commerse\utils\session" />
       <recent name="C:\Users\Dan\PycharmProjects\e_commerse\client\checkout" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dan\PycharmProjects\e_commerse\root\settings\components" />
+      <recent name="C:\Users\Dan\PycharmProjects\e_commerse\client" />
+      <recent name="C:\Users\Dan\PycharmProjects\e_commerse\accounts\urls" />
+      <recent name="C:\Users\Dan\PycharmProjects\e_commerse\client\cart" />
+      <recent name="C:\Users\Dan\PycharmProjects\e_commerse\utils\session" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -299,7 +367,123 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django tests.Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number">
+  <component name="RunManager" selected="Django server.E_Commerse">
+    <configuration name="Cart Tests" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <module name="e_commerce" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Dan\PycharmProjects\e_commerse\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="TARGET" value="client.cart" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+    </configuration>
+    <configuration name="Checkout Tests" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <module name="e_commerce" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Dan\PycharmProjects\e_commerse\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="TARGET" value="client.checkout" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+    </configuration>
+    <configuration name="Cms Tests" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <module name="e_commerce" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Dan\PycharmProjects\e_commerse\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="TARGET" value="business.cms" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+    </configuration>
+    <configuration name="Delivery Tests" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <module name="e_commerce" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Dan\PycharmProjects\e_commerse\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="TARGET" value="client.delivery" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+    </configuration>
     <configuration name="E_Commerse Tests" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="e_commerce" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -308,7 +492,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Dan\PycharmProjects\e_commerse\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/root/settings" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -323,102 +507,65 @@
           <ENTRY IS_ENABLED="true" PARSER="runconfig" />
         </ENTRIES>
       </EXTENSION>
-      <option name="TARGET" value="*tests.py" />
+      <option name="TARGET" value="" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
     </configuration>
-    <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_add_product" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+    <configuration name="Inventory Tests" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="e_commerce" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Dan\PycharmProjects\e_commerse\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="client.cart.tests.TestCartAuthenticatedUser.test_add_product" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="TARGET" value="business.inventory" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
     </configuration>
-    <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_add_product_number" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+    <configuration name="Order tests" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="e_commerce" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Dan\PycharmProjects\e_commerse\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="client.cart.tests.TestCartAuthenticatedUser.test_add_product_number" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-    </configuration>
-    <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_remove_product" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
-      <module name="e_commerce" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="client.cart.tests.TestCartAuthenticatedUser.test_remove_product" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-    </configuration>
-    <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_subtract_product_number" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
-      <module name="e_commerce" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="client.cart.tests.TestCartAuthenticatedUser.test_subtract_product_number" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-    </configuration>
-    <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
-      <module name="e_commerce" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="client.cart.tests.TestCartAuthenticatedUser.test_update_product_number" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="TARGET" value="business.orders" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
@@ -460,21 +607,13 @@
     <list>
       <item itemvalue="Django server.E_Commerse" />
       <item itemvalue="Django tests.E_Commerse Tests" />
-      <item itemvalue="Django tests.Test: client.cart.tests.TestCartAuthenticatedUser.test_add_product" />
-      <item itemvalue="Django tests.Test: client.cart.tests.TestCartAuthenticatedUser.test_remove_product" />
-      <item itemvalue="Django tests.Test: client.cart.tests.TestCartAuthenticatedUser.test_add_product_number" />
-      <item itemvalue="Django tests.Test: client.cart.tests.TestCartAuthenticatedUser.test_subtract_product_number" />
-      <item itemvalue="Django tests.Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number" />
+      <item itemvalue="Django tests.Cart Tests" />
+      <item itemvalue="Django tests.Checkout Tests" />
+      <item itemvalue="Django tests.Cms Tests" />
+      <item itemvalue="Django tests.Delivery Tests" />
+      <item itemvalue="Django tests.Order tests" />
+      <item itemvalue="Django tests.Inventory Tests" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Django tests.Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number" />
-        <item itemvalue="Django tests.Test: client.cart.tests.TestCartAuthenticatedUser.test_subtract_product_number" />
-        <item itemvalue="Django tests.Test: client.cart.tests.TestCartAuthenticatedUser.test_add_product_number" />
-        <item itemvalue="Django tests.Test: client.cart.tests.TestCartAuthenticatedUser.test_remove_product" />
-        <item itemvalue="Django tests.Test: client.cart.tests.TestCartAuthenticatedUser.test_add_product" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -515,39 +654,46 @@
       <option name="project" value="LOCAL" />
       <updated>1570463354342</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Wrote tests on the cart operations">
+      <created>1570545112047</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570545112047</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test__client_cart_tests_TestCartAuthenticatedUser_test_update_product_number - 2019.10.08 at 14h 06m 57s.xml">
-      <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Cms_Tests - 2019.10.09 at 08h 31m 55s.xml">
+      <configuration name="Cms Tests" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__client_cart_tests_TestCartAuthenticatedUser_test_update_product_number - 2019.10.08 at 14h 09m 20s.xml">
-      <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Cms_Tests - 2019.10.09 at 08h 32m 09s.xml">
+      <configuration name="Cms Tests" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__client_cart_tests_TestCartAuthenticatedUser_test_update_product_number - 2019.10.08 at 14h 11m 36s.xml">
-      <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Cms_Tests - 2019.10.09 at 08h 32m 20s.xml">
+      <configuration name="Cms Tests" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__client_cart_tests_TestCartAuthenticatedUser_test_update_product_number - 2019.10.08 at 14h 12m 37s.xml">
-      <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Cms_Tests - 2019.10.09 at 08h 33m 45s.xml">
+      <configuration name="Cms Tests" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__client_cart_tests_TestCartAuthenticatedUser_test_update_product_number - 2019.10.08 at 14h 13m 37s.xml">
-      <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Delivery_Tests - 2019.10.09 at 08h 35m 16s.xml">
+      <configuration name="Delivery Tests" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__client_cart_tests_TestCartAuthenticatedUser_test_update_product_number - 2019.10.08 at 14h 20m 21s.xml">
-      <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Delivery_Tests - 2019.10.09 at 08h 41m 20s.xml">
+      <configuration name="Delivery Tests" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__client_cart_tests_TestCartAuthenticatedUser_test_update_product_number - 2019.10.08 at 14h 21m 58s.xml">
-      <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Delivery_Tests - 2019.10.09 at 08h 42m 09s.xml">
+      <configuration name="Delivery Tests" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__client_cart_tests_TestCartAuthenticatedUser_test_update_product_number - 2019.10.08 at 14h 32m 54s.xml">
-      <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Inventory_Tests - 2019.10.10 at 07h 46m 49s.xml">
+      <configuration name="Inventory Tests" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__client_cart_tests_TestCartAuthenticatedUser_test_update_product_number - 2019.10.08 at 14h 34m 45s.xml">
-      <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Inventory_Tests - 2019.10.10 at 07h 48m 09s.xml">
+      <configuration name="Inventory Tests" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__client_cart_tests_TestCartAuthenticatedUser_test_update_product_number - 2019.10.08 at 17h 24m 04s.xml">
-      <configuration name="Test: client.cart.tests.TestCartAuthenticatedUser.test_update_product_number" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Inventory_Tests - 2019.10.10 at 07h 51m 56s.xml">
+      <configuration name="Inventory Tests" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -561,19 +707,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.37443268" side_tool="true" weight="0.6287129" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.32838285" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.4009901" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.4108911" />
-      <window_info anchor="right" id="Coverage" order="3" side_tool="true" weight="0.32980332" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.27887788" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25113463" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.34323433" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.52970296" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.19471948" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30711043" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.33055976" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.32838285" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32980332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
@@ -585,33 +732,33 @@
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32838285" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.32838285" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39933994" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22995462" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32838285" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.5718608" weight="0.4108911" />
-      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32838285" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.4009901" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49924356" weight="0.32838285" />
-      <window_info anchor="right" id="Database" order="5" weight="0.32980332" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32980332" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.37443268" side_tool="true" weight="0.6287129" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49924356" weight="0.32838285" />
-      <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.6255673" visible="true" weight="0.27887788" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32838285" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.4339934" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30257186" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.32838285" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32838285" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32980332" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32838285" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.37443268" side_tool="true" weight="0.6287129" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32980332" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.32838285" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.6255673" weight="0.3910891" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32980332" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.490099" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,319 +771,398 @@
     <MESSAGE value="edited car utils" />
     <MESSAGE value="Added order and delivery modules" />
     <MESSAGE value="Added order and delivery modules &#10;Wrote tests on order delivery &#10;Wrote the modules on payment and wrote a Receipt Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added order and delivery modules &#10;Wrote tests on order delivery &#10;Wrote the modules on payment and wrote a Receipt Model" />
+    <MESSAGE value="Wrote tests on the cart operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wrote tests on the cart operations" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/utils/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/delivery/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/inventory/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/orders/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/payment/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/orders/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/orders/order.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/orders/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/orders/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/orders/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/checkout/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/checkout/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/settings/components/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/delivery/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/delivery/api.py">
+    <entry file="file://$PROJECT_DIR$/business/payment/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/checkout/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/cart/serializers.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/checkout/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/cms/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" selection-end-line="169" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/delivery/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="41" lean-forward="true" selection-start-line="39" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/cart/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/country_currencies/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="223" column="19" lean-forward="true" selection-start-line="223" selection-start-column="19" selection-end-line="223" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/country_currencies/__init__.py">
+    <entry file="file://$PROJECT_DIR$/business/cms/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+          <caret line="7" column="60" lean-forward="true" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/commerse/maasai/settings.py">
+    <entry file="file://$PROJECT_DIR$/accounts/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="299" lean-forward="true" selection-start-line="297" selection-end-line="299" />
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geoip2/base.py">
+    <entry file="file://$PROJECT_DIR$/business/orders/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TODO.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/authorization/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/cms/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/inventory/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/authorization/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/inventory/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/authorization/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/inventory/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/currency/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+        <state relative-caret-position="102">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/exceptions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="255" selection-start-line="255" selection-end-line="255" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/cart/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="83" column="11" lean-forward="true" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/cart/errors.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/djmoney/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/cart/api.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/djmoney/contrib/exchange/management/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/management/commands/inspectdb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/root/settings/environments/local.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/settings/components/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/api.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/products/apps.py" />
-    <entry file="file://$PROJECT_DIR$/client/products/api.py" />
-    <entry file="file://$PROJECT_DIR$/client/products/serializers.py" />
-    <entry file="file://$PROJECT_DIR$/client/products/urls.py" />
-    <entry file="file://$PROJECT_DIR$/business/products/models.py" />
-    <entry file="file://$PROJECT_DIR$/business/payment/models.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/djmoney/contrib/exchange/management/commands/update_rates.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/payment/tests.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/djmoney/contrib/exchange/management/commands/clear_rates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/test/runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="682" column="19" lean-forward="true" selection-start-line="682" selection-start-column="19" selection-end-line="682" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="291" column="19" lean-forward="true" selection-start-line="291" selection-start-column="19" selection-end-line="291" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/djmoney/contrib/exchange/management/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/root/.env">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/payment/api.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/cart/utils.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/exceptions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="112" column="27" lean-forward="true" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
+        <state relative-caret-position="26">
+          <caret line="76" column="18" lean-forward="true" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/payment/__init__.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/apps/registry.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state relative-caret-position="159">
+          <caret line="92" column="40" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/status.json" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="521">
-            <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="102">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/root/settings/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="74">
+          <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/root/settings/components/departments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/authorization/management/commands/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_auth/registration/app_settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/apps/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/authorization/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/root/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/department_app/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/root/settings/components/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/showmigrations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
           <folding>
-            <element signature="e#251#301#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/shell.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="524">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/migrate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="67" column="20" lean-forward="true" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/flush.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/authorization/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/cms/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/makemigrations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="39" column="43" lean-forward="true" selection-end-line="311" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/startapp.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/management/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="132" column="6" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/createcachetable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="107" column="17" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/authorization/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/authorization/management/commands/clean_departments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="49" column="33" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+          <folding>
+            <element signature="e#321#398#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>D</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

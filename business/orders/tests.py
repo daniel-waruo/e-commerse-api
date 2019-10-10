@@ -1,6 +1,6 @@
 from rest_framework.reverse import reverse
 
-from business.delivery.models import DeliveryInfo
+from client.delivery.models import DeliveryInfo
 from utils.tests import UserTestCase
 from .models import Order
 

@@ -4,3 +4,7 @@ The Inventory App Deals with :-
     # Creating new instances of products
     # Management of Storage of Goods
 """
+# from business.authorization.utils import create_department_from_app_config
+# from .apps import InventoryConfig
+
+# create_department_from_app_config(InventoryConfig)

@@ -1,5 +1,7 @@
-from django.apps import AppConfig
+from business.authorization.utils import DepartmentAppConfig
 
 
-class CmsConfig(AppConfig):
+class CmsConfig(DepartmentAppConfig):
+    label = 'cms'
     name = 'business.cms'
+    verbose_name = "Content Management System"

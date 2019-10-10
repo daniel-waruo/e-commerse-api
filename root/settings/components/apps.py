@@ -1,5 +1,6 @@
 INSTALLED_APPS = [
     'django.contrib.auth',
+    'django.contrib.admin',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -28,13 +29,14 @@ INSTALLED_APPS = [
     'accounts',
     # business apps
     'business.inventory',
-    'business.cms',
-    'business.delivery',
+    'business.cms.apps.CmsConfig',
     'business.orders',
     'business.payment',
+    'business.authorization',
     # client apps
     'client.checkout',
     'client.cart',
+    'client.delivery',
     # utils
     'utils.geo.phone_numbers',
     'utils.session'

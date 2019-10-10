@@ -1,12 +1,16 @@
 django
 djangorestframework
 django-rest-auth
+django-allauth
 
 django-jsonfield
 django-shortuuidfield
-django-phonenumber-field
 phonenumbers
+django-phonenumber-field
 django-location-field
+
+geoip2
+country_currencies
 
 pillow
 django-qsessions

@@ -9,8 +9,9 @@ To change settings file:
 
 """
 
-from split_settings.tools import optional, include
 from os import environ
+
+from split_settings.tools import include
 
 ENV = environ.get('DJANGO_ENV') or 'development'
 
@@ -24,6 +25,7 @@ base_settings = [
     'components/allauth.py',  # allauth rest_auth settings
     'components/currency.py',  # currency settings
     'components/email.py',  # email settings
+    'components/departments.py',
     'components/rest_framework.py',  # rest framework settings
 ]
 

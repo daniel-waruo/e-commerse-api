@@ -9,7 +9,6 @@ from business.inventory.models import Product as BaseProduct
 # Create your models here.
 from utils.currency.utils import round_off
 
-MyUser = settings.AUTH_USER_MODEL
 BASE_CURRENCY = settings.BASE_CURRENCY
 
 

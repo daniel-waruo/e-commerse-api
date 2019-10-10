@@ -1,10 +1,15 @@
 from rest_framework.reverse import reverse
 
-from utils.tests import UserTestCase, test_category_params, create_test_category, \
-    create_test_cms_product, create_test_inventory_product
+from utils.tests import (
+    TestAuthenticatedUser,
+    test_category_params,
+    create_test_category,
+    create_test_cms_product,
+    create_test_inventory_product
+)
 
 
-class TestCreateCategory(UserTestCase):
+class TestCreateCategory(TestAuthenticatedUser):
 
     def setUp(self):
         super().setUp()
@@ -23,7 +28,7 @@ class TestCreateCategory(UserTestCase):
                          .format(response.status_code, response.content))
 
 
-class TestCategoryView(UserTestCase):
+class TestCategoryView(TestAuthenticatedUser):
     def setUp(self):
         super().setUp()
         create_test_category()
@@ -77,7 +82,7 @@ class TestCategoryView(UserTestCase):
                          .format(response.status_code, response.content))
 
 
-class TestCreateProduct(UserTestCase):
+class TestCreateProduct(TestAuthenticatedUser):
 
     def setUp(self):
         super().setUp()
@@ -110,7 +115,7 @@ class TestCreateProduct(UserTestCase):
                          .format(response.status_code, response.content))
 
 
-class TestProductView(UserTestCase):
+class TestProductView(TestAuthenticatedUser):
     def setUp(self):
         super().setUp()
         create_test_cms_product()

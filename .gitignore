@@ -9,6 +9,5 @@
 .env
 
 .idea/*
-GeoLite2-Country.mmdb
 
 /root/staticfiles/*

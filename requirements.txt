@@ -29,3 +29,6 @@ oauth2client
 
 django-environ
 django-split-settings
+
+gunicorn
+django_heroku

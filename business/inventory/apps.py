@@ -1,7 +1,7 @@
-from django.apps import AppConfig
+from business.authorization.apps import DepartmentAppConfig
 
 
-class InventoryConfig(AppConfig):
-    is_department = True
-    name = 'business'
+class InventoryConfig(DepartmentAppConfig):
+    label = 'inventory'
+    name = 'business.inventory'
     verbose_name = 'Inventory Management'

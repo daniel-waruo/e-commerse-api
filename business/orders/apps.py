@@ -1,5 +1,7 @@
-from django.apps import AppConfig
+from business.authorization.apps import DepartmentAppConfig
 
 
-class OrdersConfig(AppConfig):
+class OrdersConfig(DepartmentAppConfig):
     name = 'business.orders'
+    verbose_name = 'Order Management'
+    label = 'orders'

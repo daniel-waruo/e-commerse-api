@@ -1,8 +1,9 @@
 from allauth.account.models import EmailConfirmationHMAC, EmailConfirmation
-from rest_framework.response import Response
-from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404
 from rest_auth.views import PasswordResetView as BasePasswordResetView
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
 from accounts.serializers import PasswordResetSerializer
 
 

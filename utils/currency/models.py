@@ -1,16 +1,13 @@
 from django.contrib.gis.db import models
-from django.contrib.postgres.fields import (
-    JSONField,
-    ArrayField)
+from djmoney.models import fields
 from djmoney.settings import CURRENCY_CHOICES
-from djmoney.models.fields import CurrencyField
 
 
 # Create your models here.
 
 
 class Currency(models.Model):
-    currency_code = CurrencyField(choices=CURRENCY_CHOICES, unique=True)
+    currency_code = fields.CurrencyField(choices=CURRENCY_CHOICES, unique=True)
     name = models.CharField(max_length=255, null=True)
 
     class Meta:

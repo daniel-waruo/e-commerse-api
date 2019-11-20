@@ -1,7 +1,7 @@
 from rest_framework.reverse import reverse
 
 from client.delivery.models import DeliveryInfo
-from utils.tests import UserTestCase
+from utils.tests import TestAuthenticatedUser, unsuccessful_message, TestStaffSuperUser, unauthorised_message
 from .models import Order
 
 
@@ -25,23 +25,55 @@ def create_order_object(user_id):
     return order.id
 
 
-class TestOrderView(UserTestCase):
+class TestUnauthorisedOrderView(TestAuthenticatedUser):
     def setUp(self):
         super().setUp()
-        self.client.force_login(user=self.user)
-        self.client.force_authenticate(user=self.user, token=self.token)
         self.order_id = create_order_object(self.user.id)
 
     def test_retrieve_order_info(self):
         """
-        Test the retrieval of  product data  an cms category
+        Test the retrieval of  order information
         :return: None
         """
-        self.client.login(username="test", password="test")
         url = reverse('orders:view_order', kwargs={'pk': self.order_id})
         response = self.client.get(url)
-        self.assertEqual(response.status_code, 200,
-                         'Retrieve Order is not Successful.\n'
-                         'Expected  Response Code 200, received {0} instead with content as :-'
-                         '\n\t {1}.'
-                         .format(response.status_code, response.content))
+        self.assertEqual(response.status_code, 403, unauthorised_message(response))
+
+    def test_change_order_status(self):
+        """
+        Test the cancellation of  order data  an cms category
+        :return: None
+        """
+        url = reverse('orders:change_order_status', kwargs={'pk': self.order_id})
+        response = self.client.post(url)
+        self.assertEqual(response.status_code, 403, unauthorised_message(response))
+
+
+class TestAuthorisedOrderView(TestStaffSuperUser):
+    def setUp(self):
+        super().setUp()
+        self.order_id = create_order_object(self.user.id)
+
+    def test_retrieve_order_info(self):
+        """
+        Test the retrieval of  order information
+        :return: None
+        """
+        url = reverse('orders:view_order', kwargs={'pk': self.order_id})
+        response = self.client.get(url)
+        self.assertEqual(
+            response.status_code, 200,
+            unsuccessful_message(response, "Retrieve Order Information", 200)
+        )
+
+    def test_change_order_status(self):
+        """
+        Test the cancellation of  order data  an cms category
+        :return: None
+        """
+        url = reverse('orders:change_order_status', kwargs={'pk': self.order_id})
+        response = self.client.post(url)
+        self.assertEqual(
+            response.status_code, 200,
+            unsuccessful_message(response, "Order Cancellation", 200)
+        )

@@ -1,9 +1,12 @@
 from django.contrib import admin
-from .models import UserProfile, User
+from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserChangeForm
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 
+from .models import UserProfile, User
+
+login_required
 
 # Register your models here.
 

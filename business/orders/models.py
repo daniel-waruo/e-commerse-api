@@ -11,8 +11,8 @@ from client.delivery.models import DeliveryInfo
 # Create your models here.
 
 ORDER_STATES = (
-    ('pend', 'Pending'),
-    ('del', 'Cancelled'),
+    ('pending', 'Pending'),
+    ('cancelled', 'Cancelled'),
     ('shipping', 'Shipping'),
     ('received', 'Received')
 )
@@ -29,7 +29,7 @@ class Order(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     receipt = models.OneToOneField(Receipt, on_delete=models.PROTECT, null=True)
     delivery_info = models.ForeignKey(DeliveryInfo, on_delete=models.CASCADE)
-    state = models.CharField(choices=ORDER_STATES, max_length=4, default='init')
+    state = models.CharField(choices=ORDER_STATES, max_length=10, default='pending')
     date_added = models.DateField(auto_now_add=True)
 
     class Meta:

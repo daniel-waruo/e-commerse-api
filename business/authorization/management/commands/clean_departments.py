@@ -12,14 +12,14 @@ import all DEPARTMENT_APPS
     delete the rest left in the QuerySet
 """
 
+from django.apps import apps
 from django.core.management.base import (
     BaseCommand, no_translations,
 )
-from django.conf import settings
-from django.apps import apps
-from business.authorization.utils import DepartmentAppConfig
-from business.authorization.models import Department
 from django.db.models import Q
+
+from business.authorization.apps import DepartmentAppConfig
+from business.authorization.models import Department
 
 
 class Command(BaseCommand):

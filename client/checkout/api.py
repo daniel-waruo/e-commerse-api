@@ -6,7 +6,7 @@ from rest_framework.views import APIView
 
 from business.orders.models import ProductOrder
 from business.orders.serializers import OrderSerializer
-from client.cart.models import Cart, CartProduct
+from client.cart.models import CartProduct
 from client.cart.utils import get_cart_object
 
 
@@ -26,38 +26,35 @@ class CheckoutApi(APIView):
         :param request:
         :return:
         """
-
-        # cart_id = request.POST.get("cart_id")
-        delivery_info_id = request.POST.get("delivery_info_id")
-        receipt_id = request.POST.get("receipt_id")
-
-        data = {
-            "user": request.user.id,
-            "delivery_info": delivery_info_id
-        }
-        # TODO:check whether the user is eligible for pay on delivery
-
-        serializer = OrderSerializer(
-            data=data
-        )
-        serializer.is_valid(raise_exception=True)
-        order = serializer.save()
         cart = get_cart_object(user_id=self.request.user.id)
-        # TODO: check whether cart products is empty and return a 404 response
         cartproducts = CartProduct.objects.filter(cart_id=cart.id)
         if not cartproducts:
             raise ValidationError("The Cart is empty therefore one cannot checkout")
 
-        def cartproduct_to_productorder(cart_product):
-            product_order = ProductOrder(
+        delivery_info_id = request.POST.get("delivery_info_id")
+        receipt_id = request.POST.get("receipt_id")
+        # TODO: create a machine learning model to learn if user requires given receipt id
+        if not receipt_id:
+            # check if user can checkout without valid receipt
+            if False:
+                raise ValidationError("The User Is not allowed to Pay on Delivery")
+        serializer = OrderSerializer(
+            data={
+                "user": request.user.id,
+                "delivery_info": delivery_info_id
+            }
+        )
+        serializer.is_valid(raise_exception=True)
+        # get the order object
+        order = serializer.save()
+        list(map(
+            lambda cart_product: print(ProductOrder.objects.create(
                 order=order,
                 product=cart_product.product,
                 number=cart_product.number,
-            )
-            product_order.save()
-
-        map(cartproduct_to_productorder, cartproducts)
-
-        Cart.objects.get(id=cart.id).delete()
-
+            )),
+            cartproducts
+        ))
+        # delete the cart after transferring to the order
+        cart.delete()
         return Response(status=status.HTTP_201_CREATED)

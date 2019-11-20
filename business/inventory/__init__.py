@@ -8,3 +8,4 @@ The Inventory App Deals with :-
 # from .apps import InventoryConfig
 
 # create_department_from_app_config(InventoryConfig)
+default_app_config = 'business.inventory.apps.InventoryConfig'

@@ -1,4 +1,4 @@
-from business.authorization.utils import DepartmentAppConfig
+from business.authorization.apps import DepartmentAppConfig
 
 
 class CmsConfig(DepartmentAppConfig):

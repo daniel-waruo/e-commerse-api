@@ -14,7 +14,7 @@ environ.Env.read_env(
 )
 
 # email specifications
-SEND_GRID_API_KEY = env("SEND_GRID_API_KEY")
+SEND_GRID_API_KEY = (env("SEND_GRID_API_KEY") or os.environ.get("SEND_GRID_API_KEY"))
 # EMAIL_HOST = 'smtp.sendgrid.com'
 # EMAIL_HOST_USER = env("EMAIL_HOST_USER")
 # EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")

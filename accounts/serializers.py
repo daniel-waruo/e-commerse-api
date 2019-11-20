@@ -3,7 +3,7 @@ from django.contrib.auth.forms import PasswordResetForm
 from rest_auth.serializers import PasswordResetSerializer as ResetPasswordSerializer
 from rest_framework import serializers
 
-from .models import User, UserProfile
+from .models import User, UserProfile, StaffUser
 
 
 # serializer for logging in a user
@@ -106,3 +106,23 @@ class ResetPasswordForm(PasswordResetForm):
 
 class PasswordResetSerializer(ResetPasswordSerializer):
     password_reset_form_class = ResetPasswordForm
+
+
+# serializer for creating a staff
+class CreateStaffUserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = StaffUser
+        fields = (
+            'user',
+            'departments',
+            'staff_type'
+        )
+
+    def create(self, validated_data):
+        staff = StaffUser.objects.create(
+            user=validated_data["user"],
+            staff_type=validated_data["staff_type"]
+        )
+        staff.departments.set(validated_data["departments"])
+
+        return staff

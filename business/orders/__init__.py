@@ -3,4 +3,5 @@ Deals with Orders after being made
     # Packaging of products
     # Processing of Orders
 """
-DEPARTMENT = True
+
+default_app_config = 'business.orders.apps.OrdersConfig'

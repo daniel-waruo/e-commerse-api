@@ -1,84 +1,71 @@
 ## Getting Started
 
 This is an api made by Django and Django-Rest-Framework.
-This api is used for E-commerse B2C applications
+This api is used as an api backend for E-commerse B2C applications
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
+Inorder to run the api server one will need 
+python 3.7.2 and pip installed and in the path.
 ```
-Give examples
+python manage.py runserver
 ```
 
 ### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+First clone the github repository
 
 ```
 git clone 
 ```
 
-And repeat
+Go to the root directory and create a virtual environment
 
 ```
-until finished
+virtualenv venv
 ```
 
+activate the virtual environment
+
+In windows
+```
+venv/Scripts/activate
+```
+In Linux
+```
+./venv/bin/activate
+```
+Install the requirements in requirements.txt
+```
+pip install -r requirements.txt
+```
+Run migration on the database
+```
+python manage.py migrate
+```
+Run the server
+```
+python manage.py runserver
+```
 End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+In order to run the tests(assuming the virtual environment is active)
 
 ```
-Give an example
+python manage.py test
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Django](https://www.djangoproject.com/) - The web framework used.
+* [Django Rest Framework](https://www.django-rest-framework.org/) - The django api library used
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
-* **Daniel Waruo** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Daniel Waruo** - waruodaniel@gmail.com
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+This project is licensed under the Apache License 2.0 License - see the [LICENSE.md](LICENSE.md) file for details

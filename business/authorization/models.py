@@ -17,14 +17,26 @@ class Department(models.Model):
 
     class Meta:
         verbose_name = 'Department'
+        permissions = (
+            # permission held by staff_account department users
+            ('add_staff', "Can add staff to a department"),
+            # department_manager permissions and general manager perms
+            ('set_permissions', "Set permissions of a Departmental staff"),
+            ('include_department', "Add a department to a staff's access"),
+            # general manager permissions
+            ('manage_department_manager', "Manage the access of a Departmental Manager"),
+            # super user permissions
+            ('edit_departments', "Can edit the name of a Department"),
+            ('manage_general_manager', "Manage the access of a General Manager"),
+        )
 
     def save(self, *args, **kwargs):
         if kwargs.get("name", None):
             self.name = kwargs.get("name")
         elif not kwargs.get("name", None):
             if not self.name:
-                self.name = self.app_label.split(".")[-1]
-        super().save(*args, **kwargs)
+                self.name = self.app_label
+        return super().save(*args, **kwargs)
 
     def __str__(self):
         return self.name + " Department"

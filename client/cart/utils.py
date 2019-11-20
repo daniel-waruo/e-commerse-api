@@ -52,19 +52,19 @@ def get_cart_number(user_id=None, session_key=None):
         return 0
 
 
-def add_product_to_cart(product_pk, user_id=None, session_key=None):
+def add_product_to_cart(product_pk, user_id=None, session_key=None, product_number=1):
     cart = get_cart_object(user_id=user_id, session_key=session_key)
     # check if there is a product cart matching both product and cart
     if cart.cartproduct_set.filter(product=product_pk).exists():
         # add the number of product cart plus one
         cart_product = cart.cartproduct_set.get(product=product_pk)
-        cart_product.number += 1
+        cart_product.number = product_number
         cart_product.save()
         return cart_product
     else:
         # create a whole new product cart and save the number as one
         return CartProduct.objects.create(
-            number=1,
+            number=product_number,
             product=Product.objects.get(pk=product_pk),
             cart=cart
         )

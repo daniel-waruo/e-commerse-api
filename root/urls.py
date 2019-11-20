@@ -14,7 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.http import JsonResponse
 from django.urls import path, include
+from rest_framework.response import Response
+
+
+def hello(request):
+    return JsonResponse({"data": "Hello Worlds"})
+
 
 urlpatterns = [
     # admin urls
@@ -22,10 +29,13 @@ urlpatterns = [
     # account urls
     path('accounts/', include('accounts.urls')),
     # business inventory urls
+    path('business/authorization/', include('business.authorization.urls')),
     path('business/inventory/', include('business.inventory.urls')),
     path('business/cms/', include('business.cms.urls')),
     path('business/delivery/', include('client.delivery.urls')),
     path('business/orders/', include('business.orders.urls')),
-    path('business/checkout/', include('client.checkout.urls')),
-    path('client/cart/', include('client.cart.urls'))
+    path('business/staff/', include('business.staff_accounts.urls')),
+    path('client/checkout/', include('client.checkout.urls')),
+    path('client/cart/', include('client.cart.urls')),
+    path('', hello)
 ]

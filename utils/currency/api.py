@@ -1,11 +1,11 @@
-from rest_framework import generics
+from rest_framework.generics import GenericAPIView
 from rest_framework.response import Response
 
 from .utils import get_currency_from_ip
 
 
 # Create your views here.
-class SetCurrencyAPI(generics.GenericAPIView):
+class SetCurrencyAPI(GenericAPIView):
     """"
     This is the Update Currency View of the API
     """

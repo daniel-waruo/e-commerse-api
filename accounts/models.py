@@ -1,6 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.db.models.signals import post_save
+from django.dispatch import receiver
 from django.utils.translation import gettext_lazy as _
 from pyuploadcare.dj.models import ImageField
 
@@ -56,22 +57,46 @@ class UserProfile(models.Model):
 
 
 # create a user profile instance as soon as the user has been created
-
+@receiver(post_save, sender=User)
 def create_profile(**kwargs):
     if kwargs['created']:
         UserProfile.objects.create(user=kwargs['instance'])
 
 
+STAFF_TYPES = (
+    (0, "Department Staff"),
+    (1, "Department Manager"),
+    (2, "General Manager")
+)
+
+
 class StaffUser(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     departments = models.ManyToManyField(to=Department)
+    staff_type = models.PositiveSmallIntegerField(choices=STAFF_TYPES)
 
     def __str__(self):
         return self.user.username
 
+    def save(self, **kwargs):
+        user = super().save(**kwargs)
+        return user
 
-"""
- TODO:
-    # Implement Permissions and Privileges     
-"""
-post_save.connect(create_profile, sender=User)
+
+@receiver(post_save, sender=StaffUser)
+def give_permissions(**kwargs):
+    staff_user = kwargs["instance"]
+    if staff_user.staff_type == 1:
+        from business.authorization.utils import set_department_manager_perms
+        department_ids = list(map(
+            lambda department: department.id,
+            staff_user.departments.all()
+        ))
+        set_department_manager_perms(staff_user.user.id, department_ids)
+    elif staff_user.staff_type == 2:
+        from business.authorization.utils import set_general_manager_perms
+        department_ids = list(map(
+            lambda department: department.id,
+            staff_user.departments.all()
+        ))
+        set_general_manager_perms(staff_user.user.id, department_ids)

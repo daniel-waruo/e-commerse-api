@@ -99,7 +99,8 @@ class AddProduct(CartApiView):
 
     def product_action(self):
         pk = self.request.POST.get("product_pk", None)
-        return add_product_to_cart(product_pk=pk, **self.user_session_kwargs)
+        product_number = self.request.POST.get("product_number", 1)
+        return add_product_to_cart(product_pk=pk, **self.user_session_kwargs, product_number=product_number)
 
 
 class RemoveProduct(CartApiView):

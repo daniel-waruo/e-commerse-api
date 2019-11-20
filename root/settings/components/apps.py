@@ -15,7 +15,8 @@ INSTALLED_APPS = [
     # rest framework
     'rest_framework',
     'rest_framework.authtoken',
-
+    # C.O.R.S management framework,
+    'corsheaders',
     # all auth
     'allauth',
     'allauth.account',
@@ -29,7 +30,7 @@ INSTALLED_APPS = [
     'accounts',
     # business apps
     'business.inventory',
-    'business.cms.apps.CmsConfig',
+    'business.cms',
     'business.orders',
     'business.payment',
     'business.authorization',

@@ -17,11 +17,11 @@ class DepartmentAppConfig(AppConfig):
 
     def ready(self):
         from .models import Department
-        # get query ser with app_label
-        queryset = Department.objects.filter(app_label=self.label)
-        # if queryset check is verbose name is same
-
         try:
+            # get query ser with app_label
+            queryset = Department.objects.filter(app_label=self.label)
+            # if queryset check is verbose name is same
+
             if queryset:
                 # check is the verbose name has changed
                 if not queryset.filter(name=self.verbose_name):
@@ -32,7 +32,7 @@ class DepartmentAppConfig(AppConfig):
                     app_label=self.label
                 )
         # if migration have not been made pardon error
-        except OperationalError:
+        except Exception:
             pass
 
 

@@ -10,7 +10,7 @@ To change settings file:
 """
 
 from os import environ
-
+import django_heroku
 from split_settings.tools import include
 
 ENV = environ.get('DJANGO_ENV') or 'development'
@@ -32,6 +32,6 @@ base_settings = [
 # Include settings:
 
 include(*base_settings)
-import django_heroku
+
 
 django_heroku.settings(locals())

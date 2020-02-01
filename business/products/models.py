@@ -3,9 +3,8 @@ from django.db import models
 from django.utils.text import slugify
 from djmoney.contrib.exchange.models import convert_money
 from djmoney.models.fields import MoneyField
-from pyuploadcare.dj.models import ImageGroupField
+from pyuploadcare.dj.models import ImageGroupField, ImageField
 
-from business.inventory.models import Product as BaseProduct
 # Create your models here.
 from utils.currency.utils import round_off
 
@@ -35,9 +34,7 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    product = models.OneToOneField(to=BaseProduct, on_delete=models.CASCADE)
     name = models.CharField(max_length=100, db_index=True)
-    images = ImageGroupField(null=True)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True)
     price = MoneyField(max_digits=14, decimal_places=2, blank=False, null=False)
     discount_price = MoneyField(max_digits=14, decimal_places=2)
@@ -58,3 +55,8 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class ProductImage(models.Model):
+    product = models.ForeignKey(Product, models.CASCADE, related_name="images")
+    image = ImageField()

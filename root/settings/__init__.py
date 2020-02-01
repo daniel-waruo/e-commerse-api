@@ -8,12 +8,10 @@ To change settings file:
 `DJANGO_ENV=production python manage.py runserver`
 
 """
-
-from os import environ
+import os
 import django_heroku
 from split_settings.tools import include
 
-ENV = environ.get('DJANGO_ENV') or 'development'
 
 base_settings = [
     'components/middleware.py',  # middleware configuration
@@ -26,12 +24,13 @@ base_settings = [
     'components/email.py',  # email settings
     'components/rest_framework.py',  # rest framework settings
     'components/common.py',  # standard django settings
-    'components/cors_configuration.py'  # configuration for Access Control Allow Origin
+    'components/cors_configuration.py',
+    # configuration for Access Control Allow Origin
+    'components/graphene.py'
 ]
 
 # Include settings:
 
 include(*base_settings)
-
 
 django_heroku.settings(locals())

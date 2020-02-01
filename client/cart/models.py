@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.db import models
 
-from business.cms.models import Product
+from business.products.models import Product
 from utils.session.models import CheckoutSession
 
 # Create your models hee

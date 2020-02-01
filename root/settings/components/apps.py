@@ -20,7 +20,9 @@ INSTALLED_APPS = [
     # all auth
     'allauth',
     'allauth.account',
-
+    # graphene
+    'graphene_django',
+    
     # rest auth
     'rest_auth',
     'rest_auth.registration',
@@ -30,7 +32,7 @@ INSTALLED_APPS = [
     'accounts',
     # business apps
     'business.inventory',
-    'business.cms',
+    'business.products',
     'business.orders',
     'business.payment',
     'business.authorization',
@@ -38,6 +40,7 @@ INSTALLED_APPS = [
     'client.checkout',
     'client.cart',
     'client.delivery',
+    'client.web',
     # utils
     'utils.geo.phone_numbers',
     'utils.session'

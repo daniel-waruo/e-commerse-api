@@ -1,14 +1,21 @@
-from rest_framework.serializers import ModelSerializer
+from rest_framework import serializers
 
-from .models import Product, Category
+from .models import Product, Category, ProductImage
 
 
-class ProductSerializer(ModelSerializer):
+class ProductImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ProductImage
+        fields = ['image']
+
+
+class ProductSerializer(serializers.ModelSerializer):
+    images = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
+
     class Meta:
         model = Product
         fields = ['product',
                   'name',
-                  'images',
                   'category',
                   'price', 'price_currency',
                   'discount_price', 'discount_price_currency',
@@ -17,7 +24,7 @@ class ProductSerializer(ModelSerializer):
                   'timestamp']
 
 
-class CategorySerializer(ModelSerializer):
+class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = ['name', 'slug', 'parent', 'id']

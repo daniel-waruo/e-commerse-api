@@ -1,5 +1,6 @@
 django
 djangorestframework
+djangorestframework-jwt
 django-rest-auth
 django-allauth
 

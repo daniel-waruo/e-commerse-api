@@ -19,6 +19,7 @@
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (e-commerse-api)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="e-commerse-frontend" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

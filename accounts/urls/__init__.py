@@ -21,5 +21,5 @@ urlpatterns = [
     # rest auth urls
     path('auth/', include('accounts.urls.rest_auth_urls')),
     # account confirm email override
-    path('auth/account_registration/', include('accounts.urls.registration_urls'))
+    path('auth/registration/', include('accounts.urls.registration_urls'))
 ]

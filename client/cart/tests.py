@@ -53,34 +53,6 @@ class TestCartAuthenticatedUser(UserTestCase):
                          '\n\t {1}.'
                          .format(response.status_code, response.content))
 
-    def test_add_product_number(self):
-        """
-        Test the addition of number of a product
-        :return: None
-        """
-        create_cart_product(1, user_id=self.user.id)
-        url = reverse('cart:cart_add_product_number')
-        response = self.client.post(url, data={"product_pk": 1})
-        self.assertEqual(response.status_code, 200,
-                         'Add Number of Products is not Successful.\n'
-                         'Expected  Response Code 200, received {0} instead with content as :-'
-                         '\n\t {1}.'
-                         .format(response.status_code, response.content))
-
-    def test_subtract_product_number(self):
-        """
-        Test the subtraction of the numbers of a product
-        :return: None
-        """
-        create_cart_product(1, user_id=self.user.id)
-        url = reverse('cart:cart_subtract_product_number')
-        response = self.client.post(url, data={"product_pk": 1})
-        self.assertEqual(response.status_code, 200,
-                         'Subtract number of products  in Cart is not Successful.\n'
-                         'Expected  Response Code 200, received {0} instead with content as :-'
-                         '\n\t {1}.'
-                         .format(response.status_code, response.content))
-
     def test_update_product_number(self):
         """
         Test the update of the number of a product
@@ -132,34 +104,6 @@ class TestCartAnonymousUser(UserTestCase, CheckoutSessionTestMixin):
         self.assertEqual(response.status_code, 204,
                          'Remove product from cart is not Successful.\n'
                          'Expected  Response Code 204, received {0} instead with content as :-'
-                         '\n\t {1}.'
-                         .format(response.status_code, response.content))
-
-    def test_add_product_number(self):
-        """
-        Test the addition of number of a product
-        :return: None
-        """
-        create_cart_product(1, session_key=self.session_key)
-        url = reverse('cart:cart_add_product_number')
-        response = self.client.post(url, data={"product_pk": 1})
-        self.assertEqual(response.status_code, 200,
-                         'Add Number of Products is not Successful.\n'
-                         'Expected  Response Code 200, received {0} instead with content as :-'
-                         '\n\t {1}.'
-                         .format(response.status_code, response.content))
-
-    def test_subtract_product_number(self):
-        """
-        Test the subtraction of the numbers of a product
-        :return: None
-        """
-        create_cart_product(1, session_key=self.session_key)
-        url = reverse('cart:cart_subtract_product_number')
-        response = self.client.post(url, data={"product_pk": 1})
-        self.assertEqual(response.status_code, 200,
-                         'Subtract number of products  in Cart is not Successful.\n'
-                         'Expected  Response Code 200, received {0} instead with content as :-'
                          '\n\t {1}.'
                          .format(response.status_code, response.content))
 

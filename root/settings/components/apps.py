@@ -15,6 +15,8 @@ INSTALLED_APPS = [
     # rest framework
     'rest_framework',
     'rest_framework.authtoken',
+    #Knox integration
+    'knox',
     # C.O.R.S management framework,
     'corsheaders',
     # all auth

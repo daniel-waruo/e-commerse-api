@@ -35,7 +35,7 @@ class Category(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=100, db_index=True)
-    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True)
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True,related_name="products")
     price = MoneyField(max_digits=14, decimal_places=2, blank=False, null=False)
     discount_price = MoneyField(max_digits=14, decimal_places=2)
     price_base = MoneyField(max_digits=14, decimal_places=2, editable=False)

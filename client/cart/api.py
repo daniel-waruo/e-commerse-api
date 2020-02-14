@@ -14,7 +14,8 @@ from .utils import (
     subtract_product_number,
     update_product_number,
     CartDetails,
-    get_cart_object)
+    get_cart_object
+)
 
 
 class CartApiView(APIView):
@@ -109,46 +110,6 @@ class RemoveProduct(CartApiView):
     def product_action(self):
         pk = self.request.POST.get("product_pk", None)
         return remove_product_from_cart(pk, **self.user_session_kwargs)
-
-
-class AddProductNumber(CartApiView):
-    def product_action(self):
-        self.pk = self.request.POST.get("product_pk", None)
-        return add_product_number(product_pk=self.pk, **self.user_session_kwargs)
-
-    def get_data(self):
-        data = super().get_data()
-        data.update(
-            {
-                "product_pk": self.pk,
-                "product_total": str(
-                    translate_money(
-                        self.request,
-                        self.cart_product.product.price * self.cart_product.number
-                    )),
-            }
-        )
-        return data
-
-
-class SubtractProductNumber(CartApiView):
-    def product_action(self):
-        self.pk = self.request.POST.get("product_pk", None)
-        return subtract_product_number(product_pk=self.pk, **self.user_session_kwargs)
-
-    def get_data(self):
-        data = super().get_data()
-        data.update(
-            {
-                "product_pk": self.pk,
-                "product_total": str(
-                    translate_money(
-                        self.request,
-                        self.cart_product.product.price * self.cart_product.number
-                    )),
-            }
-        )
-        return data
 
 
 class UpdateProductNumber(CartApiView):

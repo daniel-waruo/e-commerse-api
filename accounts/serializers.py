@@ -1,27 +1,49 @@
 from django.contrib.auth import authenticate
 from django.contrib.auth.forms import PasswordResetForm
-from rest_auth.serializers import PasswordResetSerializer as ResetPasswordSerializer
+from rest_auth.serializers import (
+    PasswordResetSerializer as ResetPasswordSerializer,
+    UserDetailsSerializer,
+    LoginSerializer as BaseLoginSerializer
+)
 from rest_framework import serializers
-
 from .models import User, UserProfile, StaffUser
+from django.conf import settings
+from allauth.account import app_settings
+from allauth.account.utils import send_email_confirmation
 
+class KnoxSerializer(serializers.Serializer):
+    """
+    Serializer for Knox authentication.
+    """
+    token = serializers.CharField()
+    user = UserDetailsSerializer()
 
 # serializer for logging in a user
-class LoginUserSerializer(serializers.Serializer):
-    def create(self, validated_data):
-        pass
+class LoginSerializer(BaseLoginSerializer):
 
-    def update(self, instance, validated_data):
-        pass
+    def validate(self, attrs):
+        username = attrs.get('username')
+        email = attrs.get('email')
+        password = attrs.get('password')
 
-    username = serializers.CharField()
-    password = serializers.CharField()
+        user = self._validate_username_email(username, email, password)
+        
+        # Did we get back an active user?
+        if user:
+            if not user.is_active:
+                msg = 'User account is disabled.'
+                raise serializers.ValidationError(msg)
+        else:
+            msg = 'Unable to log in with provided credentials.'
+            raise serializers.ValidationError(msg)
 
-    def validate(self, data):
-        user = authenticate(**data)
-        if user and user.is_active:
-            return user
-        raise serializers.ValidationError("Unable to log in with provided credentials.")
+        if app_settings.EMAIL_VERIFICATION == app_settings.EmailVerificationMethod.MANDATORY:
+            email_address,isCreated = user.emailaddress_set.get_or_create(email=user.email)
+            if not email_address.verified:
+                send_email_confirmation(self.context["request"],user)
+                raise serializers.ValidationError('E-mail is not verified.Check your email')
+        attrs['user'] = user
+        return attrs
 
 
 # serializer for creating a user

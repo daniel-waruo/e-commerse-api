@@ -4,7 +4,7 @@ from django.db import models
 from djmoney.models.fields import MoneyField
 from shortuuidfield import ShortUUIDField
 
-from business.cms.models import Product
+from business.products.models import Product
 from business.payment.models import Receipt
 from client.delivery.models import DeliveryInfo
 

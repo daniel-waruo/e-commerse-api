@@ -16,26 +16,38 @@ Including another URLconf
 from django.contrib import admin
 from django.http import JsonResponse
 from django.urls import path, include
-from rest_framework.response import Response
-
-
-def hello(request):
-    return JsonResponse({"data": "Hello Worlds"})
+from django.views.decorators.csrf import csrf_exempt
+from graphene_django.views import GraphQLView
+from accounts.graph_ql import DRFAuthenticatedGraphQLView
 
 
 urlpatterns = [
-    # admin urls
+    ############################
+    # DJANGO ADMIN URL
+    ############################
     path('admin/', admin.site.urls),
+
+    #############################
+    # REST API URLS
+    #############################
+
     # account urls
     path('accounts/', include('accounts.urls')),
-    # business inventory urls
+    # business urls
     path('business/authorization/', include('business.authorization.urls')),
     path('business/inventory/', include('business.inventory.urls')),
-    path('business/cms/', include('business.cms.urls')),
+    path('business/products/', include('business.products.urls')),
     path('business/delivery/', include('client.delivery.urls')),
     path('business/orders/', include('business.orders.urls')),
     path('business/staff/', include('business.staff_accounts.urls')),
     path('client/checkout/', include('client.checkout.urls')),
     path('client/cart/', include('client.cart.urls')),
-    path('', hello)
+    path('', lambda request: JsonResponse({"data": "Welcome to the E-commerce API"})),
+
+    ############################
+    # GRAPH-QL URLS
+    ############################
+    path("graph-ql", DRFAuthenticatedGraphQLView.as_view(graphiql=True)),
+    # path('graph-ql', csrf_exempt(GraphQLView.as_view(graphiql=True)))
+
 ]

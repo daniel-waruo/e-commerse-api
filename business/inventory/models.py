@@ -3,6 +3,8 @@ import uuid
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 
+from business.products.models import Product
+
 
 # Write your models here
 
@@ -28,30 +30,27 @@ class Shipment(models.Model):
 """
 TODO:
     - Implement JSON Field
-
 """
-SIZE_CATEGORY = (
-    (1, 'Small'),
-    (2, 'Medium'),
-    (3, 'Large')
+
+measured_in = (
+    ("weight", "Sold per Weight"),
+    ("unit", "Sold per Unit")
 )
 
 
-class Product(models.Model):
-    name = models.CharField(max_length=100, unique=True, db_index=True)
+class Inventory(models.Model):
+    product = models.OneToOneField(Product, on_delete=models.CASCADE)
     supplier = models.ManyToManyField(to=Supplier)
-    weight = models.DecimalField(max_digits=20, decimal_places=2)
-    size = models.PositiveSmallIntegerField(default=1)
+    measured_in = models.BooleanField()
+    number = models.PositiveIntegerField(default=0)
 
-    def save(self, *args, **kwargs):
-        self.name = self.name.lower()
-        super(Product, self).save(*args, **kwargs)
-
-    def weight_str(self):
-        return str(self.weight)
+    def in_stock(self):
+        if self.number == 0:
+            return False
+        return True
 
     def __str__(self):
-        return self.name
+        return self.product.name
 
     class Meta:
         verbose_name = "product inventory"

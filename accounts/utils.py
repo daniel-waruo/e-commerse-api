@@ -1,6 +1,6 @@
-def token_creator(token_model, user, serializer):
-    if token_model.objects.filter(user=user).exists():
-        token, _ = token_model.objects.create(user=user)
-    else:
-        token = token_model.objects.get(user=user)
+from knox.models import AuthToken
+
+
+def create_knox_token(token_model, user, serializer):
+    instance,token = AuthToken.objects.create(user=user)
     return token

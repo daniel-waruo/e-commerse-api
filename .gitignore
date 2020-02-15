@@ -1,6 +1,6 @@
 # ignore venv folder
 /e_venv/*
-
+/venv/*
 # ignore python cache files
 **/__pycache__/
 *.pyc

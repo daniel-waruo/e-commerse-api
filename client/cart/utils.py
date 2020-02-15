@@ -3,7 +3,7 @@ from django.db.models import Sum, F
 from djmoney.models.fields import MoneyField
 from djmoney.money import Money
 
-from business.cms.models import Product
+from business.products.models import Product
 from client.cart.errors import NoUserIdOrSessionKeyError, NoProductToDelete, BadConfigError
 from .models import CartProduct, Cart
 

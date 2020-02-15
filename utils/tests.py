@@ -11,7 +11,7 @@ from rest_framework.test import APITestCase, APIClient
 
 from accounts.models import StaffUser
 from business.authorization.utils import get_all_department_ids
-from business.cms.models import Category, Product as CmsProduct
+from business.products.models import Category, Product as CmsProduct
 from business.inventory.models import Supplier, Product as InventoryProduct
 
 

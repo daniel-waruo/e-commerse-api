@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.db import models
 
-from business.cms.models import Product
+from business.products.models import Product
 from utils.session.models import CheckoutSession
 
 # Create your models hee
@@ -41,7 +41,7 @@ class CartProduct(models.Model):
     """
         This is a Product on the cart list
     """
-    cart = models.ForeignKey(Cart, on_delete=models.CASCADE, db_index=True)
+    cart = models.ForeignKey(Cart, on_delete=models.CASCADE, db_index=True,related_name="products")
     product = models.ForeignKey(Product, on_delete=models.CASCADE, db_index=True)
     number = models.PositiveIntegerField()
 

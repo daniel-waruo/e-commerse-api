@@ -6,7 +6,6 @@ from django.contrib.auth.forms import UserCreationForm
 
 from .models import UserProfile, User
 
-login_required
 
 # Register your models here.
 

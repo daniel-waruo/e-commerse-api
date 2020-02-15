@@ -1,5 +1,6 @@
 django
 djangorestframework
+djangorestframework-jwt
 django-rest-auth
 django-allauth
 
@@ -27,10 +28,13 @@ django-sendgrid-v5
 google-api-python-client
 oauth2client
 
-django-environ
+python-dotenv
 django-split-settings
 
 gunicorn
 django_heroku
 
 django-cors-headers
+
+graphene_django
+django-filter

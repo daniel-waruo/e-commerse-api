@@ -93,6 +93,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(os.getcwd(), "my_static")
+
 # CHECKOUT SESSIONS
 ANONYMOUS_SESSION_ENGINE = "utils.session.cached_db"
 ANONYMOUS_SESSION_CACHE_ALIAS = "default"

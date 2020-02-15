@@ -1,5 +1,4 @@
 from django.apps import AppConfig
-from django.db import OperationalError
 
 from client.cart.errors import BadConfigError
 

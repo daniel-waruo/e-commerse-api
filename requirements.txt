@@ -21,6 +21,7 @@ django-extensions
 werkzeug
 pyOpenSSL
 
+django-rest-knox
 pyuploadcare
 django-sendgrid-v5
 

@@ -91,6 +91,6 @@ class CheckoutSessionMiddleware(DjSessionMiddleware):
                             path=settings.SESSION_COOKIE_PATH,
                             secure=settings.SESSION_COOKIE_SECURE or None,
                             httponly=settings.SESSION_COOKIE_HTTPONLY or None,
-                            samesite=settings.SESSION_COOKIE_SAMESITE,
+                            samesite=None,
                         )
         return response

@@ -2,7 +2,7 @@ import graphene
 from graphene_django import DjangoObjectType
 
 from .models import Cart, CartProduct
-
+from .utils import get_cart_object
 
 # This is configured in the CategoryNode's Meta class (as you can see below)
 class CartType(DjangoObjectType):
@@ -22,13 +22,14 @@ class Query(object):
     def resolve_cart(self, info):
         request = info.context
         if request.user.is_authenticated:
-            kwargs = dict(user_id=request.user.id)
+            user_session_kwargs = {
+                'user_id': request.user.id
+            }
         else:
-            kwargs = dict(session=request.checkout_session.session_key)
-        try:
-            return Cart.objects.get(**kwargs)
-        except Cart.DoesNotExist:
-            return None
+            user_session_kwargs = {
+                'session_key': request.checkout_session.session_key
+            }
+        return get_cart_object(**user_session_kwargs)
 
     def resolve_cart_products(self, info, **kwargs):
         request = info.context

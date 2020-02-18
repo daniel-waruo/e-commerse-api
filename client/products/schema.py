@@ -25,22 +25,12 @@ def convert_field(field, registry=None):
     return graphene.String()
 
 
-class CustomNode(relay.Node):
-    class Meta:
-        name = 'Node'
-
-    @staticmethod
-    def to_global_id(type, id, **kwargs):
-        # returns a non-encoded ID
-        return id
-
-    @staticmethod
-    def get_node_from_global_id(info, global_id, only_type=None, **kwargs):
-        model = getattr(Query, info.field_name).field_type._meta.model
-        return model.objects.get(id=global_id)
-
-
 class ProductNode(DjangoObjectType):
+    pk = graphene.String()
+
+    def resolve_pk(self,info):
+        return self.pk
+
     class Meta:
         model = Product
         # Allow for some more advanced filtering here
@@ -52,10 +42,11 @@ class ProductNode(DjangoObjectType):
             'category': ['exact'],
             'category__name': ['exact'],
         }
-        interfaces = (CustomNode,)
+        interfaces = (relay.Node,)
 
 
 class ProductType(DjangoObjectType):
+    
     class Meta:
         model = Product
 
@@ -69,6 +60,8 @@ class ProductImageType(DjangoObjectType):
 class Query(object):
     product = graphene.Field(ProductType, id=graphene.String(required=True))
     all_products = DjangoFilterConnectionField(ProductNode)
+
+
 
     product_images = graphene.List(ProductImageType)
     product_image = graphene.Field(ProductImageType)

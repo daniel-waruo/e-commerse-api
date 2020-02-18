@@ -49,5 +49,4 @@ urlpatterns = [
     ############################
     path("graph-ql", DRFAuthenticatedGraphQLView.as_view(graphiql=True)),
     # path('graph-ql', csrf_exempt(GraphQLView.as_view(graphiql=True)))
-
 ]

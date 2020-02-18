@@ -8,58 +8,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2626fec1-3ddf-4594-b705-ddfca256fc71" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/e_commerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e_commerce.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/urls/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/urls/auth_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls/auth_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/urls/registration_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls/registration_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/urls/rest_auth_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls/rest_auth_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/products/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/cart/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/cart/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/cart/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/schema.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/cart/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/products/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/products/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/database.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/settings/components/allauth.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/components/allauth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/settings/components/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/components/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/settings/components/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/components/common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/settings/components/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/components/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/settings/components/rest_framework.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/components/rest_framework.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/settings/components/cors_configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/settings/components/cors_configuration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/carousel/carouselHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/carousel/carouselHome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/carousel/carouselProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/carousel/carouselProduct.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/cart/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/cart/Cart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/categories/CategoriesMenuLink.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/categories/CategoriesMenuLink.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/loaders/spinnerLoader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/loaders/spinnerLoader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/modals/CartModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/modals/CartModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/navbar/navbarHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/navbar/navbarHome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/navbar/search_form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/navbar/search_form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/navbar/userInfoDropdown.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/navbar/userInfoDropdown.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/session/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/session/middleware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/_constants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/_constants.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/_request.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/_request.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/resolver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/resolver.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/typeDef.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/typeDef.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/navbar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/navbar/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/productDialog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/productDialog.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/app/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/app/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/app/queries.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/app/queries.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/products/product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/products/product.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/rangeSlider/rangeSlider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/rangeSlider/rangeSlider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/sidenav/SideNav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/sidenav/SideNav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/constants.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/cart/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/cart/Cart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/HomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/queries.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/queries.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/login/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/login/LoginPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/product/ProductPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/product/ProductPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/product/queries.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/product/queries.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/products/ProductsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/products/ProductsPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/register/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/register/RegisterPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/resolvers/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/InputPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/cart/Cart.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/HomePage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/components/carouselHome.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/components/categoriesMenuLink.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/components/homeProducts.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/components/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/queries.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/login/LoginPage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/login/components/loginForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/login/queries.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/product/ProductPage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/product/components/carouselProduct.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/product/queries.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/products/ProductsPage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/products/products.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/products/queries.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/register/RegisterPage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/register/components/registerForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/register/queries.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/routes/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -136,29 +126,7 @@
     <option name="OUTPUT_DIRECTORY" value="C:\Users\Dan\PycharmProjects\e_commerse" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="graph_ql.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/graph_ql.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rest_framework.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/root/settings/components/rest_framework.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -166,16 +134,12 @@
         <option value="Vue Single File Component" />
         <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>INSTALLED_APPS</find>
-      <find>apps</find>
-      <find>commands</find>
-      <find>has_per</find>
-      <find>superuser</find>
       <find>context</find>
       <find>models.ManyToMany</find>
       <find>SITE_CACHE</find>
@@ -201,6 +165,11 @@
       <find>department</find>
       <find>env(</find>
       <find>DepartmentA</find>
+      <find>MDBNavLink</find>
+      <find>class=</find>
+      <find>box</find>
+      <find>box-head</find>
+      <find>self.cart_product</find>
     </findStrings>
     <replaceStrings>
       <replace>cart</replace>
@@ -209,6 +178,7 @@
       <replace>cms</replace>
       <replace>product</replace>
       <replace>staff_user</replace>
+      <replace>className=</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Dan\PycharmProjects\e_commerse</dir>
@@ -221,7 +191,7 @@
         <option value="Daniel Waruo &lt;warudaniel@gmail.com&gt;" />
       </list>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../e-commerse-frontend" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -231,24 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/utils/currency/api.py" />
-        <option value="$PROJECT_DIR$/business/authorization/permissions.py" />
-        <option value="$PROJECT_DIR$/business/inventory/api.py" />
-        <option value="$PROJECT_DIR$/business/orders/models.py" />
-        <option value="$PROJECT_DIR$/business/orders/urls.py" />
-        <option value="$PROJECT_DIR$/business/orders/tests.py" />
-        <option value="$PROJECT_DIR$/accounts/models.py" />
-        <option value="$PROJECT_DIR$/utils/currency/models.py" />
-        <option value="$PROJECT_DIR$/root/settings/components/database.py" />
-        <option value="$PROJECT_DIR$/client/checkout/tests.py" />
-        <option value="$PROJECT_DIR$/client/checkout/api.py" />
-        <option value="$PROJECT_DIR$/client/cart/utils.py" />
-        <option value="$PROJECT_DIR$/client/cart/api.py" />
-        <option value="$PROJECT_DIR$/business/authorization/__init__.py" />
-        <option value="$PROJECT_DIR$/business/authorization/serializers.py" />
-        <option value="$PROJECT_DIR$/business/authorization/utils.py" />
-        <option value="$PROJECT_DIR$/business/authorization/api.py" />
-        <option value="$PROJECT_DIR$/business/authorization/urls.py" />
         <option value="$PROJECT_DIR$/business/staff_accounts/tests.py" />
         <option value="$PROJECT_DIR$/business/orders/api.py" />
         <option value="$PROJECT_DIR$/business/authorization/tests.py" />
@@ -258,7 +210,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/business/inventory/models.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/root/settings/components/apps.py" />
         <option value="$PROJECT_DIR$/root/settings/components/graphene.py" />
         <option value="$PROJECT_DIR$/business/authorization/apps.py" />
@@ -270,7 +221,6 @@
         <option value="$PROJECT_DIR$/root/settings/__init__.py" />
         <option value="$PROJECT_DIR$/accounts/urls/auth_urls.py" />
         <option value="$PROJECT_DIR$/root/settings/components/allauth.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/root/settings/components/common.py" />
         <option value="$PROJECT_DIR$/accounts/urls/__init__.py" />
         <option value="$PROJECT_DIR$/accounts/urls/rest_auth_urls.py" />
@@ -282,6 +232,26 @@
         <option value="$PROJECT_DIR$/accounts/graph_ql.py" />
         <option value="$PROJECT_DIR$/accounts/auth.py" />
         <option value="$PROJECT_DIR$/root/settings/components/rest_framework.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/app/index.jsx" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/components/index.css" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/login/index.jsx" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/index.js" />
+        <option value="$PROJECT_DIR$/client/cart/tests.py" />
+        <option value="$PROJECT_DIR$/client/cart/utils.py" />
+        <option value="$PROJECT_DIR$/client/cart/api.py" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/components/index.jsx" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/components/products/product.jsx" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/app/queries.jsx" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/productDialog.jsx" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/_request.jsx" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/_constants.jsx" />
+        <option value="$PROJECT_DIR$/client/cart/urls.py" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/resolver.jsx" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/index.jsx" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/queries.jsx" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/typeDef.jsx" />
       </list>
     </option>
   </component>
@@ -291,8 +261,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/../e-commerse-frontend/node_modules" />
+  </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/../e-commerse-frontend/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
@@ -315,7 +290,21 @@
             </path>
             <path>
               <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="e-commerse-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-commerse-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-commerse-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -329,8 +318,10 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../e-commerse-frontend" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -839,24 +830,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.37443268" side_tool="true" weight="0.6287129" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.33333334" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32838285" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.41038525" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.3250825" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25189108" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.40924093" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.28382838" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2632375" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
+      <window_info anchor="bottom" id="TypeScript" order="14" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.32838285" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -865,33 +856,33 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32838285" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.32838285" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.32838285" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32980332" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18229954" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.33333334" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.4108911" />
       <window_info anchor="bottom" id="Inspection Results" order="10" weight="0.32838285" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32838285" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.32838285" />
       <window_info anchor="right" id="Database" order="5" weight="0.33055976" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.32838285" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.33333334" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.37443268" side_tool="true" weight="0.6287129" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32980332" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" weight="0.21122113" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32980332" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32838285" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -949,188 +940,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/products/api.py" />
-    <entry file="file://$PROJECT_DIR$/business/inventory/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/inventory/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/products/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/settings/components/graphene.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://74126a37-db65-4125-b2b0-fe9e93a2cb16/schema/main/table/accounts_user" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/74126a37-db65-4125-b2b0-fe9e93a2cb16/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/.env" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pyuploadcare/dj/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="103" column="6" lean-forward="true" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/products/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/products/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/authorization/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/products/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/inventory/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/products/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/products/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/products/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/products/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/settings/components/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/settings/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/settings/components/cors_configuration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/orders/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runtime.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/settings/components/allauth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.vscode/settings.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1183,9 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1200,9 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="42" column="81" lean-forward="true" selection-start-line="42" selection-start-column="81" selection-end-line="42" selection-end-column="81" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1210,9 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1244,23 +1048,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/graph_ql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts/auth.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1271,10 +1062,274 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/root/settings/components/rest_framework.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/graph_ql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/node_modules/mdbreact/dist/mdbreact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="170" column="39" lean-forward="true" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/node_modules/mdbreact/dist/mdbreact.esm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/node_modules/mdbreact/dist/types/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="881" column="3" lean-forward="true" selection-start-line="881" selection-start-column="3" selection-end-line="881" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/app/components/navbar/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/menuLink.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/home/components/categoriesMenuLink.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/home/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/components/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../distribution/css/style.default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/login/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../distribution/basket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="304" column="42" lean-forward="true" selection-start-line="304" selection-start-column="42" selection-end-line="304" selection-end-column="42" />
+          <folding>
+            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/cart/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/cart/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/cart/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="94" column="24" lean-forward="true" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/cart/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="99" column="37" lean-forward="true" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/cart/Cart.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/components/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="82" column="17" lean-forward="true" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/app/components/productDialog.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/app/queries.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/products/product.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="65" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/app/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/_request.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/apollo/resolver.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="143" column="47" selection-start-line="143" selection-start-column="47" selection-end-line="143" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/_constants.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="21" column="58" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/cart/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/apollo/typeDef.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/queries.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

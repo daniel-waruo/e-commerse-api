@@ -1,6 +1,7 @@
-CORS_ORIGIN_WHITELIST = [
-    # "https://www.commerce.com",
-    # "https://commerce.com"
-]
+CORS_ORIGIN_ALLOW_ALL = False
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = (
+       'http://localhost:3000',
+)
+
+CORS_ALLOW_CREDENTIALS = True

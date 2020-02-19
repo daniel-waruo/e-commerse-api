@@ -92,5 +92,5 @@ class UpdateCart(CartApiView):
     required_post_fields = ['products']
 
     def product_action(self):
-        products = self.request.data.get('product_number')
+        products = self.request.data.get('products')
         update_cart(products, **self.get_user_session_kwargs())

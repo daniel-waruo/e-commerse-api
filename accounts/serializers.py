@@ -1,3 +1,5 @@
+from allauth.account import app_settings
+from allauth.account.utils import send_email_confirmation
 from django.contrib.auth import authenticate
 from django.contrib.auth.forms import PasswordResetForm
 from rest_auth.serializers import (
@@ -6,10 +8,9 @@ from rest_auth.serializers import (
     LoginSerializer as BaseLoginSerializer
 )
 from rest_framework import serializers
+
 from .models import User, UserProfile, StaffUser
-from django.conf import settings
-from allauth.account import app_settings
-from allauth.account.utils import send_email_confirmation
+
 
 class KnoxSerializer(serializers.Serializer):
     """
@@ -17,6 +18,7 @@ class KnoxSerializer(serializers.Serializer):
     """
     token = serializers.CharField()
     user = UserDetailsSerializer()
+
 
 # serializer for logging in a user
 class LoginSerializer(BaseLoginSerializer):
@@ -27,7 +29,7 @@ class LoginSerializer(BaseLoginSerializer):
         password = attrs.get('password')
 
         user = self._validate_username_email(username, email, password)
-        
+
         # Did we get back an active user?
         if user:
             if not user.is_active:
@@ -38,9 +40,9 @@ class LoginSerializer(BaseLoginSerializer):
             raise serializers.ValidationError(msg)
 
         if app_settings.EMAIL_VERIFICATION == app_settings.EmailVerificationMethod.MANDATORY:
-            email_address,isCreated = user.emailaddress_set.get_or_create(email=user.email)
+            email_address, isCreated = user.emailaddress_set.get_or_create(email=user.email)
             if not email_address.verified:
-                send_email_confirmation(self.context["request"],user)
+                send_email_confirmation(self.context["request"], user)
                 raise serializers.ValidationError('E-mail is not verified.Check your email')
         attrs['user'] = user
         return attrs

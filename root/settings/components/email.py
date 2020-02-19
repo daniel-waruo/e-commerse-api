@@ -1,6 +1,4 @@
 import os
-from django.core.mail.backends.console import EmailBackend
-
 
 # email specifications
 SEND_GRID_API_KEY = os.environ.get("SEND_GRID_API_KEY")

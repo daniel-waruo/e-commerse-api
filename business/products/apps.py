@@ -1,7 +1,7 @@
 from business.authorization.apps import DepartmentAppConfig
 
 
-class CmsConfig(DepartmentAppConfig):
-    label = 'cms'
+class ProductsConfig(DepartmentAppConfig):
+    label = 'products'
     name = 'business.products'
     verbose_name = "Products"

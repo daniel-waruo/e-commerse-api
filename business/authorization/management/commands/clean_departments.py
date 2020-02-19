@@ -39,7 +39,7 @@ class Command(BaseCommand):
         # returns a list of app_labels from department app configs
         app_labels = list(map(get_department_app_configs, app_configs))
 
-        # query set of all the department intances without an app label in the app labels list
+        # query set of all the department instances without an app label in the app labels list
         queryset = Department.objects.filter(~Q(app_label__in=app_labels))
 
         if queryset:

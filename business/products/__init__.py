@@ -1,1 +1,1 @@
-default_app_config = 'business.products.apps.CmsConfig'
+default_app_config = 'business.products.apps.ProductsConfig'

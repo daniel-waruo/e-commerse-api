@@ -1,0 +1,1 @@
+pg_dump -Fc -U postgres db_api  > data.dump

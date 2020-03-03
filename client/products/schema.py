@@ -70,7 +70,9 @@ class Query(object):
     product = graphene.Field(ProductType, id=graphene.String(), slug=graphene.String())
     all_products = DjangoFilterConnectionField(ProductNode, filterset_class=ProductFilter)
 
-    filter_products = DjangoFilterConnectionField(ProductNode, filterset_class=ProductFilter,
+    filter_products = DjangoFilterConnectionField(ProductNode,
+                                                  filterset_class=ProductFilter,
+                                                  categorySlugs=graphene.List(graphene.String),
                                                   category_Ids=graphene.List(graphene.String),
                                                   query=graphene.String()
                                                   )
@@ -92,18 +94,23 @@ class Query(object):
         return Category.objects.all()
 
     def resolve_filter_products(self, info, **kwargs):
-        category_Ids = kwargs.get("category_Ids")
+        categoryIds = kwargs.get("category_Ids")
+        categorySlugs = kwargs.get("categorySlugs")
         query = kwargs.get("query")
         # initial queryset object
         query_set = Product.objects.all()
 
         # if categoryIds and query not provided
-        if not (category_Ids or query):
+        if not (categoryIds or query or categorySlugs):
             return query_set
-
+        # TODO: remove category ids filter as it redndant after fully migrating
         # if categoryIds filter
-        if category_Ids:
-            query_set = query_set.filter(category_id__in=category_Ids)
+        if categoryIds:
+            query_set = query_set.filter(category_id__in=categoryIds)
+
+        # if categorySlugs filter
+        if categorySlugs:
+            query_set = query_set.filter(category__slug__in=categorySlugs)
 
         # if query filter according to the query
         if query:

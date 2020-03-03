@@ -9,56 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2626fec1-3ddf-4594-b705-ddfca256fc71" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/products/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/products/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/root/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/Routes.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/_constants.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/_constants.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/_helpers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/_helpers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/_request.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/_request.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/resolver.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/resolver.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/typeDef.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/typeDef.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/navbar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/navbar/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/navbar/search_form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/navbar/search_form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/productDialog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/productDialog.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/app/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/app/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/app/queries.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/app/queries.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/cart/Cart.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/loaders/mainLoader.css" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/loaders/mainLoader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/menuLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/menuLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/modalLogin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/products/product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/products/product.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/products/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/products/products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/rangeSlider/rangeSlider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/rangeSlider/rangeSlider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/sectionContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/sidenav/SideNav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/sidenav/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/components/sidenav/sidenav.css" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/components/sidenav/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/InputPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/cart/Cart.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/HomePage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/components/carouselHome.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/components/categoriesMenuLink.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/components/homeProducts.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/components/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/home/queries.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/login/LoginPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/login/components/loginForm.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/login/queries.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/product/ProductPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/product/components/carouselProduct.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/product/queries.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/products/ProductsPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/products/products.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/products/queries.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/register/RegisterPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/register/components/registerForm.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/pages/register/queries.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/registerServiceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/registerServiceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/routes/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -135,7 +86,29 @@
     <option name="OUTPUT_DIRECTORY" value="C:\Users\Dan\PycharmProjects\e_commerse" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="_constants.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/_constants.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -212,7 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/authResover.jsx" />
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/index.js" />
         <option value="$PROJECT_DIR$/root/urls.py" />
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/typeDef.jsx" />
@@ -226,7 +198,6 @@
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/_queryParse.jsx" />
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/_helpers.jsx" />
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/home/components/menuLink.jsx" />
-        <option value="$PROJECT_DIR$/client/products/schema.py" />
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/products/components/searchForm.jsx" />
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/components/cart.jsx" />
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/components/searchForm.jsx" />
@@ -263,6 +234,8 @@
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/register/index.jsx" />
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/product/components/index.jsx" />
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/product/index.jsx" />
+        <option value="$PROJECT_DIR$/client/products/schema.py" />
+        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/_constants.jsx" />
       </list>
     </option>
   </component>
@@ -836,8 +809,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.33333334" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.40924093" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.50825083" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24508321" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.50825083" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24508321" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.32838285" />
@@ -945,23 +918,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/_helpers.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="51" column="7" selection-start-line="48" selection-start-column="4" selection-end-line="51" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/products/schema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/components/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1375,6 +1331,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/products/schema.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/_constants.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

@@ -1,7 +1,7 @@
 import graphene
 from graphene_django import DjangoObjectType
-from pyuploadcare.dj.models import ImageField
 from graphene_django.converter import convert_django_field
+from pyuploadcare.dj.models import ImageField
 
 from .models import User, UserProfile
 
@@ -10,7 +10,7 @@ from .models import User, UserProfile
 class UserType(DjangoObjectType):
     class Meta:
         model = User
-        exclude = ('password',)
+        exclude = ['password']
 
 
 @convert_django_field.register(ImageField)

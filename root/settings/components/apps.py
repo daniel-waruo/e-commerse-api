@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # client apps
     'client.checkout',
     'client.cart',
+    'client.products.apps.ProductsConfig',
     'client.delivery',
     'client.web',
     # utils

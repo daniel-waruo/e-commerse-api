@@ -11,12 +11,7 @@ from graphene_django.filter import DjangoFilterConnectionField
 from pyuploadcare.dj.models import ImageField
 
 from business.products.models import Category, Product, ProductImage
-
-
-# This is configured in the CategoryNode's Meta class (as you can see below)
-class CategoryType(DjangoObjectType):
-    class Meta:
-        model = Category
+from .models import ProductReview
 
 
 @convert_django_field.register(ImageField)
@@ -27,6 +22,17 @@ def convert_field(field, registry=None):
 @convert_django_field.register(MoneyField)
 def convert_field(field, registry=None):
     return graphene.String()
+
+
+# This is configured in the CategoryNode's Meta class (as you can see below)
+class CategoryType(DjangoObjectType):
+    class Meta:
+        model = Category
+
+
+class ProductReviewType(DjangoObjectType):
+    class Meta:
+        model = ProductReview
 
 
 class ProductFilter(django_filters.FilterSet):
@@ -82,6 +88,9 @@ class Query(object):
 
     all_categories = graphene.List(CategoryType)
 
+    product_reviews = graphene.List(ProductReviewType,
+                                    product_slug=graphene.String())
+
     def resolve_product(self, info, id=None, slug=None):
         try:
             if id:
@@ -134,3 +143,8 @@ class Query(object):
 
     def resolve_product_images(self, info, **kwargs):
         return ProductImage.objects.all()
+
+    def resolve_product_reviews(self, info, **kwargs):
+        if kwargs.get("product_slug"):
+            return ProductReview.objects.filter(product__slug=kwargs.get("product_slug"))
+        return ProductReview.objects.none()

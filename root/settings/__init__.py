@@ -8,7 +8,6 @@ To change settings file:
 `DJANGO_ENV=production python manage.py runserver`
 
 """
-import os
 import django_heroku
 from split_settings.tools import include
 

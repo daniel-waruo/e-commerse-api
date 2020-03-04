@@ -12,7 +12,6 @@ import os
 import django_heroku
 from split_settings.tools import include
 
-
 base_settings = [
     'components/middleware.py',  # middleware configuration
     'components/apps.py',  # installed applications

@@ -12,7 +12,7 @@ django-location-field
 
 geoip2
 country_currencies
-
+-e git+https://github.com/daniel-waruo/django-rest-auth.git@master#egg=django-rest-auth
 pillow
 django-qsessions
 django-money

@@ -1,5 +1,7 @@
 from django.apps import AppConfig
 
 
-class DeliveryConfig(AppConfig):
-    name = 'client.delivery'
+class ProductsConfig(AppConfig):
+    # app_label = 'client_products'
+    label = 'client_products'
+    name = 'client.products'

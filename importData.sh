@@ -1,1 +1,1 @@
-heroku pg:backups:restore 'https://raw.githubusercontent.com/daniel-waruo/e-commerse-api/master/data.dump'
+heroku pg:backups:restore 'https://raw.githubusercontent.com/daniel-waruo/e-commerse-api/develop/data.dump'

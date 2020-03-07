@@ -99,5 +99,7 @@ def update_cart(products, user_id=None, session_key=None):
     with transaction.atomic():
         for product in cart_products:
             for item in products:
-                if product.pk == item['pk']:
+                # check if the product linked to the cart product is equal to the product in the pk
+                if product.product.pk == int(item['pk']):
+                    # update the cart product
                     cart.products.filter(product=item['pk']).update(number=item['number'])

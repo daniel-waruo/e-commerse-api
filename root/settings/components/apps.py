@@ -15,16 +15,20 @@ INSTALLED_APPS = [
     # rest framework
     'rest_framework',
     'rest_framework.authtoken',
-    #Knox integration
+    # Knox integration
     'knox',
     # C.O.R.S management framework,
     'corsheaders',
     # all auth
     'allauth',
     'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.instagram',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.facebook',
     # graphene
     'graphene_django',
-    
+
     # rest auth
     'rest_auth',
     'rest_auth.registration',

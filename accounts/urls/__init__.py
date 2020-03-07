@@ -15,11 +15,17 @@ Including another URLconf
 """
 from django.urls import path, include
 
+from ..api import FacebookLogin, InstagramLogin, GoogleLogin
+
 urlpatterns = [
     # all auth urls
     path('auth/', include("accounts.urls.auth_urls")),
     # rest auth urls
     path('auth/', include('accounts.urls.rest_auth_urls')),
     # account confirm email override
-    path('auth/registration/', include('accounts.urls.registration_urls'))
+    path('auth/registration/', include('accounts.urls.registration_urls')),
+
+    path('auth/social/instagram/', InstagramLogin.as_view(), name='ig_login'),
+    path('auth/social/google/', GoogleLogin.as_view(), name='g_login'),
+    path('auth/social/facebook/', FacebookLogin.as_view(), name='fb_login')
 ]

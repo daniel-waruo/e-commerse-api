@@ -45,5 +45,6 @@ urlpatterns = [
     ############################
     # GRAPH-QL URLS
     ############################
+
     path("graph-ql", DRFAuthenticatedGraphQLView.as_view(graphiql=True))
 ]

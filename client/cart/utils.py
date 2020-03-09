@@ -34,11 +34,13 @@ def get_cart_id(user_id=None, session_key=None):
         raise NoUserIdOrSessionKeyError
 
 
-def get_grand_total(user_id=None, session_key=None):
-    cart = get_cart_object(user_id, session_key)
+def get_grand_total(user_id=None, session_key=None, cart=None, price_field=None):
+    if not cart:
+        cart = get_cart_object(user_id, session_key)
     if cart.products.all().exists():
+        price_field = price_field or 'price_base'
         total = cart.products.aggregate(
-            cart_total=Sum(F("number") * F("product__price_base"), output_field=MoneyField())
+            cart_total=Sum(F("number") * F("product__" + price_field), output_field=MoneyField())
         )["cart_total"]
         return Money(total, BASE_CURRENCY)
     else:

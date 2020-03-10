@@ -34,6 +34,18 @@ def get_cart_id(user_id=None, session_key=None):
         raise NoUserIdOrSessionKeyError
 
 
+def get_cart_from_request(request):
+    if request.user.is_authenticated:
+        user_session_kwargs = {
+            'user_id': request.user.id
+        }
+    else:
+        user_session_kwargs = {
+            'session_key': request.checkout_session.session_key
+        }
+    return get_cart_object(**user_session_kwargs)
+
+
 def get_grand_total(user_id=None, session_key=None, cart=None, price_field=None):
     if not cart:
         cart = get_cart_object(user_id, session_key)

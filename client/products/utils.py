@@ -15,7 +15,7 @@ def filter_products(kwargs):
     # if categoryIds and query not provided
     if not (category_ids or query or category_slugs):
         return query_set
-    # TODO: remove category ids filter as it redndant after fully migrating
+    # TODO: remove category ids filter as it redundant after fully migrating to using slugs
     # if categoryIds filter
     if category_ids:
         query_set = query_set.filter(category_id__in=category_ids)

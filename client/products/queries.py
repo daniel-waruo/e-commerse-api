@@ -1,4 +1,3 @@
-import django_filters
 import graphene
 
 from business.products.models import Product, Category, ProductImage
@@ -9,6 +8,7 @@ from .utils import filter_products
 
 
 class Query(object):
+    """ Product Query"""
     product = graphene.Field(
         ProductType,
         id=graphene.String(),
@@ -33,6 +33,7 @@ class Query(object):
         # return all categories
         return Category.objects.all()
 
+    """Filter Products"""
     filter_products = graphene.Field(
         FilterProducts,
         categorySlugs=graphene.List(graphene.String),
@@ -45,6 +46,7 @@ class Query(object):
             products=filter_products(kwargs)
         )
 
+    """Product Images"""
     product_images = graphene.List(ProductImageType)
 
     def resolve_product_images(self, info, **kwargs):

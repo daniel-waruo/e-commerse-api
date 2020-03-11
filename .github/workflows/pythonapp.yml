@@ -21,7 +21,3 @@ jobs:
       run: |
         python manage.py collectstatic
         # stop the build if there are Python syntax errors or undefined names
-        
-    - name: Test Runserver
-      run: |
-        python manage.py runserver

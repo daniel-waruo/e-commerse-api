@@ -90,6 +90,7 @@ class UpdateProductNumber(CartApiView):
 
 class UpdateCart(CartApiView):
     required_post_fields = ['products']
+    success_message = "Cart Update Successful"
 
     def product_action(self):
         products = self.request.data.get('products')

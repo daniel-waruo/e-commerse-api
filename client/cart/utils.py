@@ -34,11 +34,25 @@ def get_cart_id(user_id=None, session_key=None):
         raise NoUserIdOrSessionKeyError
 
 
-def get_grand_total(user_id=None, session_key=None):
-    cart = get_cart_object(user_id, session_key)
+def get_cart_from_request(request):
+    if request.user.is_authenticated:
+        user_session_kwargs = {
+            'user_id': request.user.id
+        }
+    else:
+        user_session_kwargs = {
+            'session_key': request.checkout_session.session_key
+        }
+    return get_cart_object(**user_session_kwargs)
+
+
+def get_grand_total(user_id=None, session_key=None, cart=None, price_field=None):
+    if not cart:
+        cart = get_cart_object(user_id, session_key)
     if cart.products.all().exists():
+        price_field = price_field or 'price_base'
         total = cart.products.aggregate(
-            cart_total=Sum(F("number") * F("product__price_base"), output_field=MoneyField())
+            cart_total=Sum(F("number") * F("product__" + price_field), output_field=MoneyField())
         )["cart_total"]
         return Money(total, BASE_CURRENCY)
     else:
@@ -99,5 +113,7 @@ def update_cart(products, user_id=None, session_key=None):
     with transaction.atomic():
         for product in cart_products:
             for item in products:
-                if product.pk == item['pk']:
+                # check if the product linked to the cart product is equal to the product in the pk
+                if product.product.pk == int(item['pk']):
+                    # update the cart product
                     cart.products.filter(product=item['pk']).update(number=item['number'])

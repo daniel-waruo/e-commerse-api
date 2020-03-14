@@ -41,7 +41,7 @@ def get_cart_from_request(request):
         }
     else:
         user_session_kwargs = {
-            'session_key': request.checkout_session.session_key
+            'session_key': request.anonymous_session.session_key
         }
     return get_cart_object(**user_session_kwargs)
 
@@ -67,8 +67,8 @@ def get_cart_number(user_id=None, session_key=None):
         return 0
 
 
-def add_product_to_cart(product_pk, user_id=None, session_key=None, product_number=1):
-    cart = get_cart_object(user_id=user_id, session_key=session_key)
+def add_product_to_cart(product_pk, request, product_number=1):
+    cart = get_cart_from_request(request)
     # check if there is a product cart matching both product and cart
     if cart.products.filter(product=product_pk).exists():
         # add the number of product cart plus one
@@ -85,31 +85,37 @@ def add_product_to_cart(product_pk, user_id=None, session_key=None, product_numb
         )
 
 
-def remove_product_from_cart(product_pk, user_id=None, session_key=None):
+def remove_product_from_cart(product_pk, request):
     if not product_pk: raise NoProductToDelete("Product PK not provided")
-    cart = get_cart_object(user_id, session_key)
+    # get cart from request
+    cart = get_cart_from_request(request)
+    # get products in cart
     if cart.products.filter(product=product_pk).exists():
+        # get cart product
         cart_product = cart.products.get(product=product_pk)
+        # delete product
         cart_product.delete()
         return cart_product
     # raise Error
     raise NoProductToDelete("The product id {0} cannot be deleted.".format(product_pk))
 
 
-def update_product_number(product_pk, product_number, user_id=None, session_key=None):
-    cart = get_cart_object(user_id, session_key)
+def update_product_number(product_pk, product_number, request):
+    cart = get_cart_from_request(request)
     if cart.products.filter(product=product_pk):
         cart_product = cart.products.get(product=product_pk)
         cart_product.number = product_number
         cart_product.save()
         return cart_product
     else:
-        return remove_product_from_cart(product_pk=product_pk, user_id=user_id)
+        return remove_product_from_cart(product_pk=product_pk, request=request)
 
 
-def update_cart(products, user_id=None, session_key=None):
-    cart = get_cart_object(user_id, session_key)
+def update_cart(products, request):
+    cart = get_cart_from_request(request)
+
     cart_products = cart.products.select_for_update().filter(cart=cart)
+
     with transaction.atomic():
         for product in cart_products:
             for item in products:

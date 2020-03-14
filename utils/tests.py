@@ -226,7 +226,7 @@ class TestInventoryProductMixin:
 
 
 class CheckoutSessionTestMixin:
-    def checkout_session(self):
+    def anonymous_session(self):
         """Return the current session variables."""
         engine = import_module(settings.ANONYMOUS_SESSION_ENGINE)
         cookie = self.client.cookies.get(settings.ANONYMOUS_SESSION_NAME)

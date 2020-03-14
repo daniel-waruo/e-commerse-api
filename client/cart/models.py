@@ -2,7 +2,7 @@ from django.conf import settings
 from django.db import models
 
 from business.products.models import Product
-from utils.session.models import CheckoutSession
+from utils.session.models import AnonymousSession
 
 # Create your models hee
 AUTH_USER_MODEL = settings.AUTH_USER_MODEL
@@ -24,7 +24,7 @@ class Cart(models.Model):
     # user whom the cart belongs to
     user = models.OneToOneField(AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, db_index=True)
     # if the user is not authenticated store the session as the user
-    session = models.OneToOneField(CheckoutSession, on_delete=models.CASCADE, null=True, db_index=True)
+    session = models.OneToOneField(AnonymousSession, on_delete=models.CASCADE, null=True, db_index=True)
     # the time the cart was created
     timestamp = models.DateTimeField(auto_now=True)
     # the current state of the cart

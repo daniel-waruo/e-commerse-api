@@ -97,7 +97,7 @@ STATIC_ROOT = os.path.join(os.getcwd(), "my_static")
 # CHECKOUT SESSIONS
 ANONYMOUS_SESSION_ENGINE = "utils.session.cached_db"
 ANONYMOUS_SESSION_CACHE_ALIAS = "default"
-ANONYMOUS_SESSION_NAME = "checkout_session"
+ANONYMOUS_SESSION_NAME = "anonymous_session"
 
 # GEOIP2 CONFIGURATION
 GEOIP_PATH = os.getcwd()

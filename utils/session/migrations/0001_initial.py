@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
             },
             bases=('qsessions.session',),
             managers=[
-                ('objects', utils.session.models.CheckoutSessionManager()),
+                ('objects', utils.session.models.AnonymousSessionManager()),
             ],
         ),
     ]

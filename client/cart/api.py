@@ -22,7 +22,7 @@ class CartApiView(APIView):
         # check whether the user is authenticates and assign the appropriate kwargs for use in
         # getting the cart objects
         user = self.request.user
-        session_key = self.request.checkout_session.session_key
+        session_key = self.request.anonymous_session.session_key
         if user.is_authenticated:
             return {'user_id': user.id}
         return {'session_key': session_key}
@@ -67,7 +67,7 @@ class AddProduct(CartApiView):
     def product_action(self):
         pk = self.request.data.get("product_pk", None)
         product_number = self.request.data.get("product_number", 1)
-        add_product_to_cart(product_pk=pk, **self.get_user_session_kwargs(), product_number=product_number)
+        add_product_to_cart(product_pk=pk, request=self.request, product_number=product_number)
 
 
 class RemoveProduct(CartApiView):
@@ -75,7 +75,7 @@ class RemoveProduct(CartApiView):
 
     def product_action(self):
         pk = self.request.data.get("product_pk", None)
-        remove_product_from_cart(pk, **self.get_user_session_kwargs())
+        remove_product_from_cart(product_pk=pk, request=self.request)
 
 
 class UpdateProductNumber(CartApiView):
@@ -84,8 +84,11 @@ class UpdateProductNumber(CartApiView):
     def product_action(self):
         pk = self.request.data.get('product_pk', None)
         product_number = self.request.data.get('product_number', None)
-        update_product_number(product_pk=pk, product_number=product_number,
-                              **self.get_user_session_kwargs())
+        update_product_number(
+            product_pk=pk,
+            product_number=product_number,
+            request=self.request
+        )
 
 
 class UpdateCart(CartApiView):
@@ -94,4 +97,7 @@ class UpdateCart(CartApiView):
 
     def product_action(self):
         products = self.request.data.get('products')
-        update_cart(products, **self.get_user_session_kwargs())
+        update_cart(
+            products=products,
+            request=self.request
+        )

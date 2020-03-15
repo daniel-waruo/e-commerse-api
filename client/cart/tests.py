@@ -75,7 +75,7 @@ class TestCartAnonymousUser(UserTestCase, CheckoutSessionTestMixin):
 
     def setUp(self):
         super().setUp()
-        self.session_key = self.checkout_session().session_key
+        self.session_key = self.anonymous_session().session_key
         # get the session key
 
     def test_add_product(self):
@@ -97,7 +97,7 @@ class TestCartAnonymousUser(UserTestCase, CheckoutSessionTestMixin):
         Test the removal of a product from the cart
         :return: None
         """
-        # raise Exception(self.checkout_session().session_key)
+        # raise Exception(self.anonymous_session().session_key)
         create_cart_product(1, session_key=self.session_key)
         url = reverse('cart:cart_remove_product')
         response = self.client.post(url, data={"product_pk": 1})

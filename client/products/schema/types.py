@@ -9,7 +9,7 @@ from graphene_django.filter import DjangoFilterConnectionField
 from pyuploadcare.dj.models import ImageField
 
 from business.products.models import Product, Category, ProductImage
-from client.cart.utils import get_cart_from_request
+from client.cart.models import Cart
 from client.products.models import ProductReview
 
 
@@ -57,11 +57,11 @@ class ProductType(DjangoObjectType):
 
     in_cart = graphene.Boolean()
 
-    def resolve_in_cart(self, info):
+    def resolve_in_cart(self: Product, info):
         # get the primary key from the object
         pk = self.id
         # get the cart from the request
-        cart = get_cart_from_request(info.context)
+        cart = Cart.objects.get_from_request(info.context)
         return cart.products.filter(product_id=pk).exists()
 
 

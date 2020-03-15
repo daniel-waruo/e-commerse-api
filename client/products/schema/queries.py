@@ -2,17 +2,17 @@ import graphene
 
 from business.products.models import Product, Category, ProductImage
 from client.products.models import ProductReview
-from client.products.types import (
+from client.products.schema.types import (
     ProductType,
     ProductImageType,
     CategoryType,
     ProductReviewType,
     FilterProducts
 )
-from .utils import filter_products
+from client.products.utils import filter_products
 
 
-class Query(object):
+class Query(graphene.ObjectType):
     """ Product Query"""
     product = graphene.Field(
         ProductType,

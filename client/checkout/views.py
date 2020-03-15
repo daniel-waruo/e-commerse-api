@@ -6,8 +6,7 @@ from rest_framework.views import APIView
 
 from business.orders.models import ProductOrder
 from business.orders.serializers import OrderSerializer
-from client.cart.models import CartProduct
-from client.cart.utils import get_cart_object
+from client.cart.models import Cart
 
 
 class CheckoutApi(APIView):
@@ -26,9 +25,8 @@ class CheckoutApi(APIView):
         :param request:
         :return:
         """
-        cart = get_cart_object(user_id=self.request.user.id)
-        cartproducts = CartProduct.objects.filter(cart_id=cart.id)
-        if not cartproducts:
+        cart = Cart.objects.get_from_request(request)
+        if not cart.products.all():
             raise ValidationError("The Cart is empty therefore one cannot checkout")
 
         delivery_info_id = request.POST.get("delivery_info_id")

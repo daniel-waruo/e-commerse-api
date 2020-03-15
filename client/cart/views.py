@@ -4,11 +4,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from .utils import (
-    add_product_to_cart,
-    remove_product_from_cart,
-    update_product_number,
-    update_cart)
+from .models import Cart
 
 
 class CartApiView(APIView):
@@ -18,14 +14,14 @@ class CartApiView(APIView):
     success_message = 'Operation Successful'
     required_post_fields = ['product_pk']
 
-    def get_user_session_kwargs(self):
-        # check whether the user is authenticates and assign the appropriate kwargs for use in
-        # getting the cart objects
-        user = self.request.user
-        session_key = self.request.anonymous_session.session_key
-        if user.is_authenticated:
-            return {'user_id': user.id}
-        return {'session_key': session_key}
+    def __init__(self, **kwargs):
+        self.cart = None
+        super().__init__(**kwargs)
+
+    def dispatch(self, request, *args, **kwargs):
+        # set self cart
+        self.cart = Cart.objects.get_from_request(request)
+        return super().dispatch(request, *args, **kwargs)
 
     def get_required_fields(self):
         # gets the required post fields for this view
@@ -65,30 +61,34 @@ class AddProduct(CartApiView):
     success_status = status.HTTP_201_CREATED
 
     def product_action(self):
+        # get product pj from request
         pk = self.request.data.get("product_pk", None)
+        # get product number from request
         product_number = self.request.data.get("product_number", 1)
-        add_product_to_cart(product_pk=pk, request=self.request, product_number=product_number)
+        # add product to cart
+        self.cart.add_product(product_pk=pk, product_number=product_number)
 
 
 class RemoveProduct(CartApiView):
     required_post_fields = ['product_pk']
 
     def product_action(self):
+        # get product pk from request data
         pk = self.request.data.get("product_pk", None)
-        remove_product_from_cart(product_pk=pk, request=self.request)
+        # remove product from cart
+        self.cart.remove_product(product_pk=pk)
 
 
 class UpdateProductNumber(CartApiView):
     required_post_fields = ['product_pk', 'product_number']
 
     def product_action(self):
+        # get product pk from request
         pk = self.request.data.get('product_pk', None)
+        # get product number from request
         product_number = self.request.data.get('product_number', None)
-        update_product_number(
-            product_pk=pk,
-            product_number=product_number,
-            request=self.request
-        )
+        # update product number
+        self.cart.update_product_number(product_pk=pk, product_number=product_number)
 
 
 class UpdateCart(CartApiView):
@@ -96,8 +96,7 @@ class UpdateCart(CartApiView):
     success_message = "Cart Update Successful"
 
     def product_action(self):
+        # get products from request
         products = self.request.data.get('products')
-        update_cart(
-            products=products,
-            request=self.request
-        )
+        # update cart
+        self.cart.update_cart(products=products)

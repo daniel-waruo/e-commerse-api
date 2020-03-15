@@ -2,7 +2,6 @@ import graphene
 from graphene_django import DjangoObjectType
 
 from .models import Cart, CartProduct
-from .utils import get_grand_total, get_cart_from_request
 
 
 # This is configured in the CategoryNode's Meta class (as you can see below)
@@ -12,11 +11,13 @@ class CartType(DjangoObjectType):
 
     number = graphene.Int()
 
-    resolve_number = ''
+    def resolve_number(self: Cart, info):
+        return self.number_of_products()
+
     total = graphene.String()
 
-    def resolve_total(self, info):
-        return get_grand_total(cart=self, price_field="discount_price")
+    def resolve_total(self: Cart, info):
+        return self.total()
 
 
 class CartProductType(DjangoObjectType):
@@ -25,17 +26,18 @@ class CartProductType(DjangoObjectType):
     class Meta:
         model = CartProduct
 
-    def resolve_total(self, info):
+    def resolve_total(self: CartProduct, info):
         return self.number * self.product.discount_price
 
 
-class Query(object):
+class Query(graphene.ObjectType):
     cart = graphene.Field(CartType)
     cart_products = graphene.List(CartProductType)
 
     def resolve_cart(self, info):
         request = info.context
-        return get_cart_from_request(request)
+        # get and return cart object type
+        return Cart.objects.get_from_request(request)
 
     def resolve_cart_products(self, info, **kwargs):
         request = info.context

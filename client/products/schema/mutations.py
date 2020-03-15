@@ -1,6 +1,6 @@
 import graphene
 
-from .models import ProductReview
+from client.products.models import ProductReview
 from .types import ProductReviewType
 
 

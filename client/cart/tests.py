@@ -3,10 +3,13 @@ from rest_framework.reverse import reverse
 from client.cart.utils import add_product_to_cart
 from utils.tests import CheckoutSessionTestMixin
 from utils.tests import UserTestCase, create_test_cms_product
+from .models import Cart
 
 
 def create_cart_product(product_pk, user_id=None, session_key=None):
     create_test_cms_product()
+    Cart.add_product(product_pk=product_pk, )
+    # FIXME:
     add_product_to_cart(
         product_pk=product_pk,
         user_id=user_id,

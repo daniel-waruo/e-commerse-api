@@ -23,7 +23,7 @@ class UserProfileType(DjangoObjectType):
         model = UserProfile
 
 
-class Query(object):
+class Query(graphene.ObjectType):
     user = graphene.Field(UserType)
     user_profile = graphene.Field(UserProfileType)
 

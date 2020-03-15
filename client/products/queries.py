@@ -2,8 +2,13 @@ import graphene
 
 from business.products.models import Product, Category, ProductImage
 from client.products.models import ProductReview
-from client.products.types import ProductType, ProductImageType, CategoryType, ProductReviewType, \
+from client.products.types import (
+    ProductType,
+    ProductImageType,
+    CategoryType,
+    ProductReviewType,
     FilterProducts
+)
 from .utils import filter_products
 
 

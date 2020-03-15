@@ -1,13 +1,17 @@
 from django.urls import path
 
-from .api import SetDepartmentStaffPermissions, SetDepartmentManagerPermissions
+from .views import (
+    SetDepartmentStaffPermissions,
+    SetDepartmentManagerPermissions,
+    SetGeneralManagerPermissions)
 
 app_name = 'authorization'
 
 urlpatterns = [
-    # product urls
-    path('add_roles', SetDepartmentStaffPermissions.as_view(), name='get_permissions'),
-    path('add_roles', SetDepartmentStaffPermissions.as_view(), name='add_permissions'),
-    path('department-managers/add_departments', SetDepartmentManagerPermissions.as_view(),
-         name="department_manager_add_departments")
+    # department staff url
+    path('department-staff', SetDepartmentStaffPermissions.as_view(), name='department-staff'),
+    # department-manager url
+    path('department-manager', SetDepartmentManagerPermissions.as_view(), name='department-manager'),
+    # general manager url
+    path('general-manager', SetGeneralManagerPermissions.as_view(), name='general-manager')
 ]

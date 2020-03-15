@@ -2,13 +2,43 @@
 <project version="4">
   <component name="AutoTestManager">
     <enabled-run-configurations>
-      <run-configuration type="DjangoTestsConfigurationType" name="E_Commerse Tests" />
       <run-configuration type="DjangoTestsConfigurationType" name="Staff Accounts Test" />
+      <run-configuration type="DjangoTestsConfigurationType" name="E_Commerse Tests" />
     </enabled-run-configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2626fec1-3ddf-4594-b705-ddfca256fc71" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/navbar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/navbar/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/e_commerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e_commerce.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls/auth_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls/auth_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls/registration_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls/registration_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls/rest_auth_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls/rest_auth_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/authorization/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/authorization/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/authorization/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/authorization/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/inventory/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/inventory/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/inventory/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/orders/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/orders/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/orders/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/orders/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/payment/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/payment/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/products/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/products/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/staff_accounts/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/staff_accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/staff_accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/staff_accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/cart/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/cart/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/checkout/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/checkout/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/checkout/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/checkout/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/delivery/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/delivery/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/delivery/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/delivery/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/products/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/products/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/products/queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/products/queries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/products/urls.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,6 +56,7 @@
     <SUITE FILE_PATH="coverage/e_commerce$Test__business_cms_tests_TestRetrieveCategory.coverage" NAME="Test: business.cms.tests.TestRetrieveCategory Coverage Results" MODIFIED="1570385521187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__business_staff_accounts_tests_TestStaffUser_test_create_staff_user.coverage" NAME="Test: business.staff_accounts.tests.TestStaffUser.test_create_staff_user Coverage Results" MODIFIED="1570736316308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$E_Commerse_Tests.coverage" NAME="E_Commerse Tests Coverage Results" MODIFIED="1571051810520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/e_commerce$Test__business_authorization_tests_TestSetStaffRoles_test_get_department_staff_permissions.coverage" NAME="Test: business.authorization.tests.TestSetStaffRoles.test_get_department_staff_permissions Coverage Results" MODIFIED="1584246147097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__business_inventory_tests_TestRetrieveProduct_test_retrieve_product.coverage" NAME="Test: business.inventory.tests.TestRetrieveProduct.test_retrieve_product Coverage Results" MODIFIED="1570176387241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Test__client_cart_tests_TestCartAnonymousUser_test_add_product_number.coverage" NAME="Test: client.cart.tests.TestCartAnonymousUser.test_add_product_number Coverage Results" MODIFIED="1570549728019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/e_commerce$Checkout.coverage" NAME="Checkout Tests Coverage Results" MODIFIED="1570553536113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -85,29 +116,7 @@
     <option name="OUTPUT_DIRECTORY" value="C:\Users\Dan\PycharmProjects\e_commerse" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_constants.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/_constants.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -174,7 +183,7 @@
         <option value="Daniel Waruo &lt;warudaniel@gmail.com&gt;" />
       </list>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../e-commerse-frontend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -184,18 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/index.js" />
-        <option value="$PROJECT_DIR$/root/urls.py" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/typeDef.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/resolver.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/authResolver.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/apollo/productResolver.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/navbar/index.jsx" />
-        <option value="$PROJECT_DIR$/client/products/utils.py" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/products/queries.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/app/components/navbar/search_form.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/_queryParse.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/_helpers.jsx" />
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/home/components/menuLink.jsx" />
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/products/components/searchForm.jsx" />
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/components/cart.jsx" />
@@ -235,6 +232,18 @@
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/product/index.jsx" />
         <option value="$PROJECT_DIR$/client/products/schema.py" />
         <option value="$PROJECT_DIR$/../e-commerse-frontend/src/_constants.jsx" />
+        <option value="$PROJECT_DIR$/.env.example" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/accounts/urls/registration_urls.py" />
+        <option value="$PROJECT_DIR$/accounts/urls/rest_auth_urls.py" />
+        <option value="$PROJECT_DIR$/accounts/serializers.py" />
+        <option value="$PROJECT_DIR$/accounts/urls/__init__.py" />
+        <option value="$PROJECT_DIR$/accounts/urls/auth_urls.py" />
+        <option value="$PROJECT_DIR$/accounts/admin.py" />
+        <option value="$PROJECT_DIR$/business/authorization/urls.py" />
+        <option value="$PROJECT_DIR$/business/inventory/urls.py" />
+        <option value="$PROJECT_DIR$/client/products/apps.py" />
+        <option value="$PROJECT_DIR$/client/products/queries.py" />
       </list>
     </option>
   </component>
@@ -245,17 +254,17 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/../e-commerse-frontend/node_modules" />
+    <handled-path value="$PROJECT_DIR$/../next-js-e-commerse/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/../e-commerse-frontend/package.json" />
+      <path value="$PROJECT_DIR$/../next-js-e-commerse/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="675" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="699" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -270,12 +279,7 @@
           <expand>
             <path>
               <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e-commerse-frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e-commerse-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="e-commerse-api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,19 +304,19 @@
     <option name="myUseBundledCoveragePy" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Dan\Documents\Work\e-commerse-api-cookie-auth" />
-      <recent name="C:\Users\Dan\Documents\Work\e-commerse-frontend\src\routes\cart\components" />
-      <recent name="C:\Users\Dan\Documents\Work\e-commerse-frontend\src\assets" />
-      <recent name="C:\Users\Dan\Documents\Work\e-commerse-api\root" />
-      <recent name="C:\Users\Dan\Documents\Work\e-commerse-api\client\products" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dan\Documents\Work\e-commerse-frontend\src\assets\css" />
       <recent name="C:\Users\Dan\PycharmProjects\e_commerse\root\settings\components" />
       <recent name="C:\Users\Dan\PycharmProjects\e_commerse\client" />
       <recent name="C:\Users\Dan\PycharmProjects\e_commerse\accounts\urls" />
       <recent name="C:\Users\Dan\PycharmProjects\e_commerse\client\cart" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dan\Documents\Work\e-commerse-api-cookie-auth" />
+      <recent name="C:\Users\Dan\Documents\Work\e-commerse-frontend\src\routes\cart\components" />
+      <recent name="C:\Users\Dan\Documents\Work\e-commerse-frontend\src\assets" />
+      <recent name="C:\Users\Dan\Documents\Work\e-commerse-api\root" />
+      <recent name="C:\Users\Dan\Documents\Work\e-commerse-api\client\products" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -327,7 +331,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.E_Commerse">
+  <component name="RunManager" selected="Django tests.Test: business.authorization.tests.TestSetStaffRoles.test_get_department_staff_permissions">
     <configuration name="Authorization Tests" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="e_commerce" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -647,6 +651,25 @@
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
     </configuration>
+    <configuration name="Test: business.authorization.tests.TestSetStaffRoles.test_get_department_staff_permissions" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <module name="e_commerce" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="business.authorization.tests.TestSetStaffRoles.test_get_department_staff_permissions" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+    </configuration>
     <configuration name="E_Commerse" type="Python.DjangoServer" factoryName="Django server">
       <module name="e_commerce" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -693,7 +716,13 @@
       <item itemvalue="Django tests.Inventory Tests" />
       <item itemvalue="Django tests.Authorization Tests" />
       <item itemvalue="Django tests.Client Apps Tests" />
+      <item itemvalue="Django tests.Test: business.authorization.tests.TestSetStaffRoles.test_get_department_staff_permissions" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Django tests.Test: business.authorization.tests.TestSetStaffRoles.test_get_department_staff_permissions" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -759,9 +788,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test__client_checkout_tests_TestCheckout_test_checkout_with_cart - 2019.10.14 at 15h 18m 48s.xml">
-      <configuration name="Test: client.checkout.tests.TestCheckout.test_checkout_with_cart" configurationId="DjangoTestsConfigurationType" />
-    </history-entry>
     <history-entry file="Test__client_checkout_tests_TestCheckout_test_checkout_with_cart - 2019.10.14 at 15h 19m 40s.xml">
       <configuration name="Test: client.checkout.tests.TestCheckout.test_checkout_with_cart" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
@@ -789,6 +815,9 @@
     <history-entry file="Business_Tests - 2019.10.25 at 10h 37m 50s.xml">
       <configuration name="Business Tests" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
+    <history-entry file="Test__business_authorization_tests_TestSetStaffRoles_test_get_department_staff_permissions - 2020.03.15 at 07h 22m 33s.xml">
+      <configuration name="Test: business.authorization.tests.TestSetStaffRoles.test_get_department_staff_permissions" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -807,9 +836,9 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.33333334" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32838285" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.40924093" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.5033003" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24886535" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.7821782" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.32838285" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12708019" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
@@ -817,8 +846,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.32838285" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -827,15 +856,14 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32838285" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.32838285" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.32838285" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.33333334" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.32838285" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.40924093" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2549168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -843,19 +871,20 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="bottom" id="Inspection Results" order="10" weight="0.32838285" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.32838285" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.50825083" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.37443268" side_tool="true" weight="0.6287129" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32838285" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.33333334" />
-      <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.32838285" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32838285" />
       <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32980332" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32838285" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.37443268" side_tool="true" weight="0.6287129" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.50825083" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32838285" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -913,327 +942,264 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/index.css" />
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/index.jsx">
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/products/index.css" />
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/products/index.jsx" />
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/register/components/registerForm.jsx" />
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/register/components/index.jsx" />
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/register/index.jsx" />
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/product/index.jsx" />
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/product/components/carouselProduct.jsx" />
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/product/components/index.jsx" />
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/login/components/index.jsx" />
+    <entry file="file://$PROJECT_DIR$/client/products/schema.py" />
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/index.js" />
+    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/_constants.jsx" />
+    <entry file="file://$PROJECT_DIR$/root/settings/components/email.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="51">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/animatedRoute.jsx">
+    <entry file="file://$PROJECT_DIR$/root/settings/components/middleware.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/root/settings/components/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="238">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/home/queries.jsx">
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/login/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/cart/Cart.jsx" />
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/assets/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/loaders/mainLoader.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/products/product.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="71" column="39" lean-forward="true" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/rangeSlider/rangeSlider.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/rangeSlider/components.jsx">
+    <entry file="file://$PROJECT_DIR$/.github/workflows/pythonapp.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/rangeSlider/index.jsx">
+    <entry file="file://$PROJECT_DIR$/accounts/urls/rest_auth_urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        <state relative-caret-position="124">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/sidenav/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/footer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/modalLogin.js" />
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/sectionContainer.js" />
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/menuLink.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/products/components/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/app/components/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/app/components/productDialog.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/app/components/navbar/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/products/components/searchForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/app/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/products/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/products/products.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/loaders/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/loaders/spinnerLoader.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/components/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/components/emptyCart.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/components/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/components/searchForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/components/cart.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/home/components/carouselHome.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/home/components/categoriesMenuLink.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/home/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/login/components/loginForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/notFound/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/product/queries.jsx">
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/products/index.css">
+    <entry file="file://$PROJECT_DIR$/accounts/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/products/index.jsx">
+    <entry file="file://$PROJECT_DIR$/accounts/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls/auth_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls/registration_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="149" column="54" lean-forward="true" selection-start-line="149" selection-start-column="54" selection-end-line="149" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/authorization/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/authorization/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/authorization/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/register/components/registerForm.jsx">
+    <entry file="file://$PROJECT_DIR$/business/inventory/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        <state relative-caret-position="272">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/register/components/index.jsx">
+    <entry file="file://$PROJECT_DIR$/business/inventory/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/orders/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/orders/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/payment/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/products/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/staff_accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        <state relative-caret-position="187">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/register/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/client/checkout/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/product/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/product/components/carouselProduct.jsx">
+    <entry file="file://$PROJECT_DIR$/client/products/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/product/components/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/routes/login/components/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/products/schema.py" />
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../e-commerse-frontend/src/_constants.jsx">
+    <entry file="file://$PROJECT_DIR$/client/delivery/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state>
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/products/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/products/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/products/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/products/queries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/products/mutations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/products/types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/schema.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

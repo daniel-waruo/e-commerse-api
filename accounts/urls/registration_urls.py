@@ -1,7 +1,7 @@
 from allauth.account.views import email_verification_sent
 from django.urls import path
 from rest_auth.registration.views import VerifyEmailView
-from accounts.api import KnoxRegisterView ,ConfirmEmailApi
+from accounts.views import KnoxRegisterView ,ConfirmEmailApi
 
 
 urlpatterns = [

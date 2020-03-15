@@ -46,6 +46,6 @@ class UserAdmin(BaseUserAdmin):
     ordering = ('email',)
     filter_horizontal = ()
 
-
+# add models to admin website
 admin.site.register(UserProfile)
 admin.site.register(User, UserAdmin)

@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .api import CreateDeliveryInfo, DeliveryInfoApi, ListDeliveryInfo
+from .views import CreateDeliveryInfo, DeliveryInfoApi, ListDeliveryInfo
 
 app_name = 'delivery'
 

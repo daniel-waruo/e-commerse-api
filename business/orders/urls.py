@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .api import OrderView, ChangeOrderStatus
+from .views import OrderView, ChangeOrderStatus
 
 app_name = 'orders'
 

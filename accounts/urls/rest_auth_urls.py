@@ -7,7 +7,7 @@ from rest_auth.views import (
     # PasswordResetView,
 )
 
-from accounts.api import PasswordResetView,KnoxLoginView
+from accounts.views import PasswordResetView,KnoxLoginView
 
 urlpatterns = [
     # URLs that do not require a session or valid token

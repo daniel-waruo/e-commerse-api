@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../e-commerse-frontend/.idea/e-commerse-frontend.iml" filepath="$PROJECT_DIR$/../e-commerse-frontend/.idea/e-commerse-frontend.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/e_commerce.iml" filepath="$PROJECT_DIR$/.idea/e_commerce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../next-js-e-commerse/.idea/next-js-e-commerse.iml" filepath="$PROJECT_DIR$/../next-js-e-commerse/.idea/next-js-e-commerse.iml" />
     </modules>
   </component>
 </project>

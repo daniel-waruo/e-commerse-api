@@ -14,8 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path, include
-
-from ..api import FacebookLogin, InstagramLogin, GoogleLogin
+from ..views import FacebookLogin, InstagramLogin, GoogleLogin
 
 urlpatterns = [
     # all auth urls
@@ -24,7 +23,7 @@ urlpatterns = [
     path('auth/', include('accounts.urls.rest_auth_urls')),
     # account confirm email override
     path('auth/registration/', include('accounts.urls.registration_urls')),
-
+    # social login urls
     path('auth/social/instagram/', InstagramLogin.as_view(), name='ig_login'),
     path('auth/social/google/', GoogleLogin.as_view(), name='g_login'),
     path('auth/social/facebook/', FacebookLogin.as_view(), name='fb_login')

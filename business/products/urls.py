@@ -1,5 +1,5 @@
 from django.urls import path
-from .api import CreateCategory, CreateProduct, ProductView, CategoryView, ListCategoryApi, ListProductApi
+from .views import CreateCategory, CreateProduct, ProductView, CategoryView, ListCategoryApi, ListProductApi
 
 app_name = 'cms'
 

@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .api import (
+from .views import (
     AddProduct,
     RemoveProduct,
     UpdateProductNumber,

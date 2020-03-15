@@ -25,9 +25,6 @@ pyuploadcare
 django-sendgrid-v5
 
 
-google-api-python-client
-oauth2client
-
 python-dotenv
 django-split-settings
 

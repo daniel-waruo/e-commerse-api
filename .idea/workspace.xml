@@ -8,14 +8,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2626fec1-3ddf-4594-b705-ddfca256fc71" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/index/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/graph_ql.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/graph_ql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/cartAddDialog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/cartAddDialog.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/navbar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/navbar/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/navbar/search_form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/navbar/search_form.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/productDialog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/productDialog.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/app/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/app/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/global/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/global/footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/index/components/homeProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/index/components/homeProducts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/lib/apollo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/lib/apollo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/lib/apolloClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/lib/apolloClient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/pages/cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/pages/cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/pages/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/pages/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/pages/login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/pages/privacy-policy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/pages/privacy-policy.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/pages/products/[category]/[slug].jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/pages/products/[category]/[slug].jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/pages/products/[category]/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/pages/products/[category]/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/pages/products/[category]/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/pages/products/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/pages/products/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/pages/products/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/pages/register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/pages/register.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -94,13 +114,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="apolloClient.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/lib/apolloClient.js">
+      <file leaf-file-name="_app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/pages/_app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="483">
+              <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
               <folding>
-                <element signature="e#0#52#0" expanded="true" />
+                <element signature="e#27#81#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,19 +135,12 @@
         <option value="Jupyter Notebook" />
         <option value="CSS File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>test_category_params</find>
-      <find>test_supplier_pa</find>
-      <find>test_supplier_p</find>
-      <find>cate</find>
-      <find>inventory</find>
-      <find>category</find>
-      <find>self</find>
-      <find>department</find>
       <find>env(</find>
       <find>DepartmentA</find>
       <find>MDBNavLink</find>
@@ -147,9 +160,17 @@
       <find>id(</find>
       <find>get</find>
       <find>get(</find>
-      <find>f get(</find>
+      <find />
       <find>remove_</find>
       <find>cart</find>
+      <find>renderToStaticNodeStream</find>
+      <find>search</find>
+      <find>global</find>
+      <find>apollo</find>
+      <find>react-a</find>
+      <find>ApolloClient</find>
+      <find>popper.j</find>
+      <find>client</find>
     </findStrings>
     <replaceStrings>
       <replace>cart</replace>
@@ -165,6 +186,8 @@
     <dirStrings>
       <dir>C:\Users\Dan\PycharmProjects\e_commerse</dir>
       <dir>C:\Users\Dan\PycharmProjects\e_commerse\venv\Lib\site-packages\django</dir>
+      <dir>C:\Users\Dan\Documents\Work\next-js-e-commerse\components\index</dir>
+      <dir>C:\Users\Dan\Documents\Work\next-js-e-commerse\components\app</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -183,39 +206,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/products/index.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/products/components/index.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/components/products/products.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/components/index.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/components/emptyCart.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/cart/components/index.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/home/components/categoriesMenuLink.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/login/components/loginForm.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/notFound/index.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/product/components/carouselProduct.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/product/queries.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/register/components/registerForm.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/register/components/index.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/register/index.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/product/components/index.jsx" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/routes/product/index.jsx" />
-        <option value="$PROJECT_DIR$/client/products/schema.py" />
-        <option value="$PROJECT_DIR$/../e-commerse-frontend/src/_constants.jsx" />
-        <option value="$PROJECT_DIR$/accounts/urls/registration_urls.py" />
-        <option value="$PROJECT_DIR$/accounts/urls/rest_auth_urls.py" />
-        <option value="$PROJECT_DIR$/accounts/serializers.py" />
-        <option value="$PROJECT_DIR$/accounts/urls/__init__.py" />
-        <option value="$PROJECT_DIR$/accounts/urls/auth_urls.py" />
-        <option value="$PROJECT_DIR$/accounts/admin.py" />
-        <option value="$PROJECT_DIR$/business/authorization/urls.py" />
-        <option value="$PROJECT_DIR$/business/inventory/urls.py" />
-        <option value="$PROJECT_DIR$/client/products/apps.py" />
-        <option value="$PROJECT_DIR$/client/products/queries.py" />
-        <option value="$PROJECT_DIR$/.env.example" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/client/cart/views.py" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/app/queries.jsx" />
-        <option value="$PROJECT_DIR$/../next-js-e-commerse/pages/_app.js" />
         <option value="$PROJECT_DIR$/client/cart/models.py" />
         <option value="$PROJECT_DIR$/client/checkout/views.py" />
         <option value="$PROJECT_DIR$/client/products/types.py" />
@@ -226,14 +217,46 @@
         <option value="$PROJECT_DIR$/accounts/schema.py" />
         <option value="$PROJECT_DIR$/client/products/schema/queries.py" />
         <option value="$PROJECT_DIR$/root/schema.py" />
-        <option value="$PROJECT_DIR$/../next-js-e-commerse/pages/cart.jsx" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/navbar/index.jsx" />
-        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/productDialog.jsx" />
-        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/cartAddDialog.jsx" />
-        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/app/index.jsx" />
-        <option value="$PROJECT_DIR$/../next-js-e-commerse/package.json" />
+        <option value="$PROJECT_DIR$/accounts/admin.py" />
+        <option value="$PROJECT_DIR$/accounts/auth.py" />
+        <option value="$PROJECT_DIR$/accounts/models.py" />
+        <option value="$PROJECT_DIR$/accounts/serializers.py" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/navbar/cartNavItem.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/global/products/product.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/lib/ssr.js" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/package.json" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/next.config.js" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/index/components/carouselHome.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/index/components/categoriesMenuLink.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/cartAddDialog.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/product/components/carouselProduct.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/productDialog.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/navbar/search_form.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/navbar/userInfoDropdown.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/index/components/homeProducts.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/lib/init-cache.js" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/lib/apollo.js" />
+        <option value="$PROJECT_DIR$/accounts/graph_ql.py" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/lib/apolloClient.js" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/.gitignore" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/login/index.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/index/index.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/cart/index.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/register/index.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/products/index.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/global/footer.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/pages/_app.js" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/app/index.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/pages/index.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/pages/cart.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/pages/register.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/pages/privacy-policy.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/pages/login.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/pages/products/index.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/pages/products/[category]/index.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/pages/products/[category]/[slug].jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/product/index.jsx" />
       </list>
     </option>
   </component>
@@ -274,6 +297,11 @@
               <item name="next-js-e-commerse" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next-js-e-commerse" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -286,7 +314,7 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/root/.env" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../next-js-e-commerse/components/login/index.jsx" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -298,19 +326,19 @@
     <option name="myUseBundledCoveragePy" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Dan\Documents\Work\e-commerse-api-cookie-auth" />
-      <recent name="C:\Users\Dan\Documents\Work\e-commerse-frontend\src\routes\cart\components" />
-      <recent name="C:\Users\Dan\Documents\Work\e-commerse-frontend\src\assets" />
-      <recent name="C:\Users\Dan\Documents\Work\e-commerse-api\root" />
-      <recent name="C:\Users\Dan\Documents\Work\e-commerse-api\client\products" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dan\Documents\Work\e-commerse-api\client\products\schema" />
       <recent name="C:\Users\Dan\Documents\Work\e-commerse-frontend\src\assets\css" />
       <recent name="C:\Users\Dan\PycharmProjects\e_commerse\root\settings\components" />
       <recent name="C:\Users\Dan\PycharmProjects\e_commerse\client" />
       <recent name="C:\Users\Dan\PycharmProjects\e_commerse\accounts\urls" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dan\Documents\Work\next-js-e-commerse\components\products" />
+      <recent name="C:\Users\Dan\Documents\Work\e-commerse-api" />
+      <recent name="C:\Users\Dan\Documents\Work\e-commerse-api-cookie-auth" />
+      <recent name="C:\Users\Dan\Documents\Work\e-commerse-frontend\src\routes\cart\components" />
+      <recent name="C:\Users\Dan\Documents\Work\e-commerse-frontend\src\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -325,7 +353,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django tests.Test: business.authorization.tests.TestSetStaffRoles.test_get_department_staff_permissions">
+  <component name="RunManager" selected="npm.analyze">
     <configuration name="Authorization Tests" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="e_commerce" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -697,6 +725,15 @@
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
     </configuration>
+    <configuration name="analyze" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/../next-js-e-commerse/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="analyze" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
     <list>
       <item itemvalue="Django server.E_Commerse" />
       <item itemvalue="Django tests.Business Tests" />
@@ -711,9 +748,11 @@
       <item itemvalue="Django tests.Authorization Tests" />
       <item itemvalue="Django tests.Client Apps Tests" />
       <item itemvalue="Django tests.Test: business.authorization.tests.TestSetStaffRoles.test_get_department_staff_permissions" />
+      <item itemvalue="npm.analyze" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.analyze" />
         <item itemvalue="Django tests.Test: business.authorization.tests.TestSetStaffRoles.test_get_department_staff_permissions" />
       </list>
     </recent_temporary>
@@ -831,9 +870,9 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.33333334" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32838285" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.43564355" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.22277227" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.37443268" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.67161715" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.06765676" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31089258" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
@@ -847,6 +886,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Inspection Results" order="10" weight="0.32838285" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32838285" />
@@ -854,32 +894,33 @@
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.32838285" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49924356" weight="0.33333334" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.40924093" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2549168" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.67161715" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27912253" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
-      <window_info anchor="bottom" id="TypeScript" order="14" />
-      <window_info anchor="bottom" id="Inspection Results" order="10" weight="0.32838285" />
+      <window_info anchor="bottom" id="TypeScript" order="15" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32838285" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32838285" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.32838285" />
+      <window_info anchor="bottom" id="Database Console" order="17" weight="0.32838285" />
       <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32980332" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.33333334" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.37443268" side_tool="true" weight="0.6287129" />
-      <window_info anchor="bottom" id="Database Console" order="16" weight="0.32838285" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.6255673" weight="0.13531353" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.37443268" side_tool="true" weight="0.6287129" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="16" weight="0.32838285" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" visible="true" weight="0.50825083" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32838285" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32838285" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.5247525" />
+      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32980332" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -937,340 +978,409 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../next-js-e-commerse/pages/index.jsx</url>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="20" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/products/__init__.py">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/app/components/cartAddDialog.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/next/dist/client/link.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/next/link.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/next/link.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/app/components/navbar/userInfoDropdown.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/app/components/navbar/search_form.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/index/components/homeProducts.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/apollo-link-timeout/lib/timeoutLink.d.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/products/apps.py">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/@apollo/react-hooks/lib/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state relative-caret-position="17">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/models.py">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/apollo-link-http/lib/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.example">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="198" column="6" selection-start-line="198" selection-start-column="6" selection-end-line="198" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="180" column="6" lean-forward="true" selection-start-line="180" selection-start-column="6" selection-end-line="180" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/apollo-link-http/lib/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/checkout/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/checkout/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/checkout/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/app/components/index.jsx">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/apollo-link-http/lib/httpLink.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        <state relative-caret-position="119">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/cart/components/index.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/apollo-link-http/lib/httpLink.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="137" column="40" lean-forward="true" selection-start-line="137" selection-start-column="40" selection-end-line="137" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/apollo-cache-inmemory/lib/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="93" selection-start-column="80" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/lib/init-cache.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="50" lean-forward="true" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/apollo-client/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/apollo-client/bundle.esm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="2105" column="27" selection-start-line="2105" selection-start-column="15" selection-end-line="2105" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/apollo-client/ApolloClient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/graph_ql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="7642" column="9" selection-start-line="7642" selection-start-column="9" selection-end-line="7642" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/cart/components/cart.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="n#!!block;n#CartItem#0" />
+            <element signature="n#!!block;n#OrderSummary#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="164" column="6" selection-start-line="164" selection-start-column="6" selection-end-line="164" selection-end-column="6" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/cart/queries.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/google/protobuf/internal/containers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="616" lean-forward="true" selection-start-line="616" selection-end-line="616" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="590" column="8" lean-forward="true" selection-start-line="590" selection-start-column="8" selection-end-line="590" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/cart/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/cart/utils.py" />
-    <entry file="file://$PROJECT_DIR$/client/checkout/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/cart/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="98" column="11" lean-forward="true" selection-start-line="98" selection-start-column="11" selection-end-line="98" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/checkout/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/cart/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="160" column="27" lean-forward="true" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/delivery/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/products/schema/types.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/products/schema/mutations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/products/schema/__init__.py">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/react-apollo/lib/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/root/schema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/cart/schema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/schema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/products/schema/queries.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/schema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.github/workflows/pythonapp.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/.now/README.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/pages/cart.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/pages/index.jsx">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/login/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/app/queries.jsx">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/index/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        <state relative-caret-position="136">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/react-apollo/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/register/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/global/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/next/dist/client/with-router.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/pages/products/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/products/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/products/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="53" column="15" lean-forward="true" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/app/components/navbar/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="216">
+          <caret line="69" column="75" selection-start-line="69" selection-start-column="75" selection-end-line="69" selection-end-column="75" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#318#787#0" />
-            <element signature="e#937#1016#0" />
-            <element signature="e#1059#1180#0" />
-            <element signature="e#1224#1446#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/global/footer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/app/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="323">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/pages/_app.js">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/cart/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="269">
+          <caret line="142" column="3" lean-forward="true" selection-start-line="142" selection-start-column="3" selection-end-line="142" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/_request.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/global/loaders/mainLoader.style.jsx">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/pages/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/global/loaders/spinnerLoader.jsx">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/pages/cart.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="13" selection-end-column="14" />
+        <state relative-caret-position="51">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/app/components/cartAddDialog.jsx">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/pages/products/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/pages/login.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/app/components/productDialog.jsx">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/pages/register.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        <state relative-caret-position="68">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/app/components/navbar/cartNavItem.jsx">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/pages/privacy-policy.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/app/queries.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/pages/products/[category]/[slug].jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/pages/products/[category]/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/product/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="96" column="44" lean-forward="true" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/lib/apolloClient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="83" column="24" lean-forward="true" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/lib/apollo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="2856">
+          <caret line="168" column="20" lean-forward="true" selection-start-line="168" selection-start-column="20" selection-end-line="168" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/lib/apolloClient.js">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/pages/_app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        <state relative-caret-position="483">
+          <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
           <folding>
-            <element signature="e#0#52#0" expanded="true" />
+            <element signature="e#27#81#0" expanded="true" />
           </folding>
         </state>
       </provider>

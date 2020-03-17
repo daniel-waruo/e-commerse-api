@@ -1,6 +1,5 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserChangeForm
 from django.contrib.auth.forms import UserCreationForm
 
@@ -45,6 +44,7 @@ class UserAdmin(BaseUserAdmin):
     search_fields = ('username', 'email')
     ordering = ('email',)
     filter_horizontal = ()
+
 
 # add models to admin website
 admin.site.register(UserProfile)

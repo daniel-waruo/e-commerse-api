@@ -1,7 +1,5 @@
 from knox.auth import TokenAuthentication as BaseTokenAuth
-from knox.settings import knox_settings
-from rest_framework import exceptions
-from rest_framework.authentication import get_authorization_header
+
 try:
     from hmac import compare_digest
 except ImportError:
@@ -9,20 +7,15 @@ except ImportError:
         return a == b
 
 import binascii
-import binascii
 
-from django.contrib.auth import get_user_model
-from django.utils import timezone
-from django.utils.translation import ugettext_lazy as _
 from rest_framework import exceptions
 from rest_framework.authentication import (
-    BaseAuthentication, get_authorization_header,
+    get_authorization_header,
 )
 
 from knox.crypto import hash_token
 from knox.models import AuthToken
 from knox.settings import CONSTANTS, knox_settings
-from knox.signals import token_expired
 
 
 class TokenAuthentication(BaseTokenAuth):
@@ -40,12 +33,12 @@ class TokenAuthentication(BaseTokenAuth):
             msg = 'Invalid token header. ' \
                   'Token string should not contain spaces.'
             raise exceptions.AuthenticationFailed(msg)
-        try :
+        try:
             user, auth_token = self.authenticate_credentials(auth[1])
         except TypeError:
             return None
         return user, auth_token
-    
+
     def authenticate_credentials(self, token):
         '''
         Due to the random nature of hashing a salted value, this must inspect

@@ -8,6 +8,8 @@ from rest_framework.settings import api_settings
 
 
 class DRFAuthenticatedGraphQLView(GraphQLView):
+    batch = True
+
     def parse_body(self, request):
         if isinstance(request, rest_framework.request.Request):
             return request.data

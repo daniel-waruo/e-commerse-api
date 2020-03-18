@@ -9,13 +9,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2626fec1-3ddf-4594-b705-ddfca256fc71" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/products/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/products/schema/queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/products/schema/queries.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/products/schema/types.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/products/schema/types.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/cart/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/cart/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/index/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/index/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/login/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/products/components/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/products/components/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/products/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/products/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/_helpers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/_helpers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/global/rangeSlider/rangeSlider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/global/rangeSlider/rangeSlider.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/products/components/searchForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/products/components/searchForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/products/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/products/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../next-js-e-commerse/components/products/queries.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../next-js-e-commerse/components/products/queries.jsx" afterDir="false" />
@@ -96,30 +94,65 @@
     <option name="OUTPUT_DIRECTORY" value="C:\Users\Dan\PycharmProjects\e_commerse" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="searchForm.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/products/components/searchForm.jsx">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/products/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+            <state relative-caret-position="378">
+              <caret line="161" column="17" lean-forward="true" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
               <folding>
-                <element signature="e#0#67#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#ProductsPage#0" />
+                <element signature="e#915#1039#0" />
+                <element signature="e#1078#1158#0" />
+                <element signature="e#1211#1808#0" />
+                <element signature="e#1833#2117#0" />
+                <element signature="n#!!block;n#render#0;n#ProductsPage#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/products/index.jsx">
+      <file leaf-file-name="queries.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/products/queries.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="125" column="44" selection-start-line="125" selection-start-column="44" selection-end-line="125" selection-end-column="44" />
+            <state relative-caret-position="187">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/products/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#870#994#0" />
-                <element signature="e#1033#1123#0" />
-                <element signature="e#1166#1763#0" />
-                <element signature="e#1788#2331#0" />
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queries.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/products/schema/queries.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="types.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/products/schema/types.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="113" column="36" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,7 +173,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>class=</find>
       <find>fa-</find>
       <find>../</find>
       <find>MDBInput</find>
@@ -170,6 +202,7 @@
       <find>product</find>
       <find>provider</find>
       <find>statusCode</find>
+      <find>categories</find>
     </findStrings>
     <replaceStrings>
       <replace>cart</replace>
@@ -181,6 +214,8 @@
       <replace>stopColor</replace>
       <replace>className=</replace>
       <replace>fontSize</replace>
+      <replace>max</replace>
+      <replace>query</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Dan\PycharmProjects\e_commerse</dir>
@@ -206,8 +241,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/accounts/models.py" />
-        <option value="$PROJECT_DIR$/accounts/serializers.py" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/app/components/navbar/cartNavItem.jsx" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/global/products/product.jsx" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/lib/ssr.js" />
@@ -226,7 +259,6 @@
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/register/index.jsx" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/global/footer.jsx" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/product/index.jsx" />
-        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/global/rangeSlider/rangeSlider.jsx" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/global/products/products.jsx" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/global/loaders/spinnerLoader.jsx" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/pages/products/index.jsx" />
@@ -248,15 +280,18 @@
         <option value="$PROJECT_DIR$/../next-js-e-commerse/package.json" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/generateSitemap.js" />
         <option value="$PROJECT_DIR$/business/products/models.py" />
-        <option value="$PROJECT_DIR$/client/products/schema/queries.py" />
-        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/products/queries.jsx" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/index/index.jsx" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/cart/index.jsx" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/login/index.jsx" />
-        <option value="$PROJECT_DIR$/client/products/schema/types.py" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/products/components/index.jsx" />
-        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/products/index.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/_helpers.jsx" />
         <option value="$PROJECT_DIR$/../next-js-e-commerse/components/products/components/searchForm.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/global/rangeSlider/rangeSlider.jsx" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/products/queries.jsx" />
+        <option value="$PROJECT_DIR$/client/products/utils.py" />
+        <option value="$PROJECT_DIR$/client/products/schema/types.py" />
+        <option value="$PROJECT_DIR$/client/products/schema/queries.py" />
+        <option value="$PROJECT_DIR$/../next-js-e-commerse/components/products/index.jsx" />
       </list>
     </option>
   </component>
@@ -303,13 +338,6 @@
               <item name="next-js-e-commerse" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="products" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e_commerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="next-js-e-commerse" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -889,19 +917,18 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.33333334" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32838285" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5718608" visible="true" weight="0.32838285" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" weight="0.44059405" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31996974" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5718608" visible="true" weight="0.24092409" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.6255673" weight="0.24257426" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3880484" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.5247525" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.32838285" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -910,36 +937,37 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32838285" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.32838285" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.5247525" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49924356" weight="0.33333334" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5718608" weight="0.67161715" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27912253" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="15" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
+      <window_info anchor="bottom" id="TypeScript" order="15" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32838285" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32838285" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.5247525" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Console" order="17" weight="0.32838285" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
-      <window_info anchor="bottom" id="Messages" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.6255673" weight="0.13531353" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.37443268" side_tool="true" weight="0.6287129" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49924356" weight="0.33333334" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="16" weight="0.32838285" />
-      <window_info anchor="bottom" id="Database Console" order="17" weight="0.32838285" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.6255673" weight="0.13531353" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.5247525" />
+      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32838285" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1002,31 +1030,17 @@
           <url>file://$PROJECT_DIR$/../next-js-e-commerse/pages/index.jsx</url>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../next-js-e-commerse/components/products/index.jsx</url>
+          <line>17</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="22" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/react-apollo/lib/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/react-apollo/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/register/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/global/index.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/next/dist/client/with-router.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1042,13 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/global/rangeSlider/rangeSlider.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
@@ -1185,9 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,30 +1202,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/sitemap-generator/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="171" column="30" lean-forward="true" selection-start-line="171" selection-start-column="30" selection-end-line="171" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/sitemap.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/gulp-sitemap/lib/sitemap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/gulp-sitemap/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/sitemap-generator/src/index.js" />
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/sitemap.xml" />
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/gulp-sitemap/lib/sitemap.js" />
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/node_modules/gulp-sitemap/index.js" />
     <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1250,20 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/products/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/business/products/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1271,23 +1241,6 @@
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/products/schema/queries.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/products/queries.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1319,16 +1272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/products/schema/types.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/product/queries.jsx">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1339,26 +1282,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/products/index.jsx">
+    <entry file="file://$PROJECT_DIR$/package-lock.json" />
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/utils/get-host.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/products/components/searchForm.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="125" column="44" selection-start-line="125" selection-start-column="44" selection-end-line="125" selection-end-column="44" />
+        <state relative-caret-position="275">
+          <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/utils/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#870#994#0" />
-            <element signature="e#1033#1123#0" />
-            <element signature="e#1166#1763#0" />
-            <element signature="e#1788#2331#0" />
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/products/components/searchForm.jsx">
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/global/rangeSlider/rangeSlider.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+        <state relative-caret-position="377">
+          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/_helpers.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/products/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
           <folding>
-            <element signature="e#0#67#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/products/schema/types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="113" column="36" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/products/schema/queries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/products/queries.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../next-js-e-commerse/components/products/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="161" column="17" lean-forward="true" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#ProductsPage#0" />
+            <element signature="e#915#1039#0" />
+            <element signature="e#1078#1158#0" />
+            <element signature="e#1211#1808#0" />
+            <element signature="e#1833#2117#0" />
+            <element signature="n#!!block;n#render#0;n#ProductsPage#0" />
           </folding>
         </state>
       </provider>

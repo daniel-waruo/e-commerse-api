@@ -9,7 +9,7 @@ from client.products.schema.types import (
     ProductReviewType,
     FilterProducts
 )
-from client.products.utils import filter_products
+from client.products.utils import filter_products, filter_by_price
 
 
 class Query(graphene.ObjectType):
@@ -43,7 +43,9 @@ class Query(graphene.ObjectType):
         FilterProducts,
         categorySlugs=graphene.List(graphene.String),
         category_Ids=graphene.List(graphene.String),
-        query=graphene.String()
+        query=graphene.String(),
+        min=graphene.String(),
+        max=graphene.String()
     )
 
     def resolve_filter_products(self, info, **kwargs):
@@ -55,8 +57,13 @@ class Query(graphene.ObjectType):
         if category_slug:
             if Category.objects.filter(slug=category_slug).exists():
                 category = Category.objects.get(slug=category_slug)
+        # filter by category query
+        all_products = filter_products(kwargs)
+        # filter by price
+        query_set = filter_by_price(all_products, kwargs)
         return FilterProducts(
-            products=filter_products(kwargs),
+            all_products=all_products,
+            products=query_set,
             category=category
         )
 

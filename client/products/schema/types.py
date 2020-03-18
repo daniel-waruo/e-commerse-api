@@ -100,12 +100,18 @@ class FilterProducts(graphene.ObjectType):
         ProductNode,
         filterset_class=ProductFilter,
     )
+
+    all_products = DjangoFilterConnectionField(
+        ProductNode,
+        filterset_class=ProductFilter,
+    )
+
     filter_price = graphene.Field(FilterPriceType)
 
     category = graphene.Field(CategoryType)
 
     def resolve_filter_price(self, info, **kwargs):
-        products = self.products
+        products = self.all_products
         price_dict = products.aggregate(Min('discount_price'), Max('discount_price'))
         return FilterPriceType(
             min=price_dict['discount_price__min'],

@@ -9,6 +9,7 @@ def filter_products(kwargs):
     category_ids = kwargs.get("category_Ids")
     category_slugs = kwargs.get("categorySlugs")
     query = kwargs.get("query")
+
     # initial queryset object
     query_set = Product.objects.all()
 
@@ -42,4 +43,17 @@ def filter_products(kwargs):
         ).order_by('-rank')
 
     # return query set
+    return query_set
+
+
+def filter_by_price(query_set, kwargs):
+    min_price = kwargs.get("min")
+    max_price = kwargs.get("max")
+
+    # if min and max filter
+    if min_price or max_price:
+        query_set = query_set.filter(
+            discount_price__gte=min_price,
+            discount_price__lte=max_price
+        )
     return query_set

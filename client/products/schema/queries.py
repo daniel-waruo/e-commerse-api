@@ -47,8 +47,17 @@ class Query(graphene.ObjectType):
     )
 
     def resolve_filter_products(self, info, **kwargs):
+        category_slug = kwargs.get("categorySlugs")
+        if category_slug:
+            category_slug = category_slug[0]
+
+        category = None
+        if category_slug:
+            if Category.objects.filter(slug=category_slug).exists():
+                category = Category.objects.get(slug=category_slug)
         return FilterProducts(
-            products=filter_products(kwargs)
+            products=filter_products(kwargs),
+            category=category
         )
 
     """Product Images"""

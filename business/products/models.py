@@ -3,7 +3,7 @@ from django.db import models
 from django.utils.text import slugify
 from djmoney.contrib.exchange.models import convert_money
 from djmoney.models.fields import MoneyField
-from pyuploadcare.dj.models import ImageGroupField, ImageField
+from pyuploadcare.dj.models import ImageField
 
 # Create your models here.
 from utils.currency.utils import round_off
@@ -15,6 +15,7 @@ class Category(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField()
     parent = models.ForeignKey('self', blank=True, null=True, related_name='children', on_delete=models.CASCADE)
+    description = models.TextField(blank=True, null=True, max_length=300)
 
     class Meta:
         unique_together = ('slug', 'parent',)  # enforcing that there can not be two
@@ -35,7 +36,7 @@ class Category(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=100, db_index=True)
-    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True,related_name="products")
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, related_name="products")
     price = MoneyField(max_digits=14, decimal_places=2, blank=False, null=False)
     discount_price = MoneyField(max_digits=14, decimal_places=2)
     price_base = MoneyField(max_digits=14, decimal_places=2, editable=False)

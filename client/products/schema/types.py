@@ -25,6 +25,11 @@ def convert_field(field, registry=None):
 
 # This is configured in the CategoryNode's Meta class (as you can see below)
 class CategoryType(DjangoObjectType):
+    name = graphene.String()
+
+    def resolve_name(self: Category, info):
+        return self.name.title()
+
     class Meta:
         model = Category
 
@@ -54,6 +59,11 @@ class ProductNode(DjangoObjectType):
 class ProductType(DjangoObjectType):
     class Meta:
         model = Product
+
+    name = graphene.String()
+
+    def resolve_name(self: Product, info):
+        return self.name.title()
 
     in_cart = graphene.Boolean()
 
@@ -91,6 +101,8 @@ class FilterProducts(graphene.ObjectType):
         filterset_class=ProductFilter,
     )
     filter_price = graphene.Field(FilterPriceType)
+
+    category = graphene.Field(CategoryType)
 
     def resolve_filter_price(self, info, **kwargs):
         products = self.products

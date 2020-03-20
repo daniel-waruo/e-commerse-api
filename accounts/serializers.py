@@ -2,13 +2,13 @@ from allauth.account import app_settings
 from allauth.account.utils import send_email_confirmation
 from django.contrib.auth import authenticate
 from django.contrib.auth.forms import PasswordResetForm
+from rest_framework import serializers
+
 from rest_auth.serializers import (
     PasswordResetSerializer as ResetPasswordSerializer,
     UserDetailsSerializer,
     LoginSerializer as BaseLoginSerializer
 )
-from rest_framework import serializers
-
 from .models import User, UserProfile, StaffUser
 
 

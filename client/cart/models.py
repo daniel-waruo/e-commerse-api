@@ -135,9 +135,10 @@ class Cart(models.Model):
             # if no products return 0
             return 0
 
+    @property
     def total(self, price_field=None):
         if self.products.all().exists():
-            price_field = price_field or 'price_base'
+            price_field = price_field or 'discount_price'
             total = self.products.aggregate(
                 cart_total=Sum(F("number") * F("product__" + price_field), output_field=MoneyField())
             )["cart_total"]
@@ -158,8 +159,8 @@ class CartProduct(models.Model):
         unique_together = ('cart', 'product')
         verbose_name = 'Cart Product'
 
-    def product_total(self):
-        return self.number * self.product.price
+    def product_total(self,field='discount_price'):
+        return self.number * getattr(self.product,field)
 
     def base_product_total(self):
         return self.number * self.product.base_price()

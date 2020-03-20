@@ -6,8 +6,9 @@ from allauth.socialaccount.providers.facebook.views import FacebookOAuth2Adapter
 from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
 from allauth.socialaccount.providers.instagram.views import InstagramOAuth2Adapter
 from django.shortcuts import get_object_or_404
+from rest_auth.helpers import complete_social_signup
 from rest_auth.registration.serializers import (SocialLoginSerializer)
-from rest_auth.registration.views import RegisterView
+from rest_auth.registration.views import RegisterView, SocialRegisterView
 from rest_auth.views import LoginView
 from rest_auth.views import PasswordResetView as BasePasswordResetView
 from rest_framework.permissions import (AllowAny)
@@ -45,6 +46,20 @@ class KnoxRegisterView(RegisterView):
         user = serializer.save(self.request)
         self.token = create_knox_token(None, user, None)
         complete_signup(self.request._request, user, allauth_settings.EMAIL_VERIFICATION, None)
+        return user
+
+
+class KnoxSocialRegisterView(SocialRegisterView):
+    def get_response_data(self, user):
+        if allauth_settings.EMAIL_VERIFICATION == allauth_settings.EmailVerificationMethod.MANDATORY:
+            return {"detail": "Verification e-mail sent."}
+        return KnoxSerializer({'user': user, 'token': self.token}).data
+
+    def perform_create(self, serializer):
+        self.request.session.pop('socialaccount_sociallogin', None)
+        user = serializer.save(self.request)
+        self.token = create_knox_token(None, user, None)
+        complete_social_signup(self.request, self.sociallogin)
         return user
 
 

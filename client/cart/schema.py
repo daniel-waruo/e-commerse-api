@@ -17,7 +17,7 @@ class CartType(DjangoObjectType):
     total = graphene.String()
 
     def resolve_total(self: Cart, info):
-        return self.total()
+        return self.total
 
 
 class CartProductType(DjangoObjectType):

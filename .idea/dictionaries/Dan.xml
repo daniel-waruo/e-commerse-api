@@ -4,6 +4,7 @@
       <w>allauth</w>
       <w>emailconfirmation</w>
       <w>pyuploadcare</w>
+      <w>sociallogin</w>
     </words>
   </dictionary>
 </component>

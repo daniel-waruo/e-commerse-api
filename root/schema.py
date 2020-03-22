@@ -1,6 +1,9 @@
 import graphene
 
-from accounts.schema import Query as UserQuery
+from accounts.schema import (
+    Query as UserQuery,
+    Mutation as UserMutation
+)
 from client.cart.schema import Query as CartQuery
 from client.products.schema import (
     Mutation as ProductMutation,
@@ -15,7 +18,7 @@ class Query(ProductQuery, WebQuery, CartQuery, UserQuery, graphene.ObjectType):
     pass
 
 
-class Mutation(ProductMutation, graphene.ObjectType):
+class Mutation(ProductMutation, UserMutation, graphene.ObjectType):
     pass
 
 

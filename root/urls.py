@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.http import JsonResponse
 from django.urls import path, include
+from graphene_django.views import GraphQLView
 
 from accounts.graph_ql import DRFAuthenticatedGraphQLView
 
@@ -46,5 +47,6 @@ urlpatterns = [
     # GRAPH-QL URLS
     ############################
 
-    path("graph-ql", DRFAuthenticatedGraphQLView.as_view(graphiql=True))
+    path("graphi-ql", GraphQLView.as_view(graphiql=True)),
+    path("graph-ql", DRFAuthenticatedGraphQLView.as_view())
 ]

@@ -5,6 +5,9 @@
 **/__pycache__/
 *.pyc
 
+# test
+.coverage
+
 # ignore env files
 .env
 

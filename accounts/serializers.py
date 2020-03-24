@@ -49,7 +49,7 @@ class LoginSerializer(BaseLoginSerializer):
             raise serializers.ValidationError(msg)
 
         if app_settings.EMAIL_VERIFICATION == app_settings.EmailVerificationMethod.MANDATORY:
-            email_address, isCreated = user.emailaddress_set.get_or_create(email=user.email)
+            email_address, _ = user.emailaddress_set.get_or_create(email=user.email)
             if not email_address.verified:
                 send_email_confirmation(self.context["request"], user)
                 raise serializers.ValidationError('E-mail is not verified.Check your email')

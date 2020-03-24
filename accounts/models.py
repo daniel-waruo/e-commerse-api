@@ -6,7 +6,7 @@ from django.utils.translation import gettext_lazy as _
 from pyuploadcare.dj.models import ImageField
 
 from business.authorization.models import Department
-from utils.geo.phone_numbers.fields import PhoneNumberField
+from utils.phone_number_field import PhoneNumberField
 
 # Create your models here.
 
@@ -38,7 +38,9 @@ class User(AbstractUser):
 
 class UserProfile(models.Model):
     """
-    Models for the User Profile
+    User Profile Model
+    This model stores information that is not necessary that
+    every user has
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
     gender = models.CharField(max_length=1, choices=gender_choices, default='u', null=True)

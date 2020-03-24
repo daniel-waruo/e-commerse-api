@@ -8,6 +8,6 @@
 # ignore env files
 .env
 
-.idea/*
+.idea/
 
-/root/staticfiles/*
+/root/staticfiles/

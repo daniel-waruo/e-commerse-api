@@ -49,6 +49,5 @@ INSTALLED_APPS = [
     'client.delivery',
     'client.web',
     # utils
-    'utils.geo.phone_numbers',
     'utils.session'
 ]

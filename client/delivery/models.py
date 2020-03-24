@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.db import models
 
-from utils.geo.phone_numbers.fields import PhoneNumberField
+from utils.phone_number_field import PhoneNumberField
 
 
 # create your models here

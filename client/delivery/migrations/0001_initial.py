@@ -3,7 +3,7 @@
 from django.conf import settings
 from django.db import migrations, models
 import django.db.models.deletion
-import utils.geo.phone_numbers.fields
+import utils.phone_number_field
 
 
 class Migration(migrations.Migration):
@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
             name='DeliveryInfo',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('phone_number', utils.geo.phone_numbers.fields.PhoneNumberField(max_length=128, region=None)),
+                ('phone_number', utils.phone_number_field.PhoneNumberField(max_length=128, region=None)),
                 ('email', models.EmailField(max_length=254)),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],

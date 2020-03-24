@@ -6,7 +6,7 @@ from djmoney.models.fields import MoneyField
 from pyuploadcare.dj.models import ImageField
 
 # Create your models here.
-from utils.currency.utils import round_off
+from utils.currency import round_off
 
 BASE_CURRENCY = settings.BASE_CURRENCY
 

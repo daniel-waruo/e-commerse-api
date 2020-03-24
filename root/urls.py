@@ -18,7 +18,7 @@ from django.http import JsonResponse
 from django.urls import path, include
 from graphene_django.views import GraphQLView
 
-from accounts.graph_ql import DRFAuthenticatedGraphQLView
+from accounts.views import DRFAuthenticatedGraphQLView
 
 urlpatterns = [
     ############################
@@ -30,9 +30,9 @@ urlpatterns = [
     # REST API URLS
     #############################
 
-    # account urls
-    path('accounts/', include('accounts.urls')),
-    # business urls
+    # accounts
+    path('accounts/auth/', include('accounts.urls')),
+    # businesses oriented functions
     path('business/authorization/', include('business.authorization.urls')),
     path('business/inventory/', include('business.inventory.urls')),
     path('business/products/', include('business.products.urls')),

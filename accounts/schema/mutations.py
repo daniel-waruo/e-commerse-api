@@ -31,7 +31,7 @@ class EditUserInformation(graphene.Mutation):
         # check if user is authenticated
         if request.user.is_authenticated:
             # call user information serializer
-            serializer = UserInformationSerializer(data=kwargs)
+            serializer = UserInformationSerializer(data=kwargs, context=request)
             if serializer.is_valid(raise_exception=True):
                 user = serializer.save(request.user)
                 # return the newly created data

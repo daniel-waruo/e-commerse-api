@@ -7,7 +7,7 @@ from django.db import migrations, models
 import django.db.models.deletion
 import django.utils.timezone
 import pyuploadcare.dj.models
-import utils.geo.phone_numbers.fields
+import utils.phone_number_field
 
 
 class Migration(migrations.Migration):
@@ -52,7 +52,7 @@ class Migration(migrations.Migration):
                 ('user', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, primary_key=True, serialize=False, to=settings.AUTH_USER_MODEL)),
                 ('gender', models.CharField(choices=[('m', 'MALE'), ('f', 'FEMALE'), ('u', 'UNKNOWN')], default='u', max_length=1, null=True)),
                 ('location', models.CharField(default='', max_length=100, null=True)),
-                ('phone_number', utils.geo.phone_numbers.fields.PhoneNumberField(max_length=128, null=True, region=None)),
+                ('phone_number', utils.phone_number_field.PhoneNumberField(max_length=128, null=True, region=None)),
                 ('image', pyuploadcare.dj.models.ImageField(null=True)),
                 ('birth_day', models.DateField(null=True)),
                 ('bio_data', models.TextField(null=True)),

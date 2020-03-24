@@ -129,10 +129,11 @@ class UserInformationSerializer(serializers.Serializer):
         :param value:
         :return: value
         """
-        if User.objects.filter(email=value):
-            raise Exception({
-                "message": "The email {} belong to another user".format(value)
-            })
+        user = self.context.user
+        if User.objects.filter(email=value) and (user.email != value):
+            raise Exception(
+                "The email {} belong to another user".format(value)
+            )
         return value
 
     def validate_phone_number(self, value):
@@ -141,10 +142,11 @@ class UserInformationSerializer(serializers.Serializer):
         :param value:
         :return: value
         """
-        if UserProfile.objects.filter(phone_number=value):
-            raise Exception({
-                "message": ["Phone Number belong to another user"]
-            })
+        user_profile = self.context.user.userprofile
+        if UserProfile.objects.filter(phone_number=value) and (user_profile.phone_number != value):
+            raise Exception(
+                "Phone Number belong to another user"
+            )
         return value
 
     def save(self, user):
@@ -159,5 +161,4 @@ class UserInformationSerializer(serializers.Serializer):
         user.email = email
         user.userprofile.phone_number = phone_number
         user.userprofile.gender = gender
-
         return user

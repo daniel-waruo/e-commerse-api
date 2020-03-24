@@ -1,3 +1,4 @@
+import rest_framework
 from allauth.account import app_settings as allauth_settings
 from allauth.account.adapter import get_adapter
 from allauth.account.models import EmailConfirmationHMAC, EmailConfirmation
@@ -6,13 +7,16 @@ from allauth.socialaccount.providers.facebook.views import FacebookOAuth2Adapter
 from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
 from allauth.socialaccount.providers.instagram.views import InstagramOAuth2Adapter
 from django.shortcuts import get_object_or_404
+from graphene_django.views import GraphQLView
 from rest_auth.helpers import complete_social_signup
 from rest_auth.registration.serializers import (SocialLoginSerializer)
 from rest_auth.registration.views import RegisterView, SocialRegisterView
 from rest_auth.views import LoginView
 from rest_auth.views import PasswordResetView as BasePasswordResetView
+from rest_framework.decorators import permission_classes, authentication_classes, api_view
 from rest_framework.permissions import (AllowAny)
 from rest_framework.response import Response
+from rest_framework.settings import api_settings
 from rest_framework.views import APIView
 
 from accounts.serializers import PasswordResetSerializer
@@ -111,3 +115,20 @@ class InstagramLogin(SocialLoginView):
 
 class GoogleLogin(SocialLoginView):
     adapter_class = GoogleOAuth2Adapter
+
+
+class DRFAuthenticatedGraphQLView(GraphQLView):
+    batch = True
+
+    def parse_body(self, request):
+        if isinstance(request, rest_framework.request.Request):
+            return request.data
+        return super(DRFAuthenticatedGraphQLView, self).parse_body(request)
+
+    @classmethod
+    def as_view(cls, *args, **kwargs):
+        view = super(DRFAuthenticatedGraphQLView, cls).as_view(*args, **kwargs)
+        view = permission_classes((AllowAny,))(view)
+        view = authentication_classes(api_settings.DEFAULT_AUTHENTICATION_CLASSES)(view)
+        view = api_view(["GET", "POST"])(view)
+        return view

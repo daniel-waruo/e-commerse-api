@@ -2,7 +2,7 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase, RequestFactory
 from knox.models import AuthToken
 
-from ..auth import TokenAuthentication
+from ..backends import TokenAuthentication
 
 
 # models test

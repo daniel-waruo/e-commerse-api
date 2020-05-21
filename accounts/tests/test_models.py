@@ -19,5 +19,4 @@ class UserProfileTest(TestCase):
         )
 
     def test_create_userprofile(self):
-        # t
         self.assertIsNotNone(self.user.userprofile)

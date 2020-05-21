@@ -26,27 +26,31 @@ from rest_auth.views import (
 )
 
 from .views import (
-    KnoxRegisterView, ConfirmEmailApi,
-    PasswordResetView, KnoxLoginView,
-    FacebookLogin, InstagramLogin, GoogleLogin
+    LoginView,
+    FacebookLogin,
+    InstagramLogin,
+    GoogleLogin,
+    RegisterView,
+    ConfirmEmailView,
+    PasswordResetView
 )
 
 urlpatterns = [
     ###########################
     # REGISTRATION URLS
     ###########################
-    path('registration/', KnoxRegisterView.as_view(), name='rest_register'),
+    path('registration/', RegisterView.as_view(), name='rest_register'),
     # url for verifying email
     path('registration/verify-email/', VerifyEmailView.as_view(), name='rest_verify_email'),
     # url for account confirmation
-    path('registration/account-confirm-email/<str:key>', ConfirmEmailApi.as_view(), name='account_confirm_email'),
+    path('registration/account-confirm-email/<str:key>', ConfirmEmailView.as_view(), name='account_confirm_email'),
     # url for informing the user that the verification in sent
     path("registration/confirm-email/", email_verification_sent, name="account_email_verification_sent"),
 
     ###########################
     # AUTHENTICATION URLS
     ###########################
-    path('login/', KnoxLoginView.as_view(), name='rest_login'),
+    path('login/', LoginView.as_view(), name='rest_login'),
     path('logout/', LogoutView.as_view(), name='rest_logout'),
 
     ###########################

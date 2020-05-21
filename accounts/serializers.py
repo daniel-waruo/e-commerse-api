@@ -13,7 +13,7 @@ from rest_framework import serializers
 from .models import User, StaffUser, gender_choices, UserProfile
 
 
-class KnoxSerializer(serializers.Serializer):
+class TokenSerializer(serializers.Serializer):
     """
       Serializer for Knox library authentication authentication.
     """
@@ -116,32 +116,19 @@ class CreateStaffUserSerializer(serializers.ModelSerializer):
         return staff
 
 
-class UserInformationSerializer(serializers.Serializer):
+class UserEditSerializer(serializers.Serializer):
     first_name = serializers.CharField(required=False)
     last_name = serializers.CharField(required=False)
-    email = serializers.EmailField(required=False)
     gender = serializers.ChoiceField(choices=gender_choices, required=False)
     phone_number = PhoneNumberField(required=False)
 
-    def validate_email(self, value):
-        """
-        Check that the email does not belong to any other person
-        :param value:
-        :return: value
-        """
-        user = self.context.user
-        if User.objects.filter(email=value) and (user.email != value):
-            raise Exception(
-                "The email {} belong to another user".format(value)
-            )
-        return value
+    def validate(self, data):
+        if not self.instance:
+            raise serializers.ValidationError("Instance Must be Provided")
+        return data
 
     def validate_phone_number(self, value):
-        """
-        Check if the phone number belongs to another user
-        :param value:
-        :return: value
-        """
+        """Check if the phone number belongs to another user"""
         user_profile = self.context.user.userprofile
         if UserProfile.objects.filter(phone_number=value) and (user_profile.phone_number != value):
             raise Exception(
@@ -149,16 +136,19 @@ class UserInformationSerializer(serializers.Serializer):
             )
         return value
 
-    def save(self, user):
-        first_name = self.validated_data.get('first_name')
-        last_name = self.validated_data.get('last_name')
-        email = self.validated_data.get('email')
-        phone_number = self.validated_data.get('phone_number')
-        gender = self.validated_data.get('gender')
-
-        user.first_name = first_name
-        user.last_name = last_name
-        user.email = email
-        user.userprofile.phone_number = phone_number
-        user.userprofile.gender = gender
+    def update(self, user, validated_data):
+        """ Update user data  in the database """
+        user.first_name = validated_data.get('first_name') or user.first_name
+        user.last_name = validated_data.get('last_name') or user.last_name
+        user.userprofile.phone_number = validated_data.get('phone_number') or user.userprofile.phone_number
+        user.userprofile.gender = validated_data.get('gender') or user.userprofile.gender
+        user.save()
+        user.userprofile.save()
         return user
+
+    def save(self):
+        user = self.update(self.instance, self.validated_data)
+        return user
+
+    def create(self, validated_data):
+        pass

@@ -4,7 +4,7 @@ from rest_framework.generics import CreateAPIView
 from rest_framework.permissions import DjangoModelPermissions
 
 from accounts.models import StaffUser
-from accounts.serializers import CreateStaffUserSerializer
+from business.authorization.serializers import CreateStaffUserSerializer
 from business.authorization.permissions import IsDepartmentMember
 
 

@@ -1,7 +1,11 @@
 from django.contrib.auth import get_user_model
+from django.contrib.messages.middleware import MessageMiddleware
+from django.contrib.sessions.middleware import SessionMiddleware
+from django.contrib.sites.models import Site
 from django.test import TestCase
+from rest_framework.test import APIRequestFactory
 
-from accounts.serializers import UserEditSerializer
+from accounts.serializers import UserEditSerializer, ChangePasswordSerializer, LoginSerializer
 
 User = get_user_model()
 
@@ -45,7 +49,7 @@ class ChangePasswordSerializerTestCase(TestCase):
             'current_password': 'password',
             'new_password': 'new-password'
         }
-        self.serializer_class = UserEditSerializer
+        self.serializer_class = ChangePasswordSerializer
         self.serializer = self.serializer_class(data=self.data)
 
     def test_wrong_credentials_on_password(self):
@@ -64,3 +68,57 @@ class ChangePasswordSerializerTestCase(TestCase):
         if self.serializer.is_valid():
             user = self.serializer.save()
             self.assertEqual(user.password, self.data['new_password'])
+
+
+class LoginSerializerTestCase(TestCase):
+    def setUp(self):
+        """ create a user """
+        self.user = User.objects.create_user(
+            username='john',
+            email='johndoe@gmail.com',
+            password='password'
+        )
+        # create a a site for that will bear the HTTP_HOST header
+        Site.objects.create(domain='testing.com', name='Testing Domain')
+
+        request = APIRequestFactory().get('rest_login', HTTP_HOST='testing.com')
+        # in your test method:
+        """Annotate a request object with a session"""
+        middleware = SessionMiddleware()
+        middleware.process_request(request)
+        request.session.save()
+
+        """Annotate a request object with a messages"""
+        middleware = MessageMiddleware()
+        middleware.process_request(request)
+        request.session.save()
+
+        self.serializer_class = LoginSerializer
+        self.context = {'request': request}
+
+    def test_unverified_email_user_login(self):
+        data = {'username': 'john', 'password': 'password'}
+        self.serializer = self.serializer_class(data=data, context=self.context)
+        self.assertFalse(self.serializer.is_valid(), "Error in data validation \n")
+
+    def _verify_email_address(self):
+        # manually confirm the users email address
+        from allauth.account.models import EmailAddress
+        EmailAddress.objects.get_or_create({
+            'user': self.user,
+            'email': self.user.email,
+            'verified': True,
+            'primary': True,
+        }, user=self.user)
+
+    def test_verified_email_user_login(self):
+        self._verify_email_address()
+        data = {'username': 'john', 'password': 'password'}
+        self.serializer = self.serializer_class(data=data, context=self.context)
+        self.assertTrue(self.serializer.is_valid(), "Error in data validation \n")
+
+    def test_wrong_credentials_user_login(self):
+        self._verify_email_address()
+        data = {'username': 'john', 'password': 'wrong-password'}
+        self.serializer = self.serializer_class(data=data, context=self.context)
+        self.assertFalse(self.serializer.is_valid(), "Security Threat wrong password authenticates.")

@@ -13,7 +13,7 @@ from rest_auth.registration.views import RegisterView as BaseRegisterView
 from rest_auth.views import LoginView as BaseLoginView
 from rest_auth.views import PasswordResetView as BasePasswordResetView
 from rest_framework.decorators import permission_classes, authentication_classes, api_view
-from rest_framework.permissions import (AllowAny)
+from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.settings import api_settings
 from rest_framework.views import APIView
@@ -70,14 +70,8 @@ class ConfirmEmailView(APIView):
         confirmation = self.get_confirmation_object(key)
         if not confirmation.email_address.verified:
             confirmation.confirm(self.request)
-            return Response({
-                "detail": "Email Verification successful"
-            })
-
-        return Response({
-            "detail": "Your Email was already verified.Try logging in."
-        })
-
+            return Response({"detail": "Email Verification successful"})
+        return Response({"detail": "Your Email was already verified.Try logging in."})
     @staticmethod
     def get_confirmation_object(key, queryset=None):
         email_confirmation = EmailConfirmationHMAC.from_key(key)

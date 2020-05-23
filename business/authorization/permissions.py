@@ -1,7 +1,6 @@
 from rest_framework.permissions import IsAuthenticated
 
-from accounts.models import StaffUser
-from business.authorization.models import Department
+from business.authorization.models import Department, StaffUser
 
 
 class IsStaff(IsAuthenticated):

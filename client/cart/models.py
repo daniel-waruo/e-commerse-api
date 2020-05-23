@@ -22,33 +22,27 @@ cart_state = (
 
 class CartManager(models.Manager):
     def get_from_request(self, request):
-        # check if user is authenticated
         if request.user.is_authenticated:
-            # get cart using the user id if not create a cart instance
-            # and store in in cart
-            cart = self.get_or_create(
-                user_id=request.user.id
-            )
+            cart = self.get_or_create(user_id=request.user.id)
         else:
-            # get cart using the anonymous session session key
-            # store it in variable cart
             cart = self.get_or_create(
                 session_id=request.anonymous_session.session_key
             )
-        # check if it is an instance of a tuple created by
-        # get or create
+        # check if it is an instance of a tuple created by get or create
         if isinstance(cart, tuple):
-            # return the first element in the tuple which is the cart insta
+            # return cart instance
             return cart[0]
         # if cart is not a tuple return cart instance
         return cart
 
 
 class Cart(models.Model):
-    """
-    Cart
-    This is the model used to store the cart before an order is officially made
-    It stores the User or Session to refer to the cart.
+    """ Handle storage and retrieval of user carts
+
+        This is the model used to store the cart before an order is officially made
+        It stores the User or Session to refer to the cart.
+        TODO:set price to be used as price and not to be used as discount price
+        TODO:get a better variable name for price
     """
     # user whom the cart belongs to
     user = models.OneToOneField(AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, db_index=True)
@@ -65,40 +59,28 @@ class Cart(models.Model):
         verbose_name = 'Cart'
 
     def __str__(self):
-        return "Cart " + str(self.pk)
+        return "Cart {}".format(self.pk)
 
-    def update_product_number(self, product_pk, product_number):
-        # check if the product is in the cart
-        if self.products.filter(product=product_pk):
-            # get cart product instance
-            cart_product = self.products.get(product=product_pk)
-            # set number as product_number
-            cart_product.number = product_number
-            # save instance
-            cart_product.save()
-            # return cart product
-            return cart_product
-        else:
-            # return remove product to handle no existent cases
-            return self.remove_product(product_pk=product_pk)
-
-    def add_product(self, product_pk, product_number):
-        # check if there is a product cart matching both product and cart
+    def update_product_number(self, product_pk, product_number=1):
+        """ Update quantity in a specific product in the cart"""
         if self.products.filter(product=product_pk).exists():
-            # add the number of product cart plus one
             cart_product = self.products.get(product=product_pk)
-            # set number as product product number
             cart_product.number = product_number
-            # save cart product
             cart_product.save()
             return cart_product
-        else:
-            # create a whole new product cart and save the number as one
-            return CartProduct.objects.create(
-                number=product_number,
-                product=Product.objects.get(pk=product_pk),
-                cart=self
-            )
+        # return remove product to handle no existent cases
+        # TODO: in future raise no product error
+        return self.remove_product(product_pk=product_pk)
+
+    def add_product(self, product_pk, product_number=1):
+        """ Adds product to the cart and update the cart product if """
+        if self.products.filter(product=product_pk).exists():
+            return self.update_product_number(product_pk, product_number)
+        return CartProduct.objects.create(
+            number=product_number,
+            product=Product.objects.get(pk=product_pk),
+            cart=self
+        )
 
     def remove_product(self, product_pk):
         # check if product in cart products
@@ -131,9 +113,7 @@ class Cart(models.Model):
             return self.products.aggregate(
                 cart_total=Sum("number")
             )["cart_total"]
-        else:
-            # if no products return 0
-            return 0
+        return 0
 
     @property
     def total(self, price_field=None):
@@ -143,8 +123,8 @@ class Cart(models.Model):
                 cart_total=Sum(F("number") * F("product__" + price_field), output_field=MoneyField())
             )["cart_total"]
             return Money(total, BASE_CURRENCY)
-        else:
-            return Money(0, BASE_CURRENCY)
+
+        return Money(0, BASE_CURRENCY)
 
 
 class CartProduct(models.Model):
@@ -159,8 +139,8 @@ class CartProduct(models.Model):
         unique_together = ('cart', 'product')
         verbose_name = 'Cart Product'
 
-    def product_total(self,field='discount_price'):
-        return self.number * getattr(self.product,field)
+    def product_total(self, field='discount_price'):
+        return self.number * getattr(self.product, field)
 
     def base_product_total(self):
         return self.number * self.product.base_price()

@@ -14,8 +14,7 @@ class UserEditTestCase(GraphQLTestCase):
     GRAPHQL_URL = '/graphi-ql'
 
     def setUp(self):
-        # create and authenticate a user
-        # create a user instance
+        """ Create and Authenticate a User """
         self.user = User.objects.create_user(
             username='john',
             email='johndoe@gmail.com',
@@ -27,7 +26,7 @@ class UserEditTestCase(GraphQLTestCase):
         self.token_string = token_string
         self._client = APIClient()
         # client.force_authenticate(user=self.user)
-        self._client.login(username='john',password='password')
+        self._client.login(username='john', password='password')
 
     def test_with_authorised_user(self):
         response = self.query(

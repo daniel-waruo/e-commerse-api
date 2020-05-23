@@ -3,7 +3,7 @@ from rest_auth.registration.views import RegisterView
 from rest_framework.generics import CreateAPIView
 from rest_framework.permissions import DjangoModelPermissions
 
-from accounts.models import StaffUser
+from business.authorization.models import StaffUser
 from business.authorization.serializers import CreateStaffUserSerializer
 from business.authorization.permissions import IsDepartmentMember
 

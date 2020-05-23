@@ -1,8 +1,8 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import Permission
 
-from accounts.models import StaffUser, User
-from business.authorization.models import Department
+from accounts.models import User
+from business.authorization.models import Department, StaffUser
 
 
 def create_staff_user(user_id: int, staff_type: int, department_ids: list):

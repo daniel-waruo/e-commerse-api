@@ -2,6 +2,7 @@ from rest_framework import status
 from rest_framework.generics import RetrieveUpdateDestroyAPIView, CreateAPIView, ListAPIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
+
 from client.delivery.models import DeliveryInfo
 from .serializers import DeliveryInfoSerializer
 
@@ -17,7 +18,6 @@ class CreateDeliveryInfo(CreateAPIView):
         data = request.data.dict()
         data["user"] = request.user.id
         serializer = self.get_serializer(data=data)
-        serializer.is_valid(raise_exception=True)
         self.perform_create(serializer)
         headers = self.get_success_headers(serializer.data)
         return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
@@ -38,7 +38,6 @@ class DeliveryInfoApi(RetrieveUpdateDestroyAPIView):
         data = request.data.dict()
         data["user"] = request.user.id
         serializer = self.get_serializer(instance, data=data, partial=partial)
-        serializer.is_valid(raise_exception=True)
         self.perform_update(serializer)
 
         if getattr(instance, '_prefetched_objects_cache', None):
@@ -57,4 +56,3 @@ class ListDeliveryInfo(ListAPIView):
         return DeliveryInfo.objects.filter(
             user_id=self.request.user.id
         )
-

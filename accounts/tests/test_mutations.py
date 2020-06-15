@@ -47,7 +47,7 @@ class UserEditTestCase(GraphQLTestCase):
                 }
             }
             ''',
-            op_name='editUserMutation',
+            op_name='EditUserMutation',
             variables={
                 'firstName': 'john',
                 'lastName': 'doe',

@@ -37,6 +37,7 @@ class Category(models.Model):
 class Product(models.Model):
     """ Handles all Product data
         TODO:make discount price editable
+        TODO: add weight,height,length,width on product
     """
     name = models.CharField(max_length=100, db_index=True)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, related_name="products")

@@ -24,7 +24,9 @@ base_settings = [
     'components/common.py',  # standard django settings
     'components/cors_configuration.py',
     # configuration for Access Control Allow Origin
-    'components/graphene.py'
+    'components/graphene.py',
+    # sendy config
+    'components/sendy.py'
 ]
 
 # Include settings:

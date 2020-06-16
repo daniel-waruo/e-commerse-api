@@ -13,6 +13,7 @@ class DeliveryInfo(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     phone_number = PhoneNumberField()
     email = models.EmailField()
+    contact_name = models.CharField(max_length=100)
 
     class Meta:
         verbose_name = 'Delivery Information'

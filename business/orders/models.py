@@ -9,6 +9,7 @@ from business.products.models import Product
 from client.delivery.models import DeliveryInfo
 # import SendyIT API wrapper
 from sendy_it import SendyIT, Person, Location, Delivery, DeliveryItem
+from client.cart.models import Cart
 
 # initialize sendy
 sendy = SendyIT(
@@ -22,7 +23,7 @@ shortuuid.set_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0987654321"
 class OrderManager(models.Manager):
     """Order Manager """
 
-    def create_from_cart(self, cart, delivery_info, sendy_order_no=None):
+    def create_from_cart(self, cart: Cart, delivery_info: DeliveryInfo, sendy_order_no=None):
         order = self.create(user=cart.user, delivery_info=delivery_info)
         cart_products = cart.products.all()
 

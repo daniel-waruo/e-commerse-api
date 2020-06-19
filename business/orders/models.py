@@ -21,7 +21,7 @@ shortuuid.set_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0987654321"
 
 
 class OrderManager(models.Manager):
-    """Order Manager """
+    """Order Manager to handle creation of orders"""
 
     def create_from_cart(self, cart: Cart, delivery_info: DeliveryInfo, sendy_order_no=None):
         order = self.create(user=cart.user, delivery_info=delivery_info)

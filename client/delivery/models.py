@@ -4,13 +4,13 @@ from django.db import models
 from utils.phone_number_field import PhoneNumberField
 
 
-# create your models here
-
-# class PickUpStation(models.Model):
-# TODO:Look For an Appropriate Representation For Location
-#    pass
 class DeliveryInfo(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    """ Contains Delivery information for people to be delivered to
+
+    TODO:change name from Delivery Info to Delivery Contacts
+    """
+
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='delivery_contacts')
     phone_number = PhoneNumberField()
     email = models.EmailField()
     contact_name = models.CharField(max_length=100)
@@ -20,3 +20,5 @@ class DeliveryInfo(models.Model):
 
     def __str__(self):
         return str(self.id)
+
+# TODO: add a model to store previous delivery location in form of coordinates
